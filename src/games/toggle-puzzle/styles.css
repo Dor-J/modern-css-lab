@@ -1,0 +1,110 @@
+.toggle-game {
+  --game-accent: oklch(66% 0.18 165);
+  counter-reset: toggle-on;
+}
+
+.toggle-board {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(4.2rem, 1fr));
+  gap: clamp(0.5rem, 2cqi, 0.9rem);
+  inline-size: min(100%, 24rem);
+  margin-inline: auto;
+}
+
+.toggle-cell {
+  aspect-ratio: 1;
+  position: relative;
+}
+
+.toggle-cell label {
+  display: grid;
+  place-items: center;
+  inline-size: 100%;
+  block-size: 100%;
+  border: 1px solid var(--game-line);
+  border-radius: 1rem;
+  background:
+    linear-gradient(135deg, color-mix(in oklch, var(--game-surface), white 4%), color-mix(in oklch, var(--game-surface), black 8%));
+  color: var(--game-muted);
+  font-size: clamp(1.2rem, 9cqi, 2.2rem);
+  font-weight: 900;
+  cursor: pointer;
+  transition:
+    transform 180ms ease,
+    border-color 180ms ease,
+    background 180ms ease,
+    box-shadow 180ms ease;
+}
+
+.toggle-cell label::before {
+  content: '';
+  position: absolute;
+  inset: 18%;
+  border-radius: 50%;
+  background: color-mix(in oklch, var(--game-accent), transparent 84%);
+  opacity: 0;
+  scale: 0.5;
+  transition: inherit;
+}
+
+.toggle-cell span {
+  position: relative;
+  z-index: 1;
+}
+
+.toggle-cell:has(input:checked) {
+  counter-increment: toggle-on;
+}
+
+.toggle-cell:has(input:checked) label {
+  border-color: color-mix(in oklch, var(--game-accent), white 10%);
+  background:
+    radial-gradient(circle at 40% 30%, color-mix(in oklch, white, transparent 16%), transparent 30%),
+    linear-gradient(135deg, var(--game-accent), color-mix(in oklch, var(--game-accent), black 18%));
+  color: white;
+  box-shadow: 0 1rem 2rem color-mix(in oklch, var(--game-accent), transparent 70%);
+}
+
+.toggle-cell:has(input:focus-visible) label,
+.toggle-cell label:hover {
+  outline: 2px solid var(--game-focus);
+  outline-offset: 0.2rem;
+  transform: translateY(-0.08rem);
+}
+
+.toggle-game:has(.toggle-cell--5 :is(input:focus-visible, label:hover)) .toggle-cell:is(.toggle-cell--2, .toggle-cell--4, .toggle-cell--6, .toggle-cell--8) label,
+.toggle-game:has(.toggle-cell--1 :is(input:focus-visible, label:hover)) .toggle-cell:is(.toggle-cell--2, .toggle-cell--4) label,
+.toggle-game:has(.toggle-cell--3 :is(input:focus-visible, label:hover)) .toggle-cell:is(.toggle-cell--2, .toggle-cell--6) label,
+.toggle-game:has(.toggle-cell--7 :is(input:focus-visible, label:hover)) .toggle-cell:is(.toggle-cell--4, .toggle-cell--8) label,
+.toggle-game:has(.toggle-cell--9 :is(input:focus-visible, label:hover)) .toggle-cell:is(.toggle-cell--6, .toggle-cell--8) label {
+  border-style: dashed;
+  border-color: color-mix(in oklch, var(--game-warning), white 12%);
+}
+
+.toggle-status::before {
+  content: counter(toggle-on) ' lights on. Target: 2, 4, 5, 6, 8.';
+  color: var(--game-muted);
+}
+
+.toggle-solved {
+  display: none;
+  gap: 0.35rem;
+  padding: var(--space-4);
+  border: 1px solid color-mix(in oklch, var(--game-success), white 8%);
+  border-radius: var(--radius-md);
+  background: color-mix(in oklch, var(--game-success), transparent 82%);
+}
+
+.toggle-game:has(#toggle-2:checked):has(#toggle-4:checked):has(#toggle-5:checked):has(#toggle-6:checked):has(#toggle-8:checked):not(:has(#toggle-1:checked)):not(:has(#toggle-3:checked)):not(:has(#toggle-7:checked)):not(:has(#toggle-9:checked)) {
+  --game-accent: var(--game-success);
+}
+
+.toggle-game:has(#toggle-2:checked):has(#toggle-4:checked):has(#toggle-5:checked):has(#toggle-6:checked):has(#toggle-8:checked):not(:has(#toggle-1:checked)):not(:has(#toggle-3:checked)):not(:has(#toggle-7:checked)):not(:has(#toggle-9:checked)) .toggle-solved {
+  display: grid;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .toggle-cell label {
+    transition: none;
+  }
+}
