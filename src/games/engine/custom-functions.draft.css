@@ -1,0 +1,17 @@
+/* Draft-only: import this manually when your browser and CSS build tool both support @function. */
+
+@function --game-cell-span(--cells) {
+  result: calc((var(--game-cell) * var(--cells)) + (var(--game-cell-gap) * (var(--cells) - 1)));
+}
+
+@function --game-track-position(--line) {
+  result: calc((var(--line) - 1) * (var(--game-cell) + var(--game-cell-gap)));
+}
+
+.game-span {
+  inline-size: --game-cell-span(var(--span, 1));
+}
+
+.game-track-offset {
+  translate: --game-track-position(var(--cell-x, 1)) --game-track-position(var(--cell-y, 1));
+}

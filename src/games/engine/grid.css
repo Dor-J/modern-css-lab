@@ -1,0 +1,271 @@
+.game-stage,
+.game-board,
+.game-layer {
+  --board-inline: calc((var(--game-cell) * var(--game-cols)) + (var(--game-cell-gap) * (var(--game-cols) - 1)));
+  --board-block: calc((var(--game-cell) * var(--game-rows)) + (var(--game-cell-gap) * (var(--game-rows) - 1)));
+}
+
+.game-stage {
+  display: grid;
+  inline-size: min(100%, var(--board-inline));
+  min-block-size: var(--board-block);
+  margin-inline: auto;
+  position: relative;
+  border: 1px solid var(--game-line);
+  border-radius: calc(var(--game-radius) * 0.8);
+  background:
+    linear-gradient(color-mix(in oklch, white, transparent 97%) 1px, transparent 1px),
+    linear-gradient(90deg, color-mix(in oklch, white, transparent 97%) 1px, transparent 1px),
+    color-mix(in oklch, var(--game-surface), black 8%);
+  background-size: var(--game-cell) var(--game-cell);
+  box-shadow: inset 0 0 0 1px color-mix(in oklch, black, transparent 78%);
+  overflow: clip;
+}
+
+.game-board,
+.game-layer {
+  grid-area: 1 / 1;
+  display: grid;
+  grid-template-columns: repeat(var(--game-cols), minmax(0, var(--game-cell)));
+  grid-template-rows: repeat(var(--game-rows), minmax(0, var(--game-cell)));
+  gap: var(--game-cell-gap);
+  inline-size: var(--board-inline);
+  block-size: var(--board-block);
+}
+
+.game-board {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.game-layer {
+  pointer-events: none;
+}
+
+.game-layer > :is(button, a, input, label, [tabindex]) {
+  pointer-events: auto;
+}
+
+.game-cell {
+  --cell-index: 1;
+  --cell-x: 1;
+  --cell-y: 1;
+  display: grid;
+  place-items: center;
+  min-inline-size: 0;
+  min-block-size: 0;
+  aspect-ratio: 1;
+  border: 1px solid color-mix(in oklch, var(--game-line), transparent 26%);
+  border-radius: max(0.25rem, calc(var(--game-cell) * 0.12));
+  background: color-mix(in oklch, var(--game-surface), transparent 18%);
+  font-size: max(0.65rem, calc(var(--game-cell) * 0.22));
+  font-variant-numeric: tabular-nums;
+  color: var(--game-muted);
+}
+
+.game-cell[data-x],
+.game-tile[data-x],
+.game-actor[data-x] {
+  grid-column: var(--cell-x);
+}
+
+.game-cell[data-y],
+.game-tile[data-y],
+.game-actor[data-y] {
+  grid-row: var(--cell-y);
+}
+
+.game-cell[data-solid],
+.game-tile[data-solid] {
+  background:
+    linear-gradient(135deg, color-mix(in oklch, var(--game-line), white 8%), color-mix(in oklch, var(--game-line), black 16%));
+  border-color: color-mix(in oklch, var(--game-line), white 18%);
+}
+
+.game-cell[data-goal],
+.game-tile[data-goal] {
+  background: color-mix(in oklch, var(--game-success), transparent 72%);
+  border-color: color-mix(in oklch, var(--game-success), white 8%);
+}
+
+.game-cell[data-hazard],
+.game-tile[data-hazard] {
+  background: color-mix(in oklch, var(--game-danger), transparent 72%);
+  border-color: color-mix(in oklch, var(--game-danger), white 8%);
+}
+
+.game-cell:is(:focus-visible, :has(:focus-visible)),
+.game-tile:is(:focus-visible, :has(:focus-visible)) {
+  outline: 2px solid var(--game-focus);
+  outline-offset: 0.2rem;
+}
+
+.game-cell:is([aria-current='true'], :has(:checked)),
+.game-tile:is([aria-current='true'], :has(:checked)) {
+  border-color: var(--game-accent);
+  box-shadow: 0 0 0 0.2rem color-mix(in oklch, var(--game-accent), transparent 72%);
+}
+
+.game-cell[data-x='1'],
+.game-tile[data-x='1'],
+.game-actor[data-x='1'] {
+  --cell-x: 1;
+}
+
+.game-cell[data-x='2'],
+.game-tile[data-x='2'],
+.game-actor[data-x='2'] {
+  --cell-x: 2;
+}
+
+.game-cell[data-x='3'],
+.game-tile[data-x='3'],
+.game-actor[data-x='3'] {
+  --cell-x: 3;
+}
+
+.game-cell[data-x='4'],
+.game-tile[data-x='4'],
+.game-actor[data-x='4'] {
+  --cell-x: 4;
+}
+
+.game-cell[data-x='5'],
+.game-tile[data-x='5'],
+.game-actor[data-x='5'] {
+  --cell-x: 5;
+}
+
+.game-cell[data-x='6'],
+.game-tile[data-x='6'],
+.game-actor[data-x='6'] {
+  --cell-x: 6;
+}
+
+.game-cell[data-x='7'],
+.game-tile[data-x='7'],
+.game-actor[data-x='7'] {
+  --cell-x: 7;
+}
+
+.game-cell[data-x='8'],
+.game-tile[data-x='8'],
+.game-actor[data-x='8'] {
+  --cell-x: 8;
+}
+
+.game-cell[data-x='9'],
+.game-tile[data-x='9'],
+.game-actor[data-x='9'] {
+  --cell-x: 9;
+}
+
+.game-cell[data-x='10'],
+.game-tile[data-x='10'],
+.game-actor[data-x='10'] {
+  --cell-x: 10;
+}
+
+.game-cell[data-x='11'],
+.game-tile[data-x='11'],
+.game-actor[data-x='11'] {
+  --cell-x: 11;
+}
+
+.game-cell[data-x='12'],
+.game-tile[data-x='12'],
+.game-actor[data-x='12'] {
+  --cell-x: 12;
+}
+
+.game-cell[data-y='1'],
+.game-tile[data-y='1'],
+.game-actor[data-y='1'] {
+  --cell-y: 1;
+}
+
+.game-cell[data-y='2'],
+.game-tile[data-y='2'],
+.game-actor[data-y='2'] {
+  --cell-y: 2;
+}
+
+.game-cell[data-y='3'],
+.game-tile[data-y='3'],
+.game-actor[data-y='3'] {
+  --cell-y: 3;
+}
+
+.game-cell[data-y='4'],
+.game-tile[data-y='4'],
+.game-actor[data-y='4'] {
+  --cell-y: 4;
+}
+
+.game-cell[data-y='5'],
+.game-tile[data-y='5'],
+.game-actor[data-y='5'] {
+  --cell-y: 5;
+}
+
+.game-cell[data-y='6'],
+.game-tile[data-y='6'],
+.game-actor[data-y='6'] {
+  --cell-y: 6;
+}
+
+.game-cell[data-y='7'],
+.game-tile[data-y='7'],
+.game-actor[data-y='7'] {
+  --cell-y: 7;
+}
+
+.game-cell[data-y='8'],
+.game-tile[data-y='8'],
+.game-actor[data-y='8'] {
+  --cell-y: 8;
+}
+
+.game-cell[data-y='9'],
+.game-tile[data-y='9'],
+.game-actor[data-y='9'] {
+  --cell-y: 9;
+}
+
+.game-cell[data-y='10'],
+.game-tile[data-y='10'],
+.game-actor[data-y='10'] {
+  --cell-y: 10;
+}
+
+.game-cell[data-y='11'],
+.game-tile[data-y='11'],
+.game-actor[data-y='11'] {
+  --cell-y: 11;
+}
+
+.game-cell[data-y='12'],
+.game-tile[data-y='12'],
+.game-actor[data-y='12'] {
+  --cell-y: 12;
+}
+
+@supports (width: calc(sibling-index() * 1px)) {
+  .game-board[data-auto-index] > .game-cell {
+    --cell-index: sibling-index();
+    --cell-count: sibling-count();
+  }
+}
+
+@supports (width: calc(mod(5, 2) * 1px)) {
+  .game-board[data-auto-index] > .game-cell {
+    --cell-x: calc(mod(calc(sibling-index() - 1), var(--game-cols)) + 1);
+  }
+}
+
+@supports (width: calc(round(up, 1.2, 1) * 1px)) {
+  .game-board[data-auto-index] > .game-cell {
+    --cell-y: round(up, calc(sibling-index() / var(--game-cols)), 1);
+  }
+}

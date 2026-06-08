@@ -1,0 +1,135 @@
+.css-game {
+  --game-cols: 8;
+  --game-rows: 8;
+  --game-loop-duration: 8s;
+  --game-loop-steps: 60;
+  --game-cell: clamp(2rem, 9vw, 4rem);
+  --game-cell: clamp(2rem, calc(82cqi / var(--game-cols)), 4rem);
+  --game-cell-gap: 0.35rem;
+  --game-density: normal;
+  --game-bg: color-mix(in oklch, var(--surface-1, #111827), black 8%);
+  --game-surface: color-mix(in oklch, var(--surface-2, #1f2937), white 3%);
+  --game-line: color-mix(in oklch, var(--border-subtle, #334155), white 8%);
+  --game-accent: var(--color-accent, #8b5cf6);
+  --game-success: var(--success, #22c55e);
+  --game-danger: var(--danger, #ef4444);
+  --game-warning: var(--warning, #f59e0b);
+  --game-text: var(--text-strong, #f8fafc);
+  --game-muted: var(--text-muted, #94a3b8);
+  --game-focus: color-mix(in oklch, var(--game-accent), white 18%);
+  --game-radius: 1rem;
+  --game-shadow: 0 1rem 3rem color-mix(in oklch, black 35%, transparent);
+  color: var(--game-text);
+  color-scheme: light dark;
+  container-type: inline-size;
+  isolation: isolate;
+  position: relative;
+}
+
+.css-game[data-density='compact'] {
+  --game-density: compact;
+  --game-cell-gap: 0.18rem;
+}
+
+.css-game[data-density='relaxed'] {
+  --game-density: relaxed;
+  --game-cell-gap: 0.55rem;
+}
+
+.css-game[data-size='small'] {
+  --game-cell: clamp(1.5rem, calc(68cqi / var(--game-cols)), 2.75rem);
+}
+
+.css-game[data-size='large'] {
+  --game-cell: clamp(2.5rem, calc(96cqi / var(--game-cols)), 5rem);
+}
+
+.css-game:focus-within {
+  outline: 2px solid var(--game-focus);
+  outline-offset: 0.35rem;
+}
+
+.css-game [hidden] {
+  display: none !important;
+}
+
+.game-shell {
+  display: grid;
+  gap: clamp(1rem, 4cqi, 2rem);
+  padding: clamp(1rem, 4cqi, 2rem);
+  border: 1px solid var(--game-line);
+  border-radius: var(--game-radius);
+  background:
+    radial-gradient(circle at 12% 8%, color-mix(in oklch, var(--game-accent), transparent 64%), transparent 32%),
+    linear-gradient(145deg, var(--game-bg), color-mix(in oklch, var(--game-bg), black 14%));
+  box-shadow: var(--game-shadow);
+}
+
+.game-hud {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem;
+  min-block-size: 2.5rem;
+}
+
+.game-stat {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding-block: 0.35rem;
+  padding-inline: 0.65rem;
+  border: 1px solid var(--game-line);
+  border-radius: 999px;
+  background: color-mix(in oklch, var(--game-surface), transparent 16%);
+  color: var(--game-muted);
+  font-size: 0.85rem;
+  font-variant-numeric: tabular-nums;
+}
+
+.game-status {
+  color: var(--game-muted);
+}
+
+.game-status::before {
+  content: 'Ready';
+}
+
+.css-game[data-state='playing'] .game-status::before {
+  content: 'Playing';
+}
+
+.css-game[data-state='paused'] .game-status::before {
+  content: 'Paused';
+}
+
+.css-game[data-state='won'] .game-status::before {
+  content: 'Won';
+  color: var(--game-success);
+}
+
+.css-game[data-state='lost'] .game-status::before {
+  content: 'Lost';
+  color: var(--game-danger);
+}
+
+@supports (gap: if(style(--game-density: compact): 1px; else: 2px)) {
+  .css-game {
+    --game-cell-gap: if(
+      style(--game-density: compact): 0.18rem;
+      style(--game-density: relaxed): 0.55rem;
+      else: 0.35rem
+    );
+  }
+}
+
+@supports (background: light-dark(white, black)) {
+  .css-game {
+    --game-bg: light-dark(#f8fafc, #101827);
+    --game-surface: light-dark(#ffffff, #172033);
+    --game-line: light-dark(#d8e0ea, #2d3a51);
+    --game-text: light-dark(#111827, #f8fafc);
+    --game-muted: light-dark(#4b5563, #9aa8bb);
+  }
+}

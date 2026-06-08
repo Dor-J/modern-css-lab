@@ -1,0 +1,137 @@
+@property --game-time {
+  syntax: '<number>';
+  inherits: true;
+  initial-value: 0;
+}
+
+@property --game-tick {
+  syntax: '<number>';
+  inherits: true;
+  initial-value: 0;
+}
+
+@property --game-frame {
+  syntax: '<number>';
+  inherits: true;
+  initial-value: 0;
+}
+
+@property --game-loop-steps {
+  syntax: '<integer>';
+  inherits: true;
+  initial-value: 60;
+}
+
+@property --game-cols {
+  syntax: '<integer>';
+  inherits: true;
+  initial-value: 8;
+}
+
+@property --game-rows {
+  syntax: '<integer>';
+  inherits: true;
+  initial-value: 8;
+}
+
+@property --game-cell {
+  syntax: '<length>';
+  inherits: true;
+  initial-value: 3rem;
+}
+
+@property --game-cell-gap {
+  syntax: '<length>';
+  inherits: true;
+  initial-value: 0.35rem;
+}
+
+@property --cell-index {
+  syntax: '<integer>';
+  inherits: true;
+  initial-value: 1;
+}
+
+@property --cell-x {
+  syntax: '<integer>';
+  inherits: true;
+  initial-value: 1;
+}
+
+@property --cell-y {
+  syntax: '<integer>';
+  inherits: true;
+  initial-value: 1;
+}
+
+@property --actor-x {
+  syntax: '<integer>';
+  inherits: true;
+  initial-value: 1;
+}
+
+@property --actor-y {
+  syntax: '<integer>';
+  inherits: true;
+  initial-value: 1;
+}
+
+@property --actor-vx {
+  syntax: '<number>';
+  inherits: true;
+  initial-value: 0;
+}
+
+@property --actor-vy {
+  syntax: '<number>';
+  inherits: true;
+  initial-value: 0;
+}
+
+@property --actor-scale {
+  syntax: '<number>';
+  inherits: true;
+  initial-value: 0.72;
+}
+
+@property --actor-angle {
+  syntax: '<angle>';
+  inherits: true;
+  initial-value: 0deg;
+}
+
+@property --actor-health {
+  syntax: '<number>';
+  inherits: true;
+  initial-value: 1;
+}
+
+@property --game-score {
+  syntax: '<integer>';
+  inherits: true;
+  initial-value: 0;
+}
+
+@property --game-state-playing {
+  syntax: '<integer>';
+  inherits: true;
+  initial-value: 0;
+}
+
+@property --game-state-paused {
+  syntax: '<integer>';
+  inherits: true;
+  initial-value: 0;
+}
+
+@property --game-state-won {
+  syntax: '<integer>';
+  inherits: true;
+  initial-value: 0;
+}
+
+@property --game-state-lost {
+  syntax: '<integer>';
+  inherits: true;
+  initial-value: 0;
+}

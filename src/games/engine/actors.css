@@ -1,0 +1,143 @@
+.game-actor,
+.game-entity,
+.game-pickup,
+.game-projectile {
+  --actor-color: var(--game-accent);
+  --actor-shadow: color-mix(in oklch, var(--actor-color), transparent 58%);
+  display: grid;
+  grid-column: var(--actor-x);
+  grid-row: var(--actor-y);
+  place-self: center;
+  place-items: center;
+  inline-size: calc(var(--game-cell) * var(--actor-scale));
+  aspect-ratio: 1;
+  border: 1px solid color-mix(in oklch, var(--actor-color), white 22%);
+  border-radius: 35%;
+  background:
+    radial-gradient(circle at 34% 28%, color-mix(in oklch, white, transparent 18%), transparent 28%),
+    linear-gradient(135deg, color-mix(in oklch, var(--actor-color), white 16%), color-mix(in oklch, var(--actor-color), black 12%));
+  box-shadow: 0 0.65rem 1.6rem var(--actor-shadow);
+  color: white;
+  font-size: calc(var(--game-cell) * 0.28);
+  line-height: 1;
+  pointer-events: auto;
+  transition:
+    grid-column 160ms ease,
+    grid-row 160ms ease,
+    transform 160ms ease,
+    opacity 160ms ease;
+}
+
+.game-actor[data-x],
+.game-entity[data-x],
+.game-pickup[data-x],
+.game-projectile[data-x] {
+  --actor-x: var(--cell-x);
+}
+
+.game-actor[data-y],
+.game-entity[data-y],
+.game-pickup[data-y],
+.game-projectile[data-y] {
+  --actor-y: var(--cell-y);
+}
+
+.game-actor[data-kind='player'] {
+  --actor-color: var(--game-accent);
+  z-index: 4;
+}
+
+.game-actor[data-kind='enemy'],
+.game-entity[data-kind='enemy'] {
+  --actor-color: var(--game-danger);
+  z-index: 3;
+}
+
+.game-pickup,
+.game-entity[data-kind='pickup'] {
+  --actor-color: var(--game-success);
+  --actor-scale: 0.46;
+  border-radius: 999px;
+}
+
+.game-projectile {
+  --actor-color: var(--game-warning);
+  --actor-scale: 0.32;
+  border-radius: 999px;
+}
+
+.game-actor:is(:focus-visible, :hover),
+.game-entity:is(:focus-visible, :hover),
+.game-pickup:is(:focus-visible, :hover),
+.game-projectile:is(:focus-visible, :hover) {
+  outline: 2px solid var(--game-focus);
+  outline-offset: 0.22rem;
+  transform: translateY(-0.1rem) scale(1.04);
+}
+
+.css-game:has(.game-move--north:checked) {
+  --actor-vx: 0;
+  --actor-vy: -1;
+}
+
+.css-game:has(.game-move--east:checked) {
+  --actor-vx: 1;
+  --actor-vy: 0;
+}
+
+.css-game:has(.game-move--south:checked) {
+  --actor-vx: 0;
+  --actor-vy: 1;
+}
+
+.css-game:has(.game-move--west:checked) {
+  --actor-vx: -1;
+  --actor-vy: 0;
+}
+
+.game-actor[data-motion='drift'],
+.game-projectile[data-motion='drift'] {
+  transform: translate(
+    calc(var(--actor-vx) * var(--game-tick) * var(--game-cell)),
+    calc(var(--actor-vy) * var(--game-tick) * var(--game-cell))
+  );
+}
+
+.game-actor[data-motion='pulse'],
+.game-entity[data-motion='pulse'] {
+  transform: scale(calc(0.9 + (var(--game-tick) * 0.18)));
+}
+
+.game-hitbox {
+  position: absolute;
+  inset: 10%;
+  border: 1px dashed color-mix(in oklch, var(--actor-color, var(--game-accent)), transparent 24%);
+  border-radius: inherit;
+  pointer-events: none;
+}
+
+@supports (transform: translateX(calc(cos(1turn) * 1px))) {
+  .game-actor[data-motion='orbit'],
+  .game-entity[data-motion='orbit'] {
+    --orbit-radius: calc(var(--game-cell) * 0.42);
+    transform: translate(
+      calc(cos(var(--actor-angle)) * var(--orbit-radius)),
+      calc(sin(var(--actor-angle)) * var(--orbit-radius))
+    );
+  }
+
+  .game-actor[data-motion='bob'],
+  .game-entity[data-motion='bob'] {
+    transform: translateY(calc(sin(var(--actor-angle)) * var(--game-cell) * -0.12));
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .game-actor,
+  .game-entity,
+  .game-pickup,
+  .game-projectile {
+    transition-duration: 1ms;
+    transform: none !important;
+  }
+}

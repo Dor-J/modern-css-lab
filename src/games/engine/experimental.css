@@ -1,0 +1,47 @@
+.game-span {
+  --span: 1;
+  inline-size: calc((var(--game-cell) * var(--span)) + (var(--game-cell-gap) * (var(--span) - 1)));
+}
+
+.game-track-offset {
+  translate:
+    calc((var(--cell-x) - 1) * (var(--game-cell) + var(--game-cell-gap)))
+    calc((var(--cell-y) - 1) * (var(--game-cell) + var(--game-cell-gap)));
+}
+
+@supports (grid-column: attr(data-x type(<integer>))) {
+  .game-cell[data-x],
+  .game-tile[data-x],
+  .game-actor[data-x] {
+    --cell-x: attr(data-x type(<integer>), 1);
+  }
+
+  .game-cell[data-y],
+  .game-tile[data-y],
+  .game-actor[data-y] {
+    --cell-y: attr(data-y type(<integer>), 1);
+  }
+
+  .game-cell[data-i] {
+    --cell-index: attr(data-i type(<integer>), 1);
+  }
+}
+
+@supports (background: if(supports(color: oklch(60% 0.2 40)): red; else: blue)) {
+  .game-cell[data-team],
+  .game-actor[data-team] {
+    --actor-color: if(
+      style(--team: danger): var(--game-danger);
+      style(--team: goal): var(--game-success);
+      else: var(--game-accent)
+    );
+  }
+}
+
+@scope (.css-game) {
+  .game-scope-zone {
+    border: 1px solid color-mix(in oklch, var(--game-accent), transparent 52%);
+    border-radius: 0.75rem;
+    padding: 0.75rem;
+  }
+}

@@ -1,0 +1,90 @@
+.css-game {
+  animation-name: game-engine-loop;
+  animation-duration: var(--game-loop-duration);
+  animation-timing-function: steps(var(--game-loop-steps), jump-end);
+  animation-iteration-count: infinite;
+  animation-play-state: paused;
+}
+
+.css-game[data-running='true'],
+.css-game:has(.game-run-toggle:checked) {
+  animation-play-state: running;
+}
+
+.css-game[data-running='false'],
+.css-game[data-state='paused'],
+.css-game:has(.game-pause-toggle:checked) {
+  animation-play-state: paused;
+}
+
+.css-game[data-speed='slow'] {
+  --game-loop-duration: 14s;
+  --game-loop-steps: 84;
+}
+
+.css-game[data-speed='fast'] {
+  --game-loop-duration: 4s;
+  --game-loop-steps: 48;
+}
+
+.css-game[data-speed='turbo'] {
+  --game-loop-duration: 1.8s;
+  --game-loop-steps: 36;
+}
+
+.game-clock,
+.game-progress {
+  display: block;
+  inline-size: 100%;
+  block-size: 0.35rem;
+  overflow: hidden;
+  border-radius: 999px;
+  background: color-mix(in oklch, var(--game-line), transparent 28%);
+}
+
+.game-clock::before,
+.game-progress::before {
+  content: '';
+  display: block;
+  inline-size: 100%;
+  block-size: 100%;
+  transform: scaleX(var(--game-tick));
+  transform-origin: left center;
+  background: linear-gradient(90deg, var(--game-accent), var(--game-success));
+}
+
+.game-frame-meter {
+  --meter-fill: calc(var(--game-frame) / var(--game-loop-steps));
+  display: grid;
+  grid-template-columns: minmax(0, calc(var(--meter-fill) * 1fr)) minmax(0, 1fr);
+}
+
+@keyframes game-engine-loop {
+  from {
+    --game-time: 0;
+    --game-tick: 0;
+    --game-frame: 0;
+    --actor-angle: 0deg;
+  }
+
+  to {
+    --game-time: 1;
+    --game-tick: 1;
+    --game-frame: var(--game-loop-steps);
+    --actor-angle: 1turn;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .css-game {
+    animation: none;
+    --game-time: 0;
+    --game-tick: 0;
+    --game-frame: 0;
+  }
+
+  .game-clock::before,
+  .game-progress::before {
+    transform: scaleX(0);
+  }
+}

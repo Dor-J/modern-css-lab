@@ -1,0 +1,111 @@
+.css-game {
+  --game-state-playing: 0;
+  --game-state-paused: 0;
+  --game-state-won: 0;
+  --game-state-lost: 0;
+  --game-can-move: 1;
+  --game-risk: 0;
+}
+
+.css-game[data-state='playing'] {
+  --game-state-playing: 1;
+  --game-state-paused: 0;
+  --game-state-won: 0;
+  --game-state-lost: 0;
+}
+
+.css-game[data-state='paused'] {
+  --game-state-playing: 0;
+  --game-state-paused: 1;
+  --game-can-move: 0;
+}
+
+.css-game[data-state='won'] {
+  --game-state-playing: 0;
+  --game-state-won: 1;
+  --game-can-move: 0;
+  --game-accent: var(--game-success);
+}
+
+.css-game[data-state='lost'] {
+  --game-state-playing: 0;
+  --game-state-lost: 1;
+  --game-can-move: 0;
+  --game-accent: var(--game-danger);
+}
+
+.css-game:has(.game-state--playing:checked) {
+  --game-state-playing: 1;
+  --game-state-paused: 0;
+  --game-state-won: 0;
+  --game-state-lost: 0;
+}
+
+.css-game:has(.game-state--paused:checked) {
+  --game-state-playing: 0;
+  --game-state-paused: 1;
+  --game-can-move: 0;
+}
+
+.css-game:has(.game-state--won:checked) {
+  --game-state-playing: 0;
+  --game-state-won: 1;
+  --game-can-move: 0;
+  --game-accent: var(--game-success);
+}
+
+.css-game:has(.game-state--lost:checked) {
+  --game-state-playing: 0;
+  --game-state-lost: 1;
+  --game-can-move: 0;
+  --game-accent: var(--game-danger);
+}
+
+.css-game:has(.game-choice--hazard:checked),
+.css-game:has(.game-cell[data-hazard]:has(:checked)) {
+  --game-risk: 1;
+  --game-accent: var(--game-danger);
+}
+
+.css-game:has(.game-choice--goal:checked),
+.css-game:has(.game-cell[data-goal]:has(:checked)) {
+  --game-risk: 0;
+  --game-accent: var(--game-success);
+}
+
+.game-panel[data-visible-when] {
+  display: none;
+}
+
+.css-game[data-state='menu'] .game-panel[data-visible-when='menu'],
+.css-game[data-state='playing'] .game-panel[data-visible-when='playing'],
+.css-game[data-state='paused'] .game-panel[data-visible-when='paused'],
+.css-game[data-state='won'] .game-panel[data-visible-when='won'],
+.css-game[data-state='lost'] .game-panel[data-visible-when='lost'] {
+  display: grid;
+}
+
+.css-game:has(.game-state--menu:checked) .game-panel[data-visible-when='menu'],
+.css-game:has(.game-state--playing:checked) .game-panel[data-visible-when='playing'],
+.css-game:has(.game-state--paused:checked) .game-panel[data-visible-when='paused'],
+.css-game:has(.game-state--won:checked) .game-panel[data-visible-when='won'],
+.css-game:has(.game-state--lost:checked) .game-panel[data-visible-when='lost'] {
+  display: grid;
+}
+
+.game-overlay {
+  display: none;
+  place-items: center;
+  grid-area: 1 / 1;
+  z-index: 10;
+  padding: 1rem;
+  background: color-mix(in oklch, var(--game-bg), transparent 18%);
+  backdrop-filter: blur(12px);
+}
+
+.css-game[data-state='won'] .game-overlay[data-state='won'],
+.css-game[data-state='lost'] .game-overlay[data-state='lost'],
+.css-game:has(.game-state--won:checked) .game-overlay[data-state='won'],
+.css-game:has(.game-state--lost:checked) .game-overlay[data-state='lost'] {
+  display: grid;
+}
