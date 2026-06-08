@@ -1,0 +1,223 @@
+@import './toggle-puzzle/styles.css';
+@import './tic-tac-toe/styles.css';
+@import './memory-cards/styles.css';
+@import './mine-sweeper/styles.css';
+@import './snake/styles.css';
+@import './icy-tower/styles.css';
+@import './doom/styles.css';
+
+.game-page {
+  display: grid;
+  gap: var(--space-5);
+}
+
+.game-page__hero,
+.games-hub-hero {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: var(--space-5);
+  align-items: end;
+  padding: clamp(1.25rem, 5vi, 3rem);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-lg);
+  background:
+    radial-gradient(circle at 12% 18%, color-mix(in oklch, var(--color-accent), transparent 70%), transparent 28rem),
+    linear-gradient(135deg, var(--surface-1), var(--surface-2));
+  box-shadow: var(--shadow-soft);
+}
+
+.game-page__hero p,
+.games-hub-hero p {
+  max-inline-size: 58rem;
+  color: var(--color-muted);
+}
+
+.game-page__meta {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(7rem, 1fr));
+  gap: var(--space-3);
+  margin: 0;
+}
+
+.game-page__meta div,
+.game-support-note,
+.game-mechanics-panel,
+.game-card,
+.game-instructions {
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-md);
+  background: color-mix(in oklch, var(--surface-1), transparent 0%);
+}
+
+.game-page__meta div {
+  padding: var(--space-4);
+}
+
+.game-page__meta dt {
+  color: var(--color-muted);
+  font-size: 0.75rem;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.game-page__meta dd {
+  margin: 0.2rem 0 0;
+  font-weight: 850;
+}
+
+.game-page__layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(17rem, 0.36fr);
+  gap: var(--space-5);
+  align-items: start;
+}
+
+.game-page__play,
+.game-page__side {
+  display: grid;
+  gap: var(--space-4);
+}
+
+.game-support-note,
+.game-mechanics-panel,
+.game-instructions {
+  display: grid;
+  gap: var(--space-3);
+  padding: var(--space-4);
+}
+
+.game-support-note {
+  border-inline-start: 0.35rem solid var(--warning);
+}
+
+.game-support-note p,
+.game-mechanics-panel li,
+.game-instructions p {
+  color: var(--color-muted);
+}
+
+.game-mechanics-panel ul,
+.game-hub-grid,
+.game-key-list {
+  display: grid;
+  gap: var(--space-3);
+  padding: 0;
+  list-style: none;
+}
+
+.game-mechanics-panel li,
+.game-key-list li {
+  padding: var(--space-3);
+  border-radius: var(--radius-sm);
+  background: var(--surface-2);
+}
+
+.game-page-hud {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-3);
+}
+
+.game-controls-panel {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.game-card {
+  display: grid;
+  gap: var(--space-3);
+  padding: var(--space-4);
+  color: inherit;
+  text-decoration: none;
+}
+
+.game-card:hover {
+  border-color: color-mix(in oklch, var(--color-accent), var(--border-subtle) 35%);
+  transform: translateY(-1px);
+}
+
+.game-card p {
+  color: var(--color-muted);
+}
+
+.game-card__meta,
+.game-card__chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem;
+}
+
+.game-card__meta span,
+.game-card__chips span {
+  padding-block: 0.25rem;
+  padding-inline: 0.55rem;
+  border-radius: 999px;
+  background: var(--surface-2);
+  color: var(--color-muted);
+  font-size: 0.75rem;
+  font-weight: 800;
+}
+
+.game-reset-button,
+.game-action-button {
+  min-block-size: 2.45rem;
+  padding-inline: 0.9rem;
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-sm);
+  color: var(--color-text);
+  background: var(--surface-2);
+  font-weight: 800;
+}
+
+.game-reset-button:is(:hover, :focus-visible),
+.game-action-button:is(:hover, :focus-visible) {
+  border-color: var(--color-accent);
+  outline: 2px solid color-mix(in oklch, var(--color-accent), transparent 68%);
+  outline-offset: 0.15rem;
+}
+
+.game-visually-hidden-control {
+  position: absolute;
+  inline-size: 1px;
+  block-size: 1px;
+  margin: -1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+}
+
+.css-game .game-hidden-input {
+  position: absolute;
+  inline-size: 1px;
+  block-size: 1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+}
+
+@supports not selector(:has(*)) {
+  .css-game::before {
+    content: 'This game needs :has() for full CSS-only state detection.';
+    display: block;
+    margin-block-end: var(--space-3);
+    padding: var(--space-3);
+    border: 1px solid var(--warning);
+    border-radius: var(--radius-sm);
+    color: var(--color-text);
+    background: color-mix(in oklch, var(--warning), transparent 82%);
+  }
+}
+
+@media (max-width: 62rem) {
+  .game-page__hero,
+  .games-hub-hero,
+  .game-page__layout {
+    grid-template-columns: 1fr;
+  }
+
+  .game-page__meta {
+    inline-size: 100%;
+  }
+}
