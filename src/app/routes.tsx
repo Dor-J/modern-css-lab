@@ -15,6 +15,13 @@ const LayoutPage = lazy(() => import('../pages/LayoutPage'))
 const MotionPage = lazy(() => import('../pages/MotionPage'))
 const SelectorsPage = lazy(() => import('../pages/SelectorsPage'))
 const TypographyPage = lazy(() => import('../pages/TypographyPage'))
+const DoomPage = lazy(() => import('../games/doom/DoomPage'))
+const IcyTowerPage = lazy(() => import('../games/icy-tower/IcyTowerPage'))
+const MemoryCardsPage = lazy(() => import('../games/memory-cards/MemoryCardsPage'))
+const MineSweeperPage = lazy(() => import('../games/mine-sweeper/MineSweeperPage'))
+const SnakePage = lazy(() => import('../games/snake/SnakePage'))
+const TicTacToePage = lazy(() => import('../games/tic-tac-toe/TicTacToePage'))
+const TogglePuzzlePage = lazy(() => import('../games/toggle-puzzle/TogglePuzzlePage'))
 
 export type AppRoute = {
   path?: string
@@ -38,5 +45,12 @@ export const routes: AppRoute[] = [
   { path: 'effects', element: page(<EffectsPage />) },
   { path: 'architecture', element: page(<ArchitecturePage />) },
   { path: 'games', element: page(<GamesPage />) },
+  { path: 'games/doom', element: page(<DoomPage />) },
+  { path: 'games/icy-tower', element: page(<IcyTowerPage />) },
+  { path: 'games/memory-cards', element: page(<MemoryCardsPage />) },
+  { path: 'games/tic-tac-toe', element: page(<TicTacToePage />) },
+  { path: 'games/mine-sweeper', element: page(<MineSweeperPage />) },
+  { path: 'games/snake', element: page(<SnakePage />) },
+  { path: 'games/toggle-puzzle', element: page(<TogglePuzzlePage />) },
   { path: 'features/:slug', element: page(<FeatureDetailPage />) },
 ]

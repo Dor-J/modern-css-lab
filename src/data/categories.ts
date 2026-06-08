@@ -86,8 +86,8 @@ export const categories: Category[] = [
     id: 'games',
     title: 'Games',
     route: '/games',
-    summary: 'A reserved area for future CSS-only game experiments.',
-    spotlight: 'Prepared structure for state-machine-heavy CSS demos later.',
+    summary: 'Playable CSS-first game experiments powered by form state, selectors, custom properties, and animations.',
+    spotlight: 'State-machine-heavy CSS demos with React only mounting routes and keyboard plumbing.',
     accent: 'games',
   },
 ]

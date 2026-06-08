@@ -4,10 +4,12 @@ This folder is reserved for future CSS-only games. Keep game-specific state mach
 
 The shared CSS-only engine lives in `engine/`. It includes board/grid variables, selector-driven state, CSS animation clocks, typed custom properties, actor primitives, controls, and progressive hooks for newer CSS functions.
 
-Planned examples:
+Implemented game routes:
 
-- CSS-only tic-tac-toe
-- CSS-only maze
-- CSS-only memory cards
-- CSS-only toggle puzzle
-- CSS-only animated character
+- `/games/toggle-puzzle`
+- `/games/tic-tac-toe`
+- `/games/memory-cards`
+- `/games/mine-sweeper`
+- `/games/snake`
+- `/games/icy-tower`
+- `/games/doom`

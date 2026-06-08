@@ -52,7 +52,7 @@ npm run test:e2e
 - Native components and platform UI
 - Visual effects and creative CSS
 - CSS architecture
-- Future CSS-only games
+- Playable CSS-only games
 - Complete MDN CSS reference catalog at `/css`
 
 ## Support Legend
@@ -79,7 +79,10 @@ The stylesheet split is:
 - `global.css`
 - `layers.css`
 - `feature-support.css`
+- `css-catalog.css`
 - `utilities.css`
+- `src/games/engine/index.css`
+- `src/games/styles.css`
 - `demos.css`
 
 The app uses modern CSS custom properties, OKLCH token enhancement, `color-scheme`, `light-dark()`, logical properties, reduced-motion handling, native nesting, and progressive enhancement blocks.
@@ -118,6 +121,10 @@ The generated inspector cards are intentionally compact. They make every feature
 The All CSS catalog is scoped to the MDN CSS Reference snapshot for June 8, 2026. It excludes vendor-prefixed `-webkit-*` entries and non-standard items. SVG-exclusive presentation attributes are also outside this catalog because the MDN CSS Reference index omits them.
 
 Catalog docs live in `docs/css-catalog-audit.md`.
+
+## CSS-Only Games
+
+The `/games` section includes seven playable CSS-first game routes: Toggle Puzzle, Tic-Tac-Toe, Memory Cards, Minesweeper, Snake, Icy Tower, and Doom CSS Maze. React mounts pages and keyboard plumbing; native controls and CSS selectors own gameplay state.
 
 ## Roadmap
 

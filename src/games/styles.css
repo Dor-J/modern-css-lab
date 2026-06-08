@@ -1,11 +1,3 @@
-@import './toggle-puzzle/styles.css';
-@import './tic-tac-toe/styles.css';
-@import './memory-cards/styles.css';
-@import './mine-sweeper/styles.css';
-@import './snake/styles.css';
-@import './icy-tower/styles.css';
-@import './doom/styles.css';
-
 .game-page {
   display: grid;
   gap: var(--space-5);
