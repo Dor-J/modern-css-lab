@@ -8,5 +8,12 @@
 @import './css-catalog.css' layer(components);
 @import './utilities.css' layer(utilities);
 @import '../games/engine/index.css' layer(demos);
+@import '../games/toggle-puzzle/styles.css' layer(demos);
+@import '../games/tic-tac-toe/styles.css' layer(demos);
+@import '../games/memory-cards/styles.css' layer(demos);
+@import '../games/mine-sweeper/styles.css' layer(demos);
+@import '../games/snake/styles.css' layer(demos);
+@import '../games/icy-tower/styles.css' layer(demos);
+@import '../games/doom/styles.css' layer(demos);
 @import '../games/styles.css' layer(demos);
 @import './demos.css' layer(demos);

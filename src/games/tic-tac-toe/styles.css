@@ -54,10 +54,6 @@
   grid-template-columns: 1fr;
 }
 
-.ttt-cell:has(input:checked) .ttt-choice:not(:has(+ input:checked)) {
-  pointer-events: none;
-}
-
 .ttt-cell:has(input:checked) .ttt-choice {
   display: none;
 }
@@ -195,17 +191,27 @@
   display: inline;
 }
 
-.ttt-game:has(.ttt-result__x:not(:empty)) .ttt-result__idle,
-.ttt-game:has(.ttt-line[style]) .ttt-result__idle {
-  display: none;
-}
-
 .ttt-game:has(:is(#ttt-x-1, #ttt-o-1):checked):has(:is(#ttt-x-2, #ttt-o-2):checked):has(:is(#ttt-x-3, #ttt-o-3):checked):has(:is(#ttt-x-4, #ttt-o-4):checked):has(:is(#ttt-x-5, #ttt-o-5):checked):has(:is(#ttt-x-6, #ttt-o-6):checked):has(:is(#ttt-x-7, #ttt-o-7):checked):has(:is(#ttt-x-8, #ttt-o-8):checked):has(:is(#ttt-x-9, #ttt-o-9):checked) .ttt-result__draw {
   display: inline;
 }
 
-.ttt-game:has(.ttt-result__x:not([hidden])) .ttt-result__idle,
-.ttt-game:has(.ttt-result__o:not([hidden])) .ttt-result__idle {
+.ttt-game:has(#ttt-x-1:checked):has(#ttt-x-2:checked):has(#ttt-x-3:checked) .ttt-result__idle,
+.ttt-game:has(#ttt-x-4:checked):has(#ttt-x-5:checked):has(#ttt-x-6:checked) .ttt-result__idle,
+.ttt-game:has(#ttt-x-7:checked):has(#ttt-x-8:checked):has(#ttt-x-9:checked) .ttt-result__idle,
+.ttt-game:has(#ttt-x-1:checked):has(#ttt-x-4:checked):has(#ttt-x-7:checked) .ttt-result__idle,
+.ttt-game:has(#ttt-x-2:checked):has(#ttt-x-5:checked):has(#ttt-x-8:checked) .ttt-result__idle,
+.ttt-game:has(#ttt-x-3:checked):has(#ttt-x-6:checked):has(#ttt-x-9:checked) .ttt-result__idle,
+.ttt-game:has(#ttt-x-1:checked):has(#ttt-x-5:checked):has(#ttt-x-9:checked) .ttt-result__idle,
+.ttt-game:has(#ttt-x-3:checked):has(#ttt-x-5:checked):has(#ttt-x-7:checked) .ttt-result__idle,
+.ttt-game:has(#ttt-o-1:checked):has(#ttt-o-2:checked):has(#ttt-o-3:checked) .ttt-result__idle,
+.ttt-game:has(#ttt-o-4:checked):has(#ttt-o-5:checked):has(#ttt-o-6:checked) .ttt-result__idle,
+.ttt-game:has(#ttt-o-7:checked):has(#ttt-o-8:checked):has(#ttt-o-9:checked) .ttt-result__idle,
+.ttt-game:has(#ttt-o-1:checked):has(#ttt-o-4:checked):has(#ttt-o-7:checked) .ttt-result__idle,
+.ttt-game:has(#ttt-o-2:checked):has(#ttt-o-5:checked):has(#ttt-o-8:checked) .ttt-result__idle,
+.ttt-game:has(#ttt-o-3:checked):has(#ttt-o-6:checked):has(#ttt-o-9:checked) .ttt-result__idle,
+.ttt-game:has(#ttt-o-1:checked):has(#ttt-o-5:checked):has(#ttt-o-9:checked) .ttt-result__idle,
+.ttt-game:has(#ttt-o-3:checked):has(#ttt-o-5:checked):has(#ttt-o-7:checked) .ttt-result__idle,
+.ttt-game:has(:is(#ttt-x-1, #ttt-o-1):checked):has(:is(#ttt-x-2, #ttt-o-2):checked):has(:is(#ttt-x-3, #ttt-o-3):checked):has(:is(#ttt-x-4, #ttt-o-4):checked):has(:is(#ttt-x-5, #ttt-o-5):checked):has(:is(#ttt-x-6, #ttt-o-6):checked):has(:is(#ttt-x-7, #ttt-o-7):checked):has(:is(#ttt-x-8, #ttt-o-8):checked):has(:is(#ttt-x-9, #ttt-o-9):checked) .ttt-result__idle {
   display: none;
 }
 
