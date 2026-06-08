@@ -1,0 +1,166 @@
+.icy-game {
+  --game-accent: oklch(70% 0.13 220);
+  --climber-x: 50%;
+  --climber-y: 84%;
+}
+
+.icy-controls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-3);
+  justify-content: space-between;
+}
+
+.icy-game:has(#icy-lane-left:checked) {
+  --climber-x: 24%;
+}
+
+.icy-game:has(#icy-lane-mid:checked) {
+  --climber-x: 50%;
+}
+
+.icy-game:has(#icy-lane-right:checked) {
+  --climber-x: 76%;
+}
+
+.icy-game:has(#icy-height-1:checked) {
+  --climber-y: 84%;
+}
+
+.icy-game:has(#icy-height-2:checked) {
+  --climber-y: 66%;
+}
+
+.icy-game:has(#icy-height-3:checked) {
+  --climber-y: 48%;
+}
+
+.icy-game:has(#icy-height-4:checked) {
+  --climber-y: 31%;
+}
+
+.icy-game:has(#icy-height-5:checked) {
+  --climber-y: 15%;
+}
+
+.icy-game:has(#icy-lane-left:checked) label[for='icy-lane-left'],
+.icy-game:has(#icy-lane-mid:checked) label[for='icy-lane-mid'],
+.icy-game:has(#icy-lane-right:checked) label[for='icy-lane-right'],
+.icy-game:has(#icy-height-1:checked) label[for='icy-height-1'],
+.icy-game:has(#icy-height-2:checked) label[for='icy-height-2'],
+.icy-game:has(#icy-height-3:checked) label[for='icy-height-3'],
+.icy-game:has(#icy-height-4:checked) label[for='icy-height-4'],
+.icy-game:has(#icy-height-5:checked) label[for='icy-height-5'] {
+  border-color: var(--game-accent);
+  background: color-mix(in oklch, var(--game-accent), transparent 74%);
+  color: var(--game-text);
+}
+
+.icy-stage {
+  position: relative;
+  min-block-size: clamp(28rem, 70dvh, 42rem);
+  overflow: hidden;
+  border: 1px solid var(--game-line);
+  border-radius: var(--game-radius);
+  background:
+    linear-gradient(180deg, color-mix(in oklch, #5ea3ff, black 35%), color-mix(in oklch, #0d1730, black 10%));
+}
+
+.icy-skyline {
+  position: absolute;
+  inset: 0;
+  background:
+    repeating-linear-gradient(180deg, transparent 0 5rem, color-mix(in oklch, white, transparent 92%) 5rem 5.1rem),
+    radial-gradient(circle at 12% 8%, color-mix(in oklch, white, transparent 65%), transparent 5rem);
+  animation: icy-scroll 9s linear infinite;
+}
+
+.icy-platform {
+  position: absolute;
+  display: grid;
+  place-items: center;
+  inline-size: 32%;
+  block-size: 1.15rem;
+  border-radius: 999px;
+  color: #07111f;
+  background: linear-gradient(180deg, #dff7ff, #75d8ff);
+  box-shadow: 0 0.8rem 1.8rem rgb(0 0 0 / 0.25);
+  font-size: 0.72rem;
+  font-weight: 900;
+}
+
+.icy-platform--1 {
+  inset-block-start: 88%;
+  inset-inline-start: 34%;
+}
+
+.icy-platform--2 {
+  inset-block-start: 70%;
+  inset-inline-start: 9%;
+}
+
+.icy-platform--3 {
+  inset-block-start: 52%;
+  inset-inline-start: 58%;
+}
+
+.icy-platform--4 {
+  inset-block-start: 35%;
+  inset-inline-start: 22%;
+}
+
+.icy-platform--5 {
+  inset-block-start: 19%;
+  inset-inline-start: 52%;
+}
+
+.icy-climber {
+  position: absolute;
+  z-index: 3;
+  inline-size: 2.1rem;
+  aspect-ratio: 0.78;
+  inset-inline-start: var(--climber-x);
+  inset-block-start: var(--climber-y);
+  translate: -50% -100%;
+  border-radius: 999px 999px 0.6rem 0.6rem;
+  background:
+    radial-gradient(circle at 50% 22%, #ffe1b4 0 26%, transparent 27%),
+    linear-gradient(180deg, var(--game-accent) 0 58%, #25314c 59%);
+  transition:
+    inset-inline-start 220ms ease,
+    inset-block-start 280ms cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
+.icy-result {
+  position: absolute;
+  inset: auto 1rem 1rem;
+  display: none;
+  gap: 0.2rem;
+  padding: var(--space-4);
+  border: 1px solid rgb(255 255 255 / 0.24);
+  border-radius: var(--radius-md);
+  background: rgb(7 17 31 / 0.72);
+  color: white;
+  backdrop-filter: blur(12px);
+}
+
+.icy-game:has(#icy-height-4:checked):has(#icy-lane-right:checked) .icy-result--fall,
+.icy-game:has(#icy-height-5:checked):has(#icy-lane-right:checked) .icy-result--win {
+  display: grid;
+}
+
+@keyframes icy-scroll {
+  to {
+    background-position: 0 10rem, 0 0;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .icy-skyline {
+    animation: none;
+  }
+
+  .icy-climber {
+    transition: none;
+  }
+}
