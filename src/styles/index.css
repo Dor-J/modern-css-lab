@@ -1,0 +1,12 @@
+@layer reset, tokens, base, layout, components, utilities, demos, overrides;
+
+@import './reset.css' layer(reset);
+@import './tokens.css' layer(tokens);
+@import './global.css' layer(base);
+@import './layers.css' layer(layout);
+@import './feature-support.css' layer(components);
+@import './css-catalog.css' layer(components);
+@import './utilities.css' layer(utilities);
+@import '../games/engine/index.css' layer(demos);
+@import '../games/styles.css' layer(demos);
+@import './demos.css' layer(demos);

@@ -1,0 +1,84 @@
+.support-badge {
+  --badge-color: var(--color-muted);
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  max-inline-size: 100%;
+  padding-block: 0.35rem;
+  padding-inline: 0.55rem;
+  border: 1px solid color-mix(in srgb, var(--badge-color), transparent 46%);
+  border-radius: 999px;
+  color: color-mix(in srgb, var(--badge-color), var(--color-text) 20%);
+  background: color-mix(in srgb, var(--badge-color), transparent 90%);
+  font-size: 0.78rem;
+  font-weight: 750;
+  line-height: 1;
+  white-space: nowrap;
+}
+
+.support-badge[data-support='baseline-widely'] {
+  --badge-color: var(--success);
+}
+
+.support-badge[data-support='baseline-newly'] {
+  --badge-color: var(--info);
+}
+
+.support-badge[data-support='progressive'] {
+  --badge-color: var(--warning);
+}
+
+.support-badge[data-support='experimental'] {
+  --badge-color: var(--experimental);
+}
+
+.support-badge__dot {
+  inline-size: 0.52rem;
+  block-size: 0.52rem;
+  border-radius: 50%;
+  background: var(--badge-color);
+  box-shadow: 0 0 0 0.22rem color-mix(in srgb, var(--badge-color), transparent 82%);
+}
+
+.support-badge__year {
+  color: var(--color-muted);
+  font-weight: 650;
+}
+
+.support-notice {
+  display: grid;
+  gap: var(--space-3);
+  padding: var(--space-4);
+  border: 1px solid var(--border-subtle);
+  border-inline-start-width: 0.35rem;
+  border-radius: var(--radius-md);
+  background: var(--surface-2);
+}
+
+.support-notice[data-support='baseline-widely'] {
+  border-inline-start-color: var(--success);
+}
+
+.support-notice[data-support='baseline-newly'] {
+  border-inline-start-color: var(--info);
+}
+
+.support-notice[data-support='progressive'] {
+  border-inline-start-color: var(--warning);
+}
+
+.support-notice[data-support='experimental'] {
+  border-inline-start-color: var(--experimental);
+}
+
+.badge {
+  display: inline-flex;
+  align-items: center;
+  padding-block: 0.25rem;
+  padding-inline: 0.5rem;
+  border-radius: 999px;
+  background: var(--surface-2);
+  color: var(--color-muted);
+  font-size: 0.76rem;
+  font-weight: 750;
+}
