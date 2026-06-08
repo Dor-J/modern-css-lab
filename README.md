@@ -29,6 +29,12 @@ Build production assets:
 npm run build
 ```
 
+Build GitHub Pages assets:
+
+```bash
+npm run build:pages
+```
+
 Validate the static CSS catalog snapshot:
 
 ```bash
@@ -125,6 +131,26 @@ Catalog docs live in `docs/css-catalog-audit.md`.
 ## CSS-Only Games
 
 The `/games` section includes seven playable CSS-first game routes: Toggle Puzzle, Tic-Tac-Toe, Memory Cards, Minesweeper, Snake, Icy Tower, and Doom CSS Maze. React mounts pages and keyboard plumbing; native controls and CSS selectors own gameplay state.
+
+## GitHub Pages
+
+This project is ready to deploy with GitHub Pages through `.github/workflows/deploy-pages.yml`.
+
+Deployment behavior:
+
+- Local development keeps Vite's base path at `/`.
+- GitHub Actions sets `GITHUB_PAGES=true`, and Vite derives the Pages base path from `GITHUB_REPOSITORY`.
+- User or organization Pages repositories such as `owner.github.io` deploy at `/`.
+- Project Pages repositories such as `modern-css-lab` deploy at `/modern-css-lab/`.
+- `npm run build:pages` creates `dist/404.html` as an SPA fallback and `dist/.nojekyll`.
+
+For a custom base path, set `VITE_BASE_PATH` when building:
+
+```bash
+VITE_BASE_PATH=/custom-path/ npm run build:pages
+```
+
+In GitHub, set **Settings -> Pages -> Build and deployment -> Source** to **GitHub Actions**.
 
 ## Roadmap
 
