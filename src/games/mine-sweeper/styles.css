@@ -1,0 +1,171 @@
+.mine-game {
+  --game-accent: oklch(64% 0.16 72);
+}
+
+.mine-board {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(3.6rem, 1fr));
+  gap: 0.38rem;
+  inline-size: min(100%, 29rem);
+  margin-inline: auto;
+}
+
+.mine-cell {
+  position: relative;
+  aspect-ratio: 1;
+  border: 1px solid var(--game-line);
+  border-radius: 0.55rem;
+  background: color-mix(in oklch, var(--game-surface), white 4%);
+  overflow: hidden;
+}
+
+.mine-reveal-label,
+.mine-flag-label {
+  position: absolute;
+  display: grid;
+  place-items: center;
+  cursor: pointer;
+  transition:
+    background 160ms ease,
+    transform 160ms ease,
+    opacity 160ms ease;
+}
+
+.mine-reveal-label {
+  inset: 0;
+  background:
+    linear-gradient(135deg, color-mix(in oklch, var(--game-accent), transparent 74%), transparent),
+    var(--game-surface);
+}
+
+.mine-flag-label {
+  inset-block-start: 0.2rem;
+  inset-inline-end: 0.2rem;
+  inline-size: 1.65rem;
+  block-size: 1.65rem;
+  border-radius: 999px;
+  background: color-mix(in oklch, var(--game-bg), transparent 18%);
+  color: var(--game-muted);
+}
+
+.mine-reveal-label span,
+.mine-flag-label span {
+  position: absolute;
+  inline-size: 1px;
+  block-size: 1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+}
+
+.mine-reveal-label::before {
+  content: '';
+  inline-size: 36%;
+  aspect-ratio: 1;
+  border-radius: 0.25rem;
+  background: color-mix(in oklch, var(--game-accent), white 5%);
+  box-shadow:
+    0.45rem 0.45rem 0 color-mix(in oklch, var(--game-accent), transparent 58%),
+    -0.45rem -0.45rem 0 color-mix(in oklch, white, transparent 88%);
+}
+
+.mine-flag-label::before {
+  content: '!';
+  font-weight: 950;
+}
+
+.mine-cell:has(input:focus-visible) {
+  outline: 2px solid var(--game-focus);
+  outline-offset: 0.18rem;
+}
+
+.mine-cell:has(.mine-reveal:checked) {
+  display: grid;
+  place-items: center;
+  background: color-mix(in oklch, var(--game-surface), black 10%);
+}
+
+.mine-cell:has(.mine-reveal:checked)::before {
+  content: attr(data-count);
+  color: var(--game-text);
+  font-size: clamp(1rem, 6cqi, 1.8rem);
+  font-weight: 950;
+}
+
+.mine-cell[data-count='0']:has(.mine-reveal:checked)::before {
+  content: '';
+}
+
+.mine-cell:has(.mine-reveal:checked) .mine-reveal-label,
+.mine-cell:has(.mine-reveal:checked) .mine-flag-label {
+  display: none;
+}
+
+.mine-cell:has(.mine-flag:checked):not(:has(.mine-reveal:checked)) .mine-flag-label {
+  background: var(--game-warning);
+  color: #111;
+}
+
+.mine-cell:has(.mine-flag:checked):not(:has(.mine-reveal:checked)) .mine-reveal-label {
+  opacity: 0.46;
+}
+
+.mine-cell[data-mine='true']:has(.mine-reveal:checked) {
+  background: color-mix(in oklch, var(--game-danger), black 10%);
+}
+
+.mine-cell[data-mine='true']:has(.mine-reveal:checked)::before {
+  content: '*';
+  color: white;
+}
+
+.mine-game:has(#mine-flag-mode:checked) .mine-reveal-label {
+  opacity: 0.55;
+}
+
+.mine-game:has(#mine-flag-mode:checked) .mine-flag-label {
+  outline: 2px solid color-mix(in oklch, var(--game-warning), transparent 55%);
+}
+
+.mine-result {
+  display: grid;
+  padding: var(--space-4);
+  border: 1px solid var(--game-line);
+  border-radius: var(--radius-md);
+  background: var(--game-surface);
+  font-weight: 850;
+}
+
+.mine-result__lost,
+.mine-result__won {
+  display: none;
+}
+
+.mine-game:has(#mine-r-5:checked) .mine-result__lost,
+.mine-game:has(#mine-r-11:checked) .mine-result__lost,
+.mine-game:has(#mine-r-18:checked) .mine-result__lost,
+.mine-game:has(#mine-r-23:checked) .mine-result__lost {
+  display: inline;
+  color: var(--game-danger);
+}
+
+.mine-game:has(#mine-r-5:checked) .mine-result__idle,
+.mine-game:has(#mine-r-11:checked) .mine-result__idle,
+.mine-game:has(#mine-r-18:checked) .mine-result__idle,
+.mine-game:has(#mine-r-23:checked) .mine-result__idle {
+  display: none;
+}
+
+.mine-game:has(#mine-r-1:checked):has(#mine-r-2:checked):has(#mine-r-3:checked):has(#mine-r-4:checked):has(#mine-r-6:checked):has(#mine-r-7:checked):has(#mine-r-8:checked):has(#mine-r-9:checked):has(#mine-r-10:checked):has(#mine-r-12:checked):has(#mine-r-13:checked):has(#mine-r-14:checked):has(#mine-r-15:checked):has(#mine-r-16:checked):has(#mine-r-17:checked):has(#mine-r-19:checked):has(#mine-r-20:checked):has(#mine-r-21:checked):has(#mine-r-22:checked):has(#mine-r-24:checked):has(#mine-r-25:checked):not(:has(#mine-r-5:checked)):not(:has(#mine-r-11:checked)):not(:has(#mine-r-18:checked)):not(:has(#mine-r-23:checked)) .mine-result__won {
+  display: inline;
+  color: var(--game-success);
+}
+
+.mine-game:has(#mine-r-1:checked):has(#mine-r-2:checked):has(#mine-r-3:checked):has(#mine-r-4:checked):has(#mine-r-6:checked):has(#mine-r-7:checked):has(#mine-r-8:checked):has(#mine-r-9:checked):has(#mine-r-10:checked):has(#mine-r-12:checked):has(#mine-r-13:checked):has(#mine-r-14:checked):has(#mine-r-15:checked):has(#mine-r-16:checked):has(#mine-r-17:checked):has(#mine-r-19:checked):has(#mine-r-20:checked):has(#mine-r-21:checked):has(#mine-r-22:checked):has(#mine-r-24:checked):has(#mine-r-25:checked) .mine-result__idle {
+  display: none;
+}
+
+@media (max-width: 40rem) {
+  .mine-board {
+    gap: 0.22rem;
+  }
+}
