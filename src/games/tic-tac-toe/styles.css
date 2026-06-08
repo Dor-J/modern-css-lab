@@ -1,0 +1,216 @@
+.ttt-game {
+  --game-accent: oklch(64% 0.2 284);
+  --ttt-x: oklch(66% 0.19 284);
+  --ttt-o: oklch(68% 0.16 45);
+}
+
+.ttt-board {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(4.8rem, 1fr));
+  gap: 0.55rem;
+  inline-size: min(100%, 26rem);
+  margin-inline: auto;
+}
+
+.ttt-cell {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  aspect-ratio: 1;
+  margin: 0;
+  padding: 0.45rem;
+  border: 1px solid var(--game-line);
+  border-radius: 0.9rem;
+  background: color-mix(in oklch, var(--game-surface), black 6%);
+}
+
+.ttt-cell legend,
+.ttt-cell input {
+  position: absolute;
+  inline-size: 1px;
+  block-size: 1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+}
+
+.ttt-choice {
+  display: grid;
+  place-items: center;
+  border: 1px solid transparent;
+  border-radius: 0.65rem;
+  color: var(--game-muted);
+  font-size: clamp(1.3rem, 9cqi, 2.4rem);
+  font-weight: 950;
+  cursor: pointer;
+}
+
+.ttt-choice:hover,
+.ttt-cell:has(input:focus-visible) .ttt-choice {
+  border-color: var(--game-focus);
+}
+
+.ttt-cell:has(input:checked) {
+  grid-template-columns: 1fr;
+}
+
+.ttt-cell:has(input:checked) .ttt-choice:not(:has(+ input:checked)) {
+  pointer-events: none;
+}
+
+.ttt-cell:has(input:checked) .ttt-choice {
+  display: none;
+}
+
+.ttt-cell:has(input[id*='ttt-x']:checked) .ttt-choice--x,
+.ttt-cell:has(input[id*='ttt-o']:checked) .ttt-choice--o {
+  display: grid;
+  grid-column: 1 / -1;
+  color: white;
+}
+
+.ttt-cell:has(input[id*='ttt-x']:checked) {
+  border-color: color-mix(in oklch, var(--ttt-x), white 10%);
+  background: color-mix(in oklch, var(--ttt-x), transparent 65%);
+}
+
+.ttt-cell:has(input[id*='ttt-o']:checked) {
+  border-color: color-mix(in oklch, var(--ttt-o), white 10%);
+  background: color-mix(in oklch, var(--ttt-o), transparent 68%);
+}
+
+.ttt-line {
+  position: absolute;
+  z-index: 4;
+  display: none;
+  border-radius: 999px;
+  background: white;
+  box-shadow: 0 0 1rem color-mix(in oklch, white, transparent 40%);
+  pointer-events: none;
+}
+
+.ttt-line:is(.ttt-line--r1, .ttt-line--r2, .ttt-line--r3) {
+  inline-size: 94%;
+  block-size: 0.35rem;
+  inset-inline-start: 3%;
+}
+
+.ttt-line--r1 {
+  inset-block-start: 16%;
+}
+
+.ttt-line--r2 {
+  inset-block-start: 50%;
+}
+
+.ttt-line--r3 {
+  inset-block-start: 84%;
+}
+
+.ttt-line:is(.ttt-line--c1, .ttt-line--c2, .ttt-line--c3) {
+  inline-size: 0.35rem;
+  block-size: 94%;
+  inset-block-start: 3%;
+}
+
+.ttt-line--c1 {
+  inset-inline-start: 16%;
+}
+
+.ttt-line--c2 {
+  inset-inline-start: 50%;
+}
+
+.ttt-line--c3 {
+  inset-inline-start: 84%;
+}
+
+.ttt-line:is(.ttt-line--d1, .ttt-line--d2) {
+  inline-size: 128%;
+  block-size: 0.35rem;
+  inset-block-start: 50%;
+  inset-inline-start: -14%;
+}
+
+.ttt-line--d1 {
+  rotate: 45deg;
+}
+
+.ttt-line--d2 {
+  rotate: -45deg;
+}
+
+.ttt-result {
+  min-block-size: 3.5rem;
+  display: grid;
+  place-items: center;
+  padding: var(--space-4);
+  border: 1px solid var(--game-line);
+  border-radius: var(--radius-md);
+  background: var(--game-surface);
+  font-weight: 850;
+}
+
+.ttt-result__x,
+.ttt-result__o,
+.ttt-result__draw {
+  display: none;
+}
+
+.ttt-game:has(#ttt-x-1:checked):has(#ttt-x-2:checked):has(#ttt-x-3:checked) .ttt-line--r1,
+.ttt-game:has(#ttt-o-1:checked):has(#ttt-o-2:checked):has(#ttt-o-3:checked) .ttt-line--r1,
+.ttt-game:has(#ttt-x-4:checked):has(#ttt-x-5:checked):has(#ttt-x-6:checked) .ttt-line--r2,
+.ttt-game:has(#ttt-o-4:checked):has(#ttt-o-5:checked):has(#ttt-o-6:checked) .ttt-line--r2,
+.ttt-game:has(#ttt-x-7:checked):has(#ttt-x-8:checked):has(#ttt-x-9:checked) .ttt-line--r3,
+.ttt-game:has(#ttt-o-7:checked):has(#ttt-o-8:checked):has(#ttt-o-9:checked) .ttt-line--r3,
+.ttt-game:has(#ttt-x-1:checked):has(#ttt-x-4:checked):has(#ttt-x-7:checked) .ttt-line--c1,
+.ttt-game:has(#ttt-o-1:checked):has(#ttt-o-4:checked):has(#ttt-o-7:checked) .ttt-line--c1,
+.ttt-game:has(#ttt-x-2:checked):has(#ttt-x-5:checked):has(#ttt-x-8:checked) .ttt-line--c2,
+.ttt-game:has(#ttt-o-2:checked):has(#ttt-o-5:checked):has(#ttt-o-8:checked) .ttt-line--c2,
+.ttt-game:has(#ttt-x-3:checked):has(#ttt-x-6:checked):has(#ttt-x-9:checked) .ttt-line--c3,
+.ttt-game:has(#ttt-o-3:checked):has(#ttt-o-6:checked):has(#ttt-o-9:checked) .ttt-line--c3,
+.ttt-game:has(#ttt-x-1:checked):has(#ttt-x-5:checked):has(#ttt-x-9:checked) .ttt-line--d1,
+.ttt-game:has(#ttt-o-1:checked):has(#ttt-o-5:checked):has(#ttt-o-9:checked) .ttt-line--d1,
+.ttt-game:has(#ttt-x-3:checked):has(#ttt-x-5:checked):has(#ttt-x-7:checked) .ttt-line--d2,
+.ttt-game:has(#ttt-o-3:checked):has(#ttt-o-5:checked):has(#ttt-o-7:checked) .ttt-line--d2 {
+  display: block;
+}
+
+.ttt-game:has(#ttt-x-1:checked):has(#ttt-x-2:checked):has(#ttt-x-3:checked) .ttt-result__x,
+.ttt-game:has(#ttt-x-4:checked):has(#ttt-x-5:checked):has(#ttt-x-6:checked) .ttt-result__x,
+.ttt-game:has(#ttt-x-7:checked):has(#ttt-x-8:checked):has(#ttt-x-9:checked) .ttt-result__x,
+.ttt-game:has(#ttt-x-1:checked):has(#ttt-x-4:checked):has(#ttt-x-7:checked) .ttt-result__x,
+.ttt-game:has(#ttt-x-2:checked):has(#ttt-x-5:checked):has(#ttt-x-8:checked) .ttt-result__x,
+.ttt-game:has(#ttt-x-3:checked):has(#ttt-x-6:checked):has(#ttt-x-9:checked) .ttt-result__x,
+.ttt-game:has(#ttt-x-1:checked):has(#ttt-x-5:checked):has(#ttt-x-9:checked) .ttt-result__x,
+.ttt-game:has(#ttt-x-3:checked):has(#ttt-x-5:checked):has(#ttt-x-7:checked) .ttt-result__x,
+.ttt-game:has(#ttt-o-1:checked):has(#ttt-o-2:checked):has(#ttt-o-3:checked) .ttt-result__o,
+.ttt-game:has(#ttt-o-4:checked):has(#ttt-o-5:checked):has(#ttt-o-6:checked) .ttt-result__o,
+.ttt-game:has(#ttt-o-7:checked):has(#ttt-o-8:checked):has(#ttt-o-9:checked) .ttt-result__o,
+.ttt-game:has(#ttt-o-1:checked):has(#ttt-o-4:checked):has(#ttt-o-7:checked) .ttt-result__o,
+.ttt-game:has(#ttt-o-2:checked):has(#ttt-o-5:checked):has(#ttt-o-8:checked) .ttt-result__o,
+.ttt-game:has(#ttt-o-3:checked):has(#ttt-o-6:checked):has(#ttt-o-9:checked) .ttt-result__o,
+.ttt-game:has(#ttt-o-1:checked):has(#ttt-o-5:checked):has(#ttt-o-9:checked) .ttt-result__o,
+.ttt-game:has(#ttt-o-3:checked):has(#ttt-o-5:checked):has(#ttt-o-7:checked) .ttt-result__o {
+  display: inline;
+}
+
+.ttt-game:has(.ttt-result__x:not(:empty)) .ttt-result__idle,
+.ttt-game:has(.ttt-line[style]) .ttt-result__idle {
+  display: none;
+}
+
+.ttt-game:has(:is(#ttt-x-1, #ttt-o-1):checked):has(:is(#ttt-x-2, #ttt-o-2):checked):has(:is(#ttt-x-3, #ttt-o-3):checked):has(:is(#ttt-x-4, #ttt-o-4):checked):has(:is(#ttt-x-5, #ttt-o-5):checked):has(:is(#ttt-x-6, #ttt-o-6):checked):has(:is(#ttt-x-7, #ttt-o-7):checked):has(:is(#ttt-x-8, #ttt-o-8):checked):has(:is(#ttt-x-9, #ttt-o-9):checked) .ttt-result__draw {
+  display: inline;
+}
+
+.ttt-game:has(.ttt-result__x:not([hidden])) .ttt-result__idle,
+.ttt-game:has(.ttt-result__o:not([hidden])) .ttt-result__idle {
+  display: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .ttt-choice {
+    transition: none;
+  }
+}
