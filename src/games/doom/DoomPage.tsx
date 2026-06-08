@@ -2,10 +2,10 @@ import { GameControls, GameHud, GamePageShell, KeyboardControlBridge } from '../
 import { getCssGame } from '..'
 
 const mechanics = [
-  'Room, facing direction, key, and enemy states are native form controls.',
-  'The raycaster-like scene is CSS perspective, gradients, and :has()-switched custom properties.',
-  'Door locks, enemy pressure, and win state are selector combinations.',
-  'The weapon and enemy are original CSS artwork with no copyrighted game assets.',
+  'Rooms, facing direction, keycard, shells, armor, and enemy defeat are native form controls.',
+  'The 3D corridor is CSS perspective, clipped wall planes, gradients, and :has()-switched room tokens.',
+  'The exit only opens when the keycard is held and the reactor enemy is defeated.',
+  'This is a CSS-only Doom-style corridor shooter, not a JavaScript raycasting engine.',
 ]
 
 function DoomPage() {
@@ -26,16 +26,18 @@ function DoomPage() {
           { key: 'ArrowLeft', selector: 'label[for="doom-face-left"]' },
           { key: 'd', selector: 'label[for="doom-face-right"]' },
           { key: 'ArrowRight', selector: 'label[for="doom-face-right"]' },
+          { key: 'e', selector: 'label[for="doom-key"]' },
+          { key: 'f', selector: 'label[for="doom-enemy-defeated"]' },
           { key: ' ', selector: 'label[for="doom-enemy-defeated"]' },
           { key: 'r', selector: '[data-key-reset]' },
         ]}
       />
       <form id="doom-game" className="css-game doom-game">
-        <section className="game-shell">
+        <section className="game-shell doom-shell">
           <GameHud>
             <div>
-              <p className="eyebrow">CSS raycaster tribute</p>
-              <h2>Find the key, clear the reactor, reach the exit</h2>
+              <p className="eyebrow">CSS-only corridor shooter</p>
+              <h2>Keycard, shells, reactor demon, exit</h2>
             </div>
             <GameControls>
               <button type="reset" className="game-reset-button" data-key-reset>
@@ -53,10 +55,12 @@ function DoomPage() {
           <input id="doom-face-left" className="game-hidden-input" name="doom-face" type="radio" />
           <input id="doom-face-right" className="game-hidden-input" name="doom-face" type="radio" />
           <input id="doom-key" className="game-hidden-input" type="checkbox" />
+          <input id="doom-shells" className="game-hidden-input" type="checkbox" />
+          <input id="doom-armor" className="game-hidden-input" type="checkbox" />
           <input id="doom-enemy-defeated" className="game-hidden-input" type="checkbox" />
 
           <div className="doom-controls">
-            <div className="game-control-group" aria-label="Rooms">
+            <div className="game-control-group" aria-label="Move between rooms">
               <label className="game-control" htmlFor="doom-room-entry">
                 Entry
               </label>
@@ -75,18 +79,24 @@ function DoomPage() {
             </div>
             <div className="game-control-group" aria-label="Look direction">
               <label className="game-control" htmlFor="doom-face-left">
-                Look left
+                Turn left
               </label>
               <label className="game-control" htmlFor="doom-face-forward">
                 Forward
               </label>
               <label className="game-control" htmlFor="doom-face-right">
-                Look right
+                Turn right
               </label>
             </div>
             <div className="game-control-group" aria-label="Actions">
               <label className="game-control" htmlFor="doom-key">
-                Take key
+                Keycard
+              </label>
+              <label className="game-control" htmlFor="doom-shells">
+                Shells
+              </label>
+              <label className="game-control" htmlFor="doom-armor">
+                Armor
               </label>
               <label className="game-control" htmlFor="doom-enemy-defeated">
                 Fire
@@ -94,23 +104,64 @@ function DoomPage() {
             </div>
           </div>
 
-          <div className="doom-screen" aria-label="Doom CSS maze screen">
+          <div className="doom-cabinet" aria-label="Doom CSS game screen">
             <div className="doom-viewport" aria-hidden="true">
+              <span className="doom-ceiling" />
+              <span className="doom-floor" />
               <span className="doom-wall doom-wall--left" />
               <span className="doom-wall doom-wall--right" />
               <span className="doom-wall doom-wall--back" />
+              <span className="doom-pillar doom-pillar--left" />
+              <span className="doom-pillar doom-pillar--right" />
               <span className="doom-door" />
               <span className="doom-pickup doom-pickup--key" />
-              <span className="doom-enemy" />
+              <span className="doom-pickup doom-pickup--shells" />
+              <span className="doom-pickup doom-pickup--armor" />
+              <span className="doom-enemy doom-enemy--imp" />
+              <span className="doom-crosshair" />
+              <span className="doom-muzzle" />
               <span className="doom-weapon" />
             </div>
+
+            <div className="doom-bottom-bar">
+              <div className="doom-face" aria-hidden="true" />
+              <dl className="doom-hud">
+                <div>
+                  <dt>Health</dt>
+                  <dd className="doom-hud__health">100</dd>
+                </div>
+                <div>
+                  <dt>Armor</dt>
+                  <dd className="doom-hud__armor">0</dd>
+                </div>
+                <div>
+                  <dt>Ammo</dt>
+                  <dd className="doom-hud__ammo">0</dd>
+                </div>
+                <div>
+                  <dt>Key</dt>
+                  <dd className="doom-hud__key">No</dd>
+                </div>
+              </dl>
+              <ol className="doom-minimap" aria-label="Map">
+                <li className="doom-map-room doom-map-room--entry">E</li>
+                <li className="doom-map-room doom-map-room--hall">H</li>
+                <li className="doom-map-room doom-map-room--armory">A</li>
+                <li className="doom-map-room doom-map-room--reactor">R</li>
+                <li className="doom-map-room doom-map-room--exit">X</li>
+              </ol>
+            </div>
+
             <div className="doom-status" aria-live="polite">
-              <span className="doom-status__entry">Entry room. Move to the hall.</span>
-              <span className="doom-status__hall">Hallway. The armory has a key; the reactor has the threat.</span>
-              <span className="doom-status__armory">Armory. Take the key before the exit.</span>
-              <span className="doom-status__reactor">Reactor. Fire until the path is clear.</span>
-              <span className="doom-status__exit-locked">Exit locked. Bring the key and clear the reactor.</span>
-              <span className="doom-status__win">Exit open. Run complete.</span>
+              <span className="doom-status__entry">Entry bay. Move into the hall.</span>
+              <span className="doom-status__hall">Hall junction. Armory left, reactor right, exit ahead.</span>
+              <span className="doom-status__armory">Armory. Pick up keycard, shells, and armor.</span>
+              <span className="doom-status__armory-ready">Armory cleared. Head to the reactor.</span>
+              <span className="doom-status__reactor-unarmed">Reactor demon ahead. Load shells before firing.</span>
+              <span className="doom-status__reactor-live">Reactor demon is live. Fire to clear the room.</span>
+              <span className="doom-status__reactor-clear">Reactor clear. Exit is now reachable with the keycard.</span>
+              <span className="doom-status__exit-locked">Exit locked. Need keycard and reactor clear.</span>
+              <span className="doom-status__win">Exit open. CSS-only run complete.</span>
             </div>
           </div>
         </section>

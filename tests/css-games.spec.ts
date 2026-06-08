@@ -76,13 +76,21 @@ test.describe('CSS-only games interactions', () => {
     await expect(page.getByText('Field cleared without revealing a mine.')).toBeVisible()
   })
 
-  test('snake route presets expose food and collision states', async ({ page }) => {
+  test('snake plays a CSS-only move sequence with food and collision states', async ({ page }) => {
     await page.goto('/games/snake')
 
-    await page.locator('label[for="snake-route-food"]').click()
+    await page.locator('label[for="snake-step-1"]').click()
+    await page.locator('label[for="snake-step-2"]').click()
+    await page.locator('label[for="snake-step-3"]').click()
     await expect(page.getByText('Food collected')).toBeVisible()
 
-    await page.locator('label[for="snake-route-wall"]').click()
+    await page.locator('label[for="snake-step-4"]').click()
+    await page.locator('label[for="snake-step-5"]').click()
+    await expect(page.locator('.snake-overlay--win strong')).toHaveText('Run complete')
+    await expect(page.locator('.snake-overlay--win')).toBeVisible()
+
+    await page.getByRole('button', { name: 'Reset snake' }).click()
+    await page.locator('label[for="snake-crash"]').first().click()
     await expect(page.locator('.snake-overlay--lost strong')).toHaveText('Collision')
     await expect(page.locator('.snake-overlay--lost')).toBeVisible()
   })
@@ -102,15 +110,18 @@ test.describe('CSS-only games interactions', () => {
     await page.goto('/games/doom')
 
     await page.locator('label[for="doom-room-exit"]').click()
-    await expect(page.getByText('Exit locked. Bring the key and clear the reactor.')).toBeVisible()
+    await expect(page.getByText('Exit locked. Need keycard and reactor clear.')).toBeVisible()
 
     await page.locator('label[for="doom-room-armory"]').click()
     await page.locator('label[for="doom-key"]').click()
+    await page.locator('label[for="doom-shells"]').click()
+    await page.locator('label[for="doom-armor"]').click()
     await page.locator('label[for="doom-room-reactor"]').click()
+    await expect(page.getByText('Reactor demon is live. Fire to clear the room.')).toBeVisible()
     await page.locator('label[for="doom-enemy-defeated"]').click()
     await page.locator('label[for="doom-room-exit"]').click()
 
-    await expect(page.getByText('Exit open. Run complete.')).toBeVisible()
+    await expect(page.getByText('Exit open. CSS-only run complete.')).toBeVisible()
   })
 
   test('games remain usable on a 360px viewport', async ({ page }) => {

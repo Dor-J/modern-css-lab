@@ -1,16 +1,30 @@
 .ttt-game {
   --game-accent: oklch(64% 0.2 284);
-  --ttt-x: oklch(66% 0.19 284);
-  --ttt-o: oklch(68% 0.16 45);
+  --ttt-paper: light-dark(#fbfaf5, #111827);
+  --ttt-ink: light-dark(#151515, #eef4ff);
+  --ttt-line: light-dark(#151515, #dbeafe);
+  --ttt-x: light-dark(#1f2937, #bfdbfe);
+  --ttt-o: light-dark(#9f1239, #fda4af);
+}
+
+.ttt-game .game-shell {
+  background:
+    radial-gradient(circle at 14% 9%, color-mix(in oklch, var(--ttt-o), transparent 78%), transparent 18rem),
+    linear-gradient(145deg, var(--game-bg), color-mix(in oklch, var(--game-bg), black 7%));
 }
 
 .ttt-board {
   position: relative;
   display: grid;
   grid-template-columns: repeat(3, minmax(4.8rem, 1fr));
-  gap: 0.55rem;
-  inline-size: min(100%, 26rem);
+  gap: clamp(0.2rem, 1cqi, 0.35rem);
+  inline-size: min(100%, 29rem);
   margin-inline: auto;
+  padding: clamp(0.2rem, 1cqi, 0.35rem);
+  border: 0.25rem solid var(--ttt-line);
+  border-radius: 0.35rem;
+  background: var(--ttt-line);
+  box-shadow: 0 1.2rem 2.5rem rgb(0 0 0 / 0.16);
 }
 
 .ttt-cell {
@@ -19,10 +33,12 @@
   grid-template-columns: 1fr 1fr;
   aspect-ratio: 1;
   margin: 0;
-  padding: 0.45rem;
-  border: 1px solid var(--game-line);
-  border-radius: 0.9rem;
-  background: color-mix(in oklch, var(--game-surface), black 6%);
+  padding: 0;
+  border: 0;
+  border-radius: 0.12rem;
+  background:
+    linear-gradient(135deg, color-mix(in oklch, white, transparent 86%), transparent),
+    var(--ttt-paper);
 }
 
 .ttt-cell legend,
@@ -37,17 +53,36 @@
 .ttt-choice {
   display: grid;
   place-items: center;
-  border: 1px solid transparent;
-  border-radius: 0.65rem;
-  color: var(--game-muted);
-  font-size: clamp(1.3rem, 9cqi, 2.4rem);
-  font-weight: 950;
+  min-inline-size: 0;
+  border: 0;
+  border-radius: 0;
+  color: var(--ttt-ink);
+  opacity: 0;
+  font-family: var(--font-mono);
+  font-size: clamp(2.8rem, 16cqi, 5.9rem);
+  font-weight: 900;
+  line-height: 1;
   cursor: pointer;
+  transition:
+    opacity 120ms ease,
+    transform 120ms ease,
+    background 120ms ease;
 }
 
 .ttt-choice:hover,
 .ttt-cell:has(input:focus-visible) .ttt-choice {
-  border-color: var(--game-focus);
+  opacity: 0.26;
+  background: color-mix(in oklch, var(--game-accent), transparent 88%);
+  outline: 2px solid color-mix(in oklch, var(--game-accent), transparent 55%);
+  outline-offset: -0.25rem;
+}
+
+.ttt-choice--x {
+  color: var(--ttt-x);
+}
+
+.ttt-choice--o {
+  color: var(--ttt-o);
 }
 
 .ttt-cell:has(input:checked) {
@@ -62,17 +97,21 @@
 .ttt-cell:has(input[id*='ttt-o']:checked) .ttt-choice--o {
   display: grid;
   grid-column: 1 / -1;
-  color: white;
+  opacity: 1;
+  transform: scale(1.03);
 }
 
-.ttt-cell:has(input[id*='ttt-x']:checked) {
-  border-color: color-mix(in oklch, var(--ttt-x), white 10%);
-  background: color-mix(in oklch, var(--ttt-x), transparent 65%);
-}
-
+.ttt-cell:has(input[id*='ttt-x']:checked),
 .ttt-cell:has(input[id*='ttt-o']:checked) {
-  border-color: color-mix(in oklch, var(--ttt-o), white 10%);
-  background: color-mix(in oklch, var(--ttt-o), transparent 68%);
+  background: var(--ttt-paper);
+}
+
+.ttt-cell:has(input[id*='ttt-x']:checked) .ttt-choice--x {
+  color: var(--ttt-x);
+}
+
+.ttt-cell:has(input[id*='ttt-o']:checked) .ttt-choice--o {
+  color: var(--ttt-o);
 }
 
 .ttt-line {
@@ -80,8 +119,8 @@
   z-index: 4;
   display: none;
   border-radius: 999px;
-  background: white;
-  box-shadow: 0 0 1rem color-mix(in oklch, white, transparent 40%);
+  background: color-mix(in oklch, var(--game-success), white 14%);
+  box-shadow: 0 0 1rem color-mix(in oklch, var(--game-success), transparent 40%);
   pointer-events: none;
 }
 
@@ -141,9 +180,10 @@
   display: grid;
   place-items: center;
   padding: var(--space-4);
-  border: 1px solid var(--game-line);
+  border: 1px solid color-mix(in oklch, var(--ttt-line), transparent 45%);
   border-radius: var(--radius-md);
-  background: var(--game-surface);
+  background: color-mix(in oklch, var(--ttt-paper), var(--game-surface) 18%);
+  color: var(--ttt-ink);
   font-weight: 850;
 }
 

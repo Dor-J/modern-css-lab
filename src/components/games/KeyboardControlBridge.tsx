@@ -20,7 +20,8 @@ function KeyboardControlBridge({ rootId, bindings }: KeyboardControlBridgeProps)
       }
 
       const root = document.getElementById(rootId)
-      const target = root?.querySelector<HTMLElement>(binding.selector)
+      const targets = Array.from(root?.querySelectorAll<HTMLElement>(binding.selector) ?? [])
+      const target = targets.find((candidate) => candidate.getClientRects().length > 0) ?? targets[0]
 
       if (!target) {
         return
