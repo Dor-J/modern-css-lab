@@ -1,0 +1,542 @@
+[
+  {
+    "slug": "pseudo-element-after",
+    "title": "::after",
+    "kind": "pseudo-element",
+    "syntax": "::after",
+    "category": "selectors",
+    "status": "standard",
+    "mdnUrl": "https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Selectors/::after",
+    "summary": "A pseudo element entry from the MDN standard CSS reference. This playground demonstrates ::after with live controls, snippets, and computed inspection.",
+    "specNotes": "Static local snapshot from the MDN CSS Reference index for the June 8, 2026 catalog scope.",
+    "browserNotes": "Part of the MDN standard CSS reference. Verify exact browser coverage for your support matrix.",
+    "fallbackStrategy": "Declare a simple baseline rule first, then layer enhanced values or selectors where supported.",
+    "tags": [
+      "pseudo-element",
+      "selectors",
+      "standard"
+    ]
+  },
+  {
+    "slug": "pseudo-element-backdrop",
+    "title": "::backdrop",
+    "kind": "pseudo-element",
+    "syntax": "::backdrop",
+    "category": "selectors",
+    "status": "standard",
+    "mdnUrl": "https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Selectors/::backdrop",
+    "summary": "A pseudo element entry from the MDN standard CSS reference. This playground demonstrates ::backdrop with live controls, snippets, and computed inspection.",
+    "specNotes": "Static local snapshot from the MDN CSS Reference index for the June 8, 2026 catalog scope.",
+    "browserNotes": "Part of the MDN standard CSS reference. Verify exact browser coverage for your support matrix.",
+    "fallbackStrategy": "Declare a simple baseline rule first, then layer enhanced values or selectors where supported.",
+    "tags": [
+      "pseudo-element",
+      "selectors",
+      "standard"
+    ]
+  },
+  {
+    "slug": "pseudo-element-before",
+    "title": "::before",
+    "kind": "pseudo-element",
+    "syntax": "::before",
+    "category": "selectors",
+    "status": "standard",
+    "mdnUrl": "https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Selectors/::before",
+    "summary": "A pseudo element entry from the MDN standard CSS reference. This playground demonstrates ::before with live controls, snippets, and computed inspection.",
+    "specNotes": "Static local snapshot from the MDN CSS Reference index for the June 8, 2026 catalog scope.",
+    "browserNotes": "Part of the MDN standard CSS reference. Verify exact browser coverage for your support matrix.",
+    "fallbackStrategy": "Declare a simple baseline rule first, then layer enhanced values or selectors where supported.",
+    "tags": [
+      "pseudo-element",
+      "selectors",
+      "standard"
+    ]
+  },
+  {
+    "slug": "pseudo-element-checkmark",
+    "title": "::checkmark",
+    "kind": "pseudo-element",
+    "syntax": "::checkmark",
+    "category": "selectors",
+    "status": "standard",
+    "mdnUrl": "https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Selectors/::checkmark",
+    "summary": "A pseudo element entry from the MDN standard CSS reference. This playground demonstrates ::checkmark with live controls, snippets, and computed inspection.",
+    "specNotes": "Static local snapshot from the MDN CSS Reference index for the June 8, 2026 catalog scope.",
+    "browserNotes": "Part of the MDN standard CSS reference. Verify exact browser coverage for your support matrix.",
+    "fallbackStrategy": "Declare a simple baseline rule first, then layer enhanced values or selectors where supported.",
+    "tags": [
+      "pseudo-element",
+      "selectors",
+      "standard"
+    ]
+  },
+  {
+    "slug": "pseudo-element-column",
+    "title": "::column",
+    "kind": "pseudo-element",
+    "syntax": "::column",
+    "category": "selectors",
+    "status": "standard",
+    "mdnUrl": "https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Selectors/::column",
+    "summary": "A pseudo element entry from the MDN standard CSS reference. This playground demonstrates ::column with live controls, snippets, and computed inspection.",
+    "specNotes": "Static local snapshot from the MDN CSS Reference index for the June 8, 2026 catalog scope.",
+    "browserNotes": "Part of the MDN standard CSS reference. Verify exact browser coverage for your support matrix.",
+    "fallbackStrategy": "Declare a simple baseline rule first, then layer enhanced values or selectors where supported.",
+    "tags": [
+      "pseudo-element",
+      "selectors",
+      "standard"
+    ]
+  },
+  {
+    "slug": "pseudo-element-cue",
+    "title": "::cue",
+    "kind": "pseudo-element",
+    "syntax": "::cue",
+    "category": "selectors",
+    "status": "standard",
+    "mdnUrl": "https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Selectors/::cue",
+    "summary": "A pseudo element entry from the MDN standard CSS reference. This playground demonstrates ::cue with live controls, snippets, and computed inspection.",
+    "specNotes": "Static local snapshot from the MDN CSS Reference index for the June 8, 2026 catalog scope.",
+    "browserNotes": "Part of the MDN standard CSS reference. Verify exact browser coverage for your support matrix.",
+    "fallbackStrategy": "Declare a simple baseline rule first, then layer enhanced values or selectors where supported.",
+    "tags": [
+      "pseudo-element",
+      "selectors",
+      "standard"
+    ]
+  },
+  {
+    "slug": "pseudo-element-details-content",
+    "title": "::details-content",
+    "kind": "pseudo-element",
+    "syntax": "::details-content",
+    "category": "selectors",
+    "status": "standard",
+    "mdnUrl": "https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Selectors/::details-content",
+    "summary": "A pseudo element entry from the MDN standard CSS reference. This playground demonstrates ::details-content with live controls, snippets, and computed inspection.",
+    "specNotes": "Static local snapshot from the MDN CSS Reference index for the June 8, 2026 catalog scope.",
+    "browserNotes": "Part of the MDN standard CSS reference. Verify exact browser coverage for your support matrix.",
+    "fallbackStrategy": "Declare a simple baseline rule first, then layer enhanced values or selectors where supported.",
+    "tags": [
+      "pseudo-element",
+      "selectors",
+      "standard"
+    ]
+  },
+  {
+    "slug": "pseudo-element-file-selector-button",
+    "title": "::file-selector-button",
+    "kind": "pseudo-element",
+    "syntax": "::file-selector-button",
+    "category": "selectors",
+    "status": "standard",
+    "mdnUrl": "https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Selectors/::file-selector-button",
+    "summary": "A pseudo element entry from the MDN standard CSS reference. This playground demonstrates ::file-selector-button with live controls, snippets, and computed inspection.",
+    "specNotes": "Static local snapshot from the MDN CSS Reference index for the June 8, 2026 catalog scope.",
+    "browserNotes": "Part of the MDN standard CSS reference. Verify exact browser coverage for your support matrix.",
+    "fallbackStrategy": "Declare a simple baseline rule first, then layer enhanced values or selectors where supported.",
+    "tags": [
+      "pseudo-element",
+      "selectors",
+      "standard"
+    ]
+  },
+  {
+    "slug": "pseudo-element-first-letter",
+    "title": "::first-letter",
+    "kind": "pseudo-element",
+    "syntax": "::first-letter",
+    "category": "selectors",
+    "status": "standard",
+    "mdnUrl": "https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Selectors/::first-letter",
+    "summary": "A pseudo element entry from the MDN standard CSS reference. This playground demonstrates ::first-letter with live controls, snippets, and computed inspection.",
+    "specNotes": "Static local snapshot from the MDN CSS Reference index for the June 8, 2026 catalog scope.",
+    "browserNotes": "Part of the MDN standard CSS reference. Verify exact browser coverage for your support matrix.",
+    "fallbackStrategy": "Declare a simple baseline rule first, then layer enhanced values or selectors where supported.",
+    "tags": [
+      "pseudo-element",
+      "selectors",
+      "standard"
+    ]
+  },
+  {
+    "slug": "pseudo-element-first-line",
+    "title": "::first-line",
+    "kind": "pseudo-element",
+    "syntax": "::first-line",
+    "category": "selectors",
+    "status": "standard",
+    "mdnUrl": "https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Selectors/::first-line",
+    "summary": "A pseudo element entry from the MDN standard CSS reference. This playground demonstrates ::first-line with live controls, snippets, and computed inspection.",
+    "specNotes": "Static local snapshot from the MDN CSS Reference index for the June 8, 2026 catalog scope.",
+    "browserNotes": "Part of the MDN standard CSS reference. Verify exact browser coverage for your support matrix.",
+    "fallbackStrategy": "Declare a simple baseline rule first, then layer enhanced values or selectors where supported.",
+    "tags": [
+      "pseudo-element",
+      "selectors",
+      "standard"
+    ]
+  },
+  {
+    "slug": "pseudo-element-grammar-error",
+    "title": "::grammar-error",
+    "kind": "pseudo-element",
+    "syntax": "::grammar-error",
+    "category": "selectors",
+    "status": "standard",
+    "mdnUrl": "https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Selectors/::grammar-error",
+    "summary": "A pseudo element entry from the MDN standard CSS reference. This playground demonstrates ::grammar-error with live controls, snippets, and computed inspection.",
+    "specNotes": "Static local snapshot from the MDN CSS Reference index for the June 8, 2026 catalog scope.",
+    "browserNotes": "Part of the MDN standard CSS reference. Verify exact browser coverage for your support matrix.",
+    "fallbackStrategy": "Declare a simple baseline rule first, then layer enhanced values or selectors where supported.",
+    "tags": [
+      "pseudo-element",
+      "selectors",
+      "standard"
+    ]
+  },
+  {
+    "slug": "pseudo-element-highlight-function",
+    "title": "::highlight()",
+    "kind": "pseudo-element",
+    "syntax": "::highlight()",
+    "category": "selectors",
+    "status": "standard",
+    "mdnUrl": "https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Selectors/::highlight",
+    "summary": "A pseudo element entry from the MDN standard CSS reference. This playground demonstrates ::highlight() with live controls, snippets, and computed inspection.",
+    "specNotes": "Static local snapshot from the MDN CSS Reference index for the June 8, 2026 catalog scope.",
+    "browserNotes": "Part of the MDN standard CSS reference. Verify exact browser coverage for your support matrix.",
+    "fallbackStrategy": "Declare a simple baseline rule first, then layer enhanced values or selectors where supported.",
+    "tags": [
+      "pseudo-element",
+      "selectors",
+      "standard"
+    ]
+  },
+  {
+    "slug": "pseudo-element-marker",
+    "title": "::marker",
+    "kind": "pseudo-element",
+    "syntax": "::marker",
+    "category": "selectors",
+    "status": "standard",
+    "mdnUrl": "https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Selectors/::marker",
+    "summary": "A pseudo element entry from the MDN standard CSS reference. This playground demonstrates ::marker with live controls, snippets, and computed inspection.",
+    "specNotes": "Static local snapshot from the MDN CSS Reference index for the June 8, 2026 catalog scope.",
+    "browserNotes": "Part of the MDN standard CSS reference. Verify exact browser coverage for your support matrix.",
+    "fallbackStrategy": "Declare a simple baseline rule first, then layer enhanced values or selectors where supported.",
+    "tags": [
+      "pseudo-element",
+      "selectors",
+      "standard"
+    ]
+  },
+  {
+    "slug": "pseudo-element-part-function",
+    "title": "::part()",
+    "kind": "pseudo-element",
+    "syntax": "::part()",
+    "category": "selectors",
+    "status": "standard",
+    "mdnUrl": "https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Selectors/::part",
+    "summary": "A pseudo element entry from the MDN standard CSS reference. This playground demonstrates ::part() with live controls, snippets, and computed inspection.",
+    "specNotes": "Static local snapshot from the MDN CSS Reference index for the June 8, 2026 catalog scope.",
+    "browserNotes": "Part of the MDN standard CSS reference. Verify exact browser coverage for your support matrix.",
+    "fallbackStrategy": "Declare a simple baseline rule first, then layer enhanced values or selectors where supported.",
+    "tags": [
+      "pseudo-element",
+      "selectors",
+      "standard"
+    ]
+  },
+  {
+    "slug": "pseudo-element-picker-function",
+    "title": "::picker()",
+    "kind": "pseudo-element",
+    "syntax": "::picker()",
+    "category": "selectors",
+    "status": "standard",
+    "mdnUrl": "https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Selectors/::picker",
+    "summary": "A pseudo element entry from the MDN standard CSS reference. This playground demonstrates ::picker() with live controls, snippets, and computed inspection.",
+    "specNotes": "Static local snapshot from the MDN CSS Reference index for the June 8, 2026 catalog scope.",
+    "browserNotes": "Part of the MDN standard CSS reference. Verify exact browser coverage for your support matrix.",
+    "fallbackStrategy": "Declare a simple baseline rule first, then layer enhanced values or selectors where supported.",
+    "tags": [
+      "pseudo-element",
+      "selectors",
+      "standard"
+    ]
+  },
+  {
+    "slug": "pseudo-element-picker-icon",
+    "title": "::picker-icon",
+    "kind": "pseudo-element",
+    "syntax": "::picker-icon",
+    "category": "selectors",
+    "status": "standard",
+    "mdnUrl": "https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Selectors/::picker-icon",
+    "summary": "A pseudo element entry from the MDN standard CSS reference. This playground demonstrates ::picker-icon with live controls, snippets, and computed inspection.",
+    "specNotes": "Static local snapshot from the MDN CSS Reference index for the June 8, 2026 catalog scope.",
+    "browserNotes": "Part of the MDN standard CSS reference. Verify exact browser coverage for your support matrix.",
+    "fallbackStrategy": "Declare a simple baseline rule first, then layer enhanced values or selectors where supported.",
+    "tags": [
+      "pseudo-element",
+      "selectors",
+      "standard"
+    ]
+  },
+  {
+    "slug": "pseudo-element-placeholder",
+    "title": "::placeholder",
+    "kind": "pseudo-element",
+    "syntax": "::placeholder",
+    "category": "selectors",
+    "status": "standard",
+    "mdnUrl": "https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Selectors/::placeholder",
+    "summary": "A pseudo element entry from the MDN standard CSS reference. This playground demonstrates ::placeholder with live controls, snippets, and computed inspection.",
+    "specNotes": "Static local snapshot from the MDN CSS Reference index for the June 8, 2026 catalog scope.",
+    "browserNotes": "Part of the MDN standard CSS reference. Verify exact browser coverage for your support matrix.",
+    "fallbackStrategy": "Declare a simple baseline rule first, then layer enhanced values or selectors where supported.",
+    "tags": [
+      "pseudo-element",
+      "selectors",
+      "standard"
+    ]
+  },
+  {
+    "slug": "pseudo-element-scroll-button-function",
+    "title": "::scroll-button()",
+    "kind": "pseudo-element",
+    "syntax": "::scroll-button()",
+    "category": "selectors",
+    "status": "experimental",
+    "mdnUrl": "https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Selectors/::scroll-button",
+    "summary": "A pseudo element entry from the MDN standard CSS reference. This playground demonstrates ::scroll-button() with live controls, snippets, and computed inspection.",
+    "specNotes": "Static local snapshot from the MDN CSS Reference index for the June 8, 2026 catalog scope.",
+    "browserNotes": "Limited or emerging support. The demo keeps a fallback path and labels support with CSS.supports() when possible.",
+    "fallbackStrategy": "Ship a complete baseline visual first, then place this syntax behind @supports or a syntax-preview note.",
+    "tags": [
+      "pseudo-element",
+      "selectors",
+      "experimental"
+    ]
+  },
+  {
+    "slug": "pseudo-element-scroll-marker",
+    "title": "::scroll-marker",
+    "kind": "pseudo-element",
+    "syntax": "::scroll-marker",
+    "category": "selectors",
+    "status": "experimental",
+    "mdnUrl": "https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Selectors/::scroll-marker",
+    "summary": "A pseudo element entry from the MDN standard CSS reference. This playground demonstrates ::scroll-marker with live controls, snippets, and computed inspection.",
+    "specNotes": "Static local snapshot from the MDN CSS Reference index for the June 8, 2026 catalog scope.",
+    "browserNotes": "Limited or emerging support. The demo keeps a fallback path and labels support with CSS.supports() when possible.",
+    "fallbackStrategy": "Ship a complete baseline visual first, then place this syntax behind @supports or a syntax-preview note.",
+    "tags": [
+      "pseudo-element",
+      "selectors",
+      "experimental"
+    ]
+  },
+  {
+    "slug": "pseudo-element-scroll-marker-group",
+    "title": "::scroll-marker-group",
+    "kind": "pseudo-element",
+    "syntax": "::scroll-marker-group",
+    "category": "selectors",
+    "status": "experimental",
+    "mdnUrl": "https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Selectors/::scroll-marker-group",
+    "summary": "A pseudo element entry from the MDN standard CSS reference. This playground demonstrates ::scroll-marker-group with live controls, snippets, and computed inspection.",
+    "specNotes": "Static local snapshot from the MDN CSS Reference index for the June 8, 2026 catalog scope.",
+    "browserNotes": "Limited or emerging support. The demo keeps a fallback path and labels support with CSS.supports() when possible.",
+    "fallbackStrategy": "Ship a complete baseline visual first, then place this syntax behind @supports or a syntax-preview note.",
+    "tags": [
+      "pseudo-element",
+      "selectors",
+      "experimental"
+    ]
+  },
+  {
+    "slug": "pseudo-element-search-text",
+    "title": "::search-text",
+    "kind": "pseudo-element",
+    "syntax": "::search-text",
+    "category": "selectors",
+    "status": "standard",
+    "mdnUrl": "https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Selectors/::search-text",
+    "summary": "A pseudo element entry from the MDN standard CSS reference. This playground demonstrates ::search-text with live controls, snippets, and computed inspection.",
+    "specNotes": "Static local snapshot from the MDN CSS Reference index for the June 8, 2026 catalog scope.",
+    "browserNotes": "Part of the MDN standard CSS reference. Verify exact browser coverage for your support matrix.",
+    "fallbackStrategy": "Declare a simple baseline rule first, then layer enhanced values or selectors where supported.",
+    "tags": [
+      "pseudo-element",
+      "selectors",
+      "standard"
+    ]
+  },
+  {
+    "slug": "pseudo-element-selection",
+    "title": "::selection",
+    "kind": "pseudo-element",
+    "syntax": "::selection",
+    "category": "selectors",
+    "status": "standard",
+    "mdnUrl": "https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Selectors/::selection",
+    "summary": "A pseudo element entry from the MDN standard CSS reference. This playground demonstrates ::selection with live controls, snippets, and computed inspection.",
+    "specNotes": "Static local snapshot from the MDN CSS Reference index for the June 8, 2026 catalog scope.",
+    "browserNotes": "Part of the MDN standard CSS reference. Verify exact browser coverage for your support matrix.",
+    "fallbackStrategy": "Declare a simple baseline rule first, then layer enhanced values or selectors where supported.",
+    "tags": [
+      "pseudo-element",
+      "selectors",
+      "standard"
+    ]
+  },
+  {
+    "slug": "pseudo-element-slotted-function",
+    "title": "::slotted()",
+    "kind": "pseudo-element",
+    "syntax": "::slotted()",
+    "category": "selectors",
+    "status": "standard",
+    "mdnUrl": "https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Selectors/::slotted",
+    "summary": "A pseudo element entry from the MDN standard CSS reference. This playground demonstrates ::slotted() with live controls, snippets, and computed inspection.",
+    "specNotes": "Static local snapshot from the MDN CSS Reference index for the June 8, 2026 catalog scope.",
+    "browserNotes": "Part of the MDN standard CSS reference. Verify exact browser coverage for your support matrix.",
+    "fallbackStrategy": "Declare a simple baseline rule first, then layer enhanced values or selectors where supported.",
+    "tags": [
+      "pseudo-element",
+      "selectors",
+      "standard"
+    ]
+  },
+  {
+    "slug": "pseudo-element-spelling-error",
+    "title": "::spelling-error",
+    "kind": "pseudo-element",
+    "syntax": "::spelling-error",
+    "category": "selectors",
+    "status": "standard",
+    "mdnUrl": "https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Selectors/::spelling-error",
+    "summary": "A pseudo element entry from the MDN standard CSS reference. This playground demonstrates ::spelling-error with live controls, snippets, and computed inspection.",
+    "specNotes": "Static local snapshot from the MDN CSS Reference index for the June 8, 2026 catalog scope.",
+    "browserNotes": "Part of the MDN standard CSS reference. Verify exact browser coverage for your support matrix.",
+    "fallbackStrategy": "Declare a simple baseline rule first, then layer enhanced values or selectors where supported.",
+    "tags": [
+      "pseudo-element",
+      "selectors",
+      "standard"
+    ]
+  },
+  {
+    "slug": "pseudo-element-target-text",
+    "title": "::target-text",
+    "kind": "pseudo-element",
+    "syntax": "::target-text",
+    "category": "selectors",
+    "status": "standard",
+    "mdnUrl": "https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Selectors/::target-text",
+    "summary": "A pseudo element entry from the MDN standard CSS reference. This playground demonstrates ::target-text with live controls, snippets, and computed inspection.",
+    "specNotes": "Static local snapshot from the MDN CSS Reference index for the June 8, 2026 catalog scope.",
+    "browserNotes": "Part of the MDN standard CSS reference. Verify exact browser coverage for your support matrix.",
+    "fallbackStrategy": "Declare a simple baseline rule first, then layer enhanced values or selectors where supported.",
+    "tags": [
+      "pseudo-element",
+      "selectors",
+      "standard"
+    ]
+  },
+  {
+    "slug": "pseudo-element-view-transition",
+    "title": "::view-transition",
+    "kind": "pseudo-element",
+    "syntax": "::view-transition",
+    "category": "selectors",
+    "status": "standard",
+    "mdnUrl": "https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Selectors/::view-transition",
+    "summary": "A pseudo element entry from the MDN standard CSS reference. This playground demonstrates ::view-transition with live controls, snippets, and computed inspection.",
+    "specNotes": "Static local snapshot from the MDN CSS Reference index for the June 8, 2026 catalog scope.",
+    "browserNotes": "Part of the MDN standard CSS reference. Verify exact browser coverage for your support matrix.",
+    "fallbackStrategy": "Declare a simple baseline rule first, then layer enhanced values or selectors where supported.",
+    "tags": [
+      "pseudo-element",
+      "selectors",
+      "standard"
+    ]
+  },
+  {
+    "slug": "pseudo-element-view-transition-group-function",
+    "title": "::view-transition-group()",
+    "kind": "pseudo-element",
+    "syntax": "::view-transition-group()",
+    "category": "selectors",
+    "status": "standard",
+    "mdnUrl": "https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Selectors/::view-transition-group",
+    "summary": "A pseudo element entry from the MDN standard CSS reference. This playground demonstrates ::view-transition-group() with live controls, snippets, and computed inspection.",
+    "specNotes": "Static local snapshot from the MDN CSS Reference index for the June 8, 2026 catalog scope.",
+    "browserNotes": "Part of the MDN standard CSS reference. Verify exact browser coverage for your support matrix.",
+    "fallbackStrategy": "Declare a simple baseline rule first, then layer enhanced values or selectors where supported.",
+    "tags": [
+      "pseudo-element",
+      "selectors",
+      "standard"
+    ]
+  },
+  {
+    "slug": "pseudo-element-view-transition-image-pair-function",
+    "title": "::view-transition-image-pair()",
+    "kind": "pseudo-element",
+    "syntax": "::view-transition-image-pair()",
+    "category": "selectors",
+    "status": "standard",
+    "mdnUrl": "https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Selectors/::view-transition-image-pair",
+    "summary": "A pseudo element entry from the MDN standard CSS reference. This playground demonstrates ::view-transition-image-pair() with live controls, snippets, and computed inspection.",
+    "specNotes": "Static local snapshot from the MDN CSS Reference index for the June 8, 2026 catalog scope.",
+    "browserNotes": "Part of the MDN standard CSS reference. Verify exact browser coverage for your support matrix.",
+    "fallbackStrategy": "Declare a simple baseline rule first, then layer enhanced values or selectors where supported.",
+    "tags": [
+      "pseudo-element",
+      "selectors",
+      "standard"
+    ]
+  },
+  {
+    "slug": "pseudo-element-view-transition-new-function",
+    "title": "::view-transition-new()",
+    "kind": "pseudo-element",
+    "syntax": "::view-transition-new()",
+    "category": "selectors",
+    "status": "standard",
+    "mdnUrl": "https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Selectors/::view-transition-new",
+    "summary": "A pseudo element entry from the MDN standard CSS reference. This playground demonstrates ::view-transition-new() with live controls, snippets, and computed inspection.",
+    "specNotes": "Static local snapshot from the MDN CSS Reference index for the June 8, 2026 catalog scope.",
+    "browserNotes": "Part of the MDN standard CSS reference. Verify exact browser coverage for your support matrix.",
+    "fallbackStrategy": "Declare a simple baseline rule first, then layer enhanced values or selectors where supported.",
+    "tags": [
+      "pseudo-element",
+      "selectors",
+      "standard"
+    ]
+  },
+  {
+    "slug": "pseudo-element-view-transition-old-function",
+    "title": "::view-transition-old()",
+    "kind": "pseudo-element",
+    "syntax": "::view-transition-old()",
+    "category": "selectors",
+    "status": "standard",
+    "mdnUrl": "https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Selectors/::view-transition-old",
+    "summary": "A pseudo element entry from the MDN standard CSS reference. This playground demonstrates ::view-transition-old() with live controls, snippets, and computed inspection.",
+    "specNotes": "Static local snapshot from the MDN CSS Reference index for the June 8, 2026 catalog scope.",
+    "browserNotes": "Part of the MDN standard CSS reference. Verify exact browser coverage for your support matrix.",
+    "fallbackStrategy": "Declare a simple baseline rule first, then layer enhanced values or selectors where supported.",
+    "tags": [
+      "pseudo-element",
+      "selectors",
+      "standard"
+    ]
+  }
+]

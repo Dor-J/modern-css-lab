@@ -1,0 +1,380 @@
+[
+  {
+    "slug": "at-charset",
+    "title": "@charset",
+    "kind": "at-rule",
+    "syntax": "@charset",
+    "category": "architecture",
+    "status": "standard",
+    "mdnUrl": "https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/At-rules/@charset",
+    "summary": "A at rule entry from the MDN standard CSS reference. This playground demonstrates @charset with live controls, snippets, and computed inspection.",
+    "specNotes": "Static local snapshot from the MDN CSS Reference index for the June 8, 2026 catalog scope.",
+    "browserNotes": "Part of the MDN standard CSS reference. Verify exact browser coverage for your support matrix.",
+    "fallbackStrategy": "Declare a simple baseline rule first, then layer enhanced values or selectors where supported.",
+    "tags": [
+      "at-rule",
+      "architecture",
+      "standard"
+    ]
+  },
+  {
+    "slug": "at-color-profile",
+    "title": "@color-profile",
+    "kind": "at-rule",
+    "syntax": "@color-profile",
+    "category": "architecture",
+    "status": "standard",
+    "mdnUrl": "https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/At-rules/@color-profile",
+    "summary": "A at rule entry from the MDN standard CSS reference. This playground demonstrates @color-profile with live controls, snippets, and computed inspection.",
+    "specNotes": "Static local snapshot from the MDN CSS Reference index for the June 8, 2026 catalog scope.",
+    "browserNotes": "Part of the MDN standard CSS reference. Verify exact browser coverage for your support matrix.",
+    "fallbackStrategy": "Declare a simple baseline rule first, then layer enhanced values or selectors where supported.",
+    "tags": [
+      "at-rule",
+      "architecture",
+      "standard"
+    ]
+  },
+  {
+    "slug": "at-container",
+    "title": "@container",
+    "kind": "at-rule",
+    "syntax": "@container",
+    "category": "architecture",
+    "status": "standard",
+    "mdnUrl": "https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/At-rules/@container",
+    "summary": "A at rule entry from the MDN standard CSS reference. This playground demonstrates @container with live controls, snippets, and computed inspection.",
+    "specNotes": "Static local snapshot from the MDN CSS Reference index for the June 8, 2026 catalog scope.",
+    "browserNotes": "Part of the MDN standard CSS reference. Verify exact browser coverage for your support matrix.",
+    "fallbackStrategy": "Declare a simple baseline rule first, then layer enhanced values or selectors where supported.",
+    "tags": [
+      "at-rule",
+      "architecture",
+      "standard"
+    ]
+  },
+  {
+    "slug": "at-counter-style",
+    "title": "@counter-style",
+    "kind": "at-rule",
+    "syntax": "@counter-style",
+    "category": "architecture",
+    "status": "standard",
+    "mdnUrl": "https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/At-rules/@counter-style",
+    "summary": "A at rule entry from the MDN standard CSS reference. This playground demonstrates @counter-style with live controls, snippets, and computed inspection.",
+    "specNotes": "Static local snapshot from the MDN CSS Reference index for the June 8, 2026 catalog scope.",
+    "browserNotes": "Part of the MDN standard CSS reference. Verify exact browser coverage for your support matrix.",
+    "fallbackStrategy": "Declare a simple baseline rule first, then layer enhanced values or selectors where supported.",
+    "tags": [
+      "at-rule",
+      "architecture",
+      "standard"
+    ]
+  },
+  {
+    "slug": "at-custom-media",
+    "title": "@custom-media",
+    "kind": "at-rule",
+    "syntax": "@custom-media",
+    "category": "architecture",
+    "status": "experimental",
+    "mdnUrl": "https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/At-rules/@custom-media",
+    "summary": "A at rule entry from the MDN standard CSS reference. This playground demonstrates @custom-media with live controls, snippets, and computed inspection.",
+    "specNotes": "Static local snapshot from the MDN CSS Reference index for the June 8, 2026 catalog scope.",
+    "browserNotes": "Limited or emerging support. The demo keeps a fallback path and labels support with CSS.supports() when possible.",
+    "fallbackStrategy": "Ship a complete baseline visual first, then place this syntax behind @supports or a syntax-preview note.",
+    "tags": [
+      "at-rule",
+      "architecture",
+      "experimental"
+    ]
+  },
+  {
+    "slug": "at-font-face",
+    "title": "@font-face",
+    "kind": "at-rule",
+    "syntax": "@font-face",
+    "category": "architecture",
+    "status": "standard",
+    "mdnUrl": "https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/At-rules/@font-face",
+    "summary": "A at rule entry from the MDN standard CSS reference. This playground demonstrates @font-face with live controls, snippets, and computed inspection.",
+    "specNotes": "Static local snapshot from the MDN CSS Reference index for the June 8, 2026 catalog scope.",
+    "browserNotes": "Part of the MDN standard CSS reference. Verify exact browser coverage for your support matrix.",
+    "fallbackStrategy": "Declare a simple baseline rule first, then layer enhanced values or selectors where supported.",
+    "tags": [
+      "at-rule",
+      "architecture",
+      "standard"
+    ]
+  },
+  {
+    "slug": "at-font-feature-values",
+    "title": "@font-feature-values",
+    "kind": "at-rule",
+    "syntax": "@font-feature-values",
+    "category": "architecture",
+    "status": "standard",
+    "mdnUrl": "https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/At-rules/@font-feature-values",
+    "summary": "A at rule entry from the MDN standard CSS reference. This playground demonstrates @font-feature-values with live controls, snippets, and computed inspection.",
+    "specNotes": "Static local snapshot from the MDN CSS Reference index for the June 8, 2026 catalog scope.",
+    "browserNotes": "Part of the MDN standard CSS reference. Verify exact browser coverage for your support matrix.",
+    "fallbackStrategy": "Declare a simple baseline rule first, then layer enhanced values or selectors where supported.",
+    "tags": [
+      "at-rule",
+      "architecture",
+      "standard"
+    ]
+  },
+  {
+    "slug": "at-font-palette-values",
+    "title": "@font-palette-values",
+    "kind": "at-rule",
+    "syntax": "@font-palette-values",
+    "category": "architecture",
+    "status": "standard",
+    "mdnUrl": "https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/At-rules/@font-palette-values",
+    "summary": "A at rule entry from the MDN standard CSS reference. This playground demonstrates @font-palette-values with live controls, snippets, and computed inspection.",
+    "specNotes": "Static local snapshot from the MDN CSS Reference index for the June 8, 2026 catalog scope.",
+    "browserNotes": "Part of the MDN standard CSS reference. Verify exact browser coverage for your support matrix.",
+    "fallbackStrategy": "Declare a simple baseline rule first, then layer enhanced values or selectors where supported.",
+    "tags": [
+      "at-rule",
+      "architecture",
+      "standard"
+    ]
+  },
+  {
+    "slug": "at-function",
+    "title": "@function",
+    "kind": "at-rule",
+    "syntax": "@function",
+    "category": "architecture",
+    "status": "standard",
+    "mdnUrl": "https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/At-rules/@function",
+    "summary": "A at rule entry from the MDN standard CSS reference. This playground demonstrates @function with live controls, snippets, and computed inspection.",
+    "specNotes": "Static local snapshot from the MDN CSS Reference index for the June 8, 2026 catalog scope.",
+    "browserNotes": "Part of the MDN standard CSS reference. Verify exact browser coverage for your support matrix.",
+    "fallbackStrategy": "Declare a simple baseline rule first, then layer enhanced values or selectors where supported.",
+    "tags": [
+      "at-rule",
+      "architecture",
+      "standard"
+    ]
+  },
+  {
+    "slug": "at-import",
+    "title": "@import",
+    "kind": "at-rule",
+    "syntax": "@import",
+    "category": "architecture",
+    "status": "standard",
+    "mdnUrl": "https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/At-rules/@import",
+    "summary": "A at rule entry from the MDN standard CSS reference. This playground demonstrates @import with live controls, snippets, and computed inspection.",
+    "specNotes": "Static local snapshot from the MDN CSS Reference index for the June 8, 2026 catalog scope.",
+    "browserNotes": "Part of the MDN standard CSS reference. Verify exact browser coverage for your support matrix.",
+    "fallbackStrategy": "Declare a simple baseline rule first, then layer enhanced values or selectors where supported.",
+    "tags": [
+      "at-rule",
+      "architecture",
+      "standard"
+    ]
+  },
+  {
+    "slug": "at-keyframes",
+    "title": "@keyframes",
+    "kind": "at-rule",
+    "syntax": "@keyframes",
+    "category": "architecture",
+    "status": "standard",
+    "mdnUrl": "https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/At-rules/@keyframes",
+    "summary": "A at rule entry from the MDN standard CSS reference. This playground demonstrates @keyframes with live controls, snippets, and computed inspection.",
+    "specNotes": "Static local snapshot from the MDN CSS Reference index for the June 8, 2026 catalog scope.",
+    "browserNotes": "Part of the MDN standard CSS reference. Verify exact browser coverage for your support matrix.",
+    "fallbackStrategy": "Declare a simple baseline rule first, then layer enhanced values or selectors where supported.",
+    "tags": [
+      "at-rule",
+      "architecture",
+      "standard"
+    ]
+  },
+  {
+    "slug": "at-layer",
+    "title": "@layer",
+    "kind": "at-rule",
+    "syntax": "@layer",
+    "category": "architecture",
+    "status": "standard",
+    "mdnUrl": "https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/At-rules/@layer",
+    "summary": "A at rule entry from the MDN standard CSS reference. This playground demonstrates @layer with live controls, snippets, and computed inspection.",
+    "specNotes": "Static local snapshot from the MDN CSS Reference index for the June 8, 2026 catalog scope.",
+    "browserNotes": "Part of the MDN standard CSS reference. Verify exact browser coverage for your support matrix.",
+    "fallbackStrategy": "Declare a simple baseline rule first, then layer enhanced values or selectors where supported.",
+    "tags": [
+      "at-rule",
+      "architecture",
+      "standard"
+    ]
+  },
+  {
+    "slug": "at-media",
+    "title": "@media",
+    "kind": "at-rule",
+    "syntax": "@media",
+    "category": "architecture",
+    "status": "standard",
+    "mdnUrl": "https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/At-rules/@media",
+    "summary": "A at rule entry from the MDN standard CSS reference. This playground demonstrates @media with live controls, snippets, and computed inspection.",
+    "specNotes": "Static local snapshot from the MDN CSS Reference index for the June 8, 2026 catalog scope.",
+    "browserNotes": "Part of the MDN standard CSS reference. Verify exact browser coverage for your support matrix.",
+    "fallbackStrategy": "Declare a simple baseline rule first, then layer enhanced values or selectors where supported.",
+    "tags": [
+      "at-rule",
+      "architecture",
+      "standard"
+    ]
+  },
+  {
+    "slug": "at-namespace",
+    "title": "@namespace",
+    "kind": "at-rule",
+    "syntax": "@namespace",
+    "category": "architecture",
+    "status": "standard",
+    "mdnUrl": "https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/At-rules/@namespace",
+    "summary": "A at rule entry from the MDN standard CSS reference. This playground demonstrates @namespace with live controls, snippets, and computed inspection.",
+    "specNotes": "Static local snapshot from the MDN CSS Reference index for the June 8, 2026 catalog scope.",
+    "browserNotes": "Part of the MDN standard CSS reference. Verify exact browser coverage for your support matrix.",
+    "fallbackStrategy": "Declare a simple baseline rule first, then layer enhanced values or selectors where supported.",
+    "tags": [
+      "at-rule",
+      "architecture",
+      "standard"
+    ]
+  },
+  {
+    "slug": "at-page",
+    "title": "@page",
+    "kind": "at-rule",
+    "syntax": "@page",
+    "category": "architecture",
+    "status": "standard",
+    "mdnUrl": "https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/At-rules/@page",
+    "summary": "A at rule entry from the MDN standard CSS reference. This playground demonstrates @page with live controls, snippets, and computed inspection.",
+    "specNotes": "Static local snapshot from the MDN CSS Reference index for the June 8, 2026 catalog scope.",
+    "browserNotes": "Part of the MDN standard CSS reference. Verify exact browser coverage for your support matrix.",
+    "fallbackStrategy": "Declare a simple baseline rule first, then layer enhanced values or selectors where supported.",
+    "tags": [
+      "at-rule",
+      "architecture",
+      "standard"
+    ]
+  },
+  {
+    "slug": "at-position-try",
+    "title": "@position-try",
+    "kind": "at-rule",
+    "syntax": "@position-try",
+    "category": "architecture",
+    "status": "standard",
+    "mdnUrl": "https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/At-rules/@position-try",
+    "summary": "A at rule entry from the MDN standard CSS reference. This playground demonstrates @position-try with live controls, snippets, and computed inspection.",
+    "specNotes": "Static local snapshot from the MDN CSS Reference index for the June 8, 2026 catalog scope.",
+    "browserNotes": "Part of the MDN standard CSS reference. Verify exact browser coverage for your support matrix.",
+    "fallbackStrategy": "Declare a simple baseline rule first, then layer enhanced values or selectors where supported.",
+    "tags": [
+      "at-rule",
+      "architecture",
+      "standard"
+    ]
+  },
+  {
+    "slug": "at-property",
+    "title": "@property",
+    "kind": "at-rule",
+    "syntax": "@property",
+    "category": "architecture",
+    "status": "standard",
+    "mdnUrl": "https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/At-rules/@property",
+    "summary": "A at rule entry from the MDN standard CSS reference. This playground demonstrates @property with live controls, snippets, and computed inspection.",
+    "specNotes": "Static local snapshot from the MDN CSS Reference index for the June 8, 2026 catalog scope.",
+    "browserNotes": "Part of the MDN standard CSS reference. Verify exact browser coverage for your support matrix.",
+    "fallbackStrategy": "Declare a simple baseline rule first, then layer enhanced values or selectors where supported.",
+    "tags": [
+      "at-rule",
+      "architecture",
+      "standard"
+    ]
+  },
+  {
+    "slug": "at-scope",
+    "title": "@scope",
+    "kind": "at-rule",
+    "syntax": "@scope",
+    "category": "architecture",
+    "status": "standard",
+    "mdnUrl": "https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/At-rules/@scope",
+    "summary": "A at rule entry from the MDN standard CSS reference. This playground demonstrates @scope with live controls, snippets, and computed inspection.",
+    "specNotes": "Static local snapshot from the MDN CSS Reference index for the June 8, 2026 catalog scope.",
+    "browserNotes": "Part of the MDN standard CSS reference. Verify exact browser coverage for your support matrix.",
+    "fallbackStrategy": "Declare a simple baseline rule first, then layer enhanced values or selectors where supported.",
+    "tags": [
+      "at-rule",
+      "architecture",
+      "standard"
+    ]
+  },
+  {
+    "slug": "at-starting-style",
+    "title": "@starting-style",
+    "kind": "at-rule",
+    "syntax": "@starting-style",
+    "category": "architecture",
+    "status": "standard",
+    "mdnUrl": "https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/At-rules/@starting-style",
+    "summary": "A at rule entry from the MDN standard CSS reference. This playground demonstrates @starting-style with live controls, snippets, and computed inspection.",
+    "specNotes": "Static local snapshot from the MDN CSS Reference index for the June 8, 2026 catalog scope.",
+    "browserNotes": "Part of the MDN standard CSS reference. Verify exact browser coverage for your support matrix.",
+    "fallbackStrategy": "Declare a simple baseline rule first, then layer enhanced values or selectors where supported.",
+    "tags": [
+      "at-rule",
+      "architecture",
+      "standard"
+    ]
+  },
+  {
+    "slug": "at-supports",
+    "title": "@supports",
+    "kind": "at-rule",
+    "syntax": "@supports",
+    "category": "architecture",
+    "status": "standard",
+    "mdnUrl": "https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/At-rules/@supports",
+    "summary": "A at rule entry from the MDN standard CSS reference. This playground demonstrates @supports with live controls, snippets, and computed inspection.",
+    "specNotes": "Static local snapshot from the MDN CSS Reference index for the June 8, 2026 catalog scope.",
+    "browserNotes": "Part of the MDN standard CSS reference. Verify exact browser coverage for your support matrix.",
+    "fallbackStrategy": "Declare a simple baseline rule first, then layer enhanced values or selectors where supported.",
+    "tags": [
+      "at-rule",
+      "architecture",
+      "standard"
+    ]
+  },
+  {
+    "slug": "at-view-transition",
+    "title": "@view-transition",
+    "kind": "at-rule",
+    "syntax": "@view-transition",
+    "category": "architecture",
+    "status": "standard",
+    "mdnUrl": "https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/At-rules/@view-transition",
+    "summary": "A at rule entry from the MDN standard CSS reference. This playground demonstrates @view-transition with live controls, snippets, and computed inspection.",
+    "specNotes": "Static local snapshot from the MDN CSS Reference index for the June 8, 2026 catalog scope.",
+    "browserNotes": "Part of the MDN standard CSS reference. Verify exact browser coverage for your support matrix.",
+    "fallbackStrategy": "Declare a simple baseline rule first, then layer enhanced values or selectors where supported.",
+    "tags": [
+      "at-rule",
+      "architecture",
+      "standard"
+    ]
+  }
+]

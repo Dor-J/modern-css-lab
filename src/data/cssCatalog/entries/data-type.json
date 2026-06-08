@@ -1,0 +1,1118 @@
+[
+  {
+    "slug": "absolute-size",
+    "title": "<absolute-size>",
+    "kind": "data-type",
+    "syntax": "<absolute-size>",
+    "category": "layout",
+    "status": "standard",
+    "mdnUrl": "https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Values/absolute-size",
+    "summary": "A data type entry from the MDN standard CSS reference. This playground demonstrates <absolute-size> with live controls, snippets, and computed inspection.",
+    "specNotes": "Static local snapshot from the MDN CSS Reference index for the June 8, 2026 catalog scope.",
+    "browserNotes": "Part of the MDN standard CSS reference. Verify exact browser coverage for your support matrix.",
+    "fallbackStrategy": "Declare a simple baseline rule first, then layer enhanced values or selectors where supported.",
+    "tags": [
+      "data-type",
+      "layout",
+      "standard"
+    ]
+  },
+  {
+    "slug": "alpha-value",
+    "title": "<alpha-value>",
+    "kind": "data-type",
+    "syntax": "<alpha-value>",
+    "category": "functions",
+    "status": "standard",
+    "mdnUrl": "https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Values/alpha-value",
+    "summary": "A data type entry from the MDN standard CSS reference. This playground demonstrates <alpha-value> with live controls, snippets, and computed inspection.",
+    "specNotes": "Static local snapshot from the MDN CSS Reference index for the June 8, 2026 catalog scope.",
+    "browserNotes": "Part of the MDN standard CSS reference. Verify exact browser coverage for your support matrix.",
+    "fallbackStrategy": "Declare a simple baseline rule first, then layer enhanced values or selectors where supported.",
+    "tags": [
+      "data-type",
+      "functions",
+      "standard"
+    ]
+  },
+  {
+    "slug": "angle-percentage",
+    "title": "<angle-percentage>",
+    "kind": "data-type",
+    "syntax": "<angle-percentage>",
+    "category": "functions",
+    "status": "standard",
+    "mdnUrl": "https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Values/angle-percentage",
+    "summary": "A data type entry from the MDN standard CSS reference. This playground demonstrates <angle-percentage> with live controls, snippets, and computed inspection.",
+    "specNotes": "Static local snapshot from the MDN CSS Reference index for the June 8, 2026 catalog scope.",
+    "browserNotes": "Part of the MDN standard CSS reference. Verify exact browser coverage for your support matrix.",
+    "fallbackStrategy": "Declare a simple baseline rule first, then layer enhanced values or selectors where supported.",
+    "tags": [
+      "data-type",
+      "functions",
+      "standard"
+    ]
+  },
+  {
+    "slug": "angle",
+    "title": "<angle>",
+    "kind": "data-type",
+    "syntax": "<angle>",
+    "category": "functions",
+    "status": "standard",
+    "mdnUrl": "https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Values/angle",
+    "summary": "A data type entry from the MDN standard CSS reference. This playground demonstrates <angle> with live controls, snippets, and computed inspection.",
+    "specNotes": "Static local snapshot from the MDN CSS Reference index for the June 8, 2026 catalog scope.",
+    "browserNotes": "Part of the MDN standard CSS reference. Verify exact browser coverage for your support matrix.",
+    "fallbackStrategy": "Declare a simple baseline rule first, then layer enhanced values or selectors where supported.",
+    "tags": [
+      "data-type",
+      "functions",
+      "standard"
+    ]
+  },
+  {
+    "slug": "axis",
+    "title": "<axis>",
+    "kind": "data-type",
+    "syntax": "<axis>",
+    "category": "functions",
+    "status": "standard",
+    "mdnUrl": "https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Values/axis",
+    "summary": "A data type entry from the MDN standard CSS reference. This playground demonstrates <axis> with live controls, snippets, and computed inspection.",
+    "specNotes": "Static local snapshot from the MDN CSS Reference index for the June 8, 2026 catalog scope.",
+    "browserNotes": "Part of the MDN standard CSS reference. Verify exact browser coverage for your support matrix.",
+    "fallbackStrategy": "Declare a simple baseline rule first, then layer enhanced values or selectors where supported.",
+    "tags": [
+      "data-type",
+      "functions",
+      "standard"
+    ]
+  },
+  {
+    "slug": "baseline-position",
+    "title": "<baseline-position>",
+    "kind": "data-type",
+    "syntax": "<baseline-position>",
+    "category": "typography",
+    "status": "standard",
+    "mdnUrl": "https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Values/baseline-position",
+    "summary": "A data type entry from the MDN standard CSS reference. This playground demonstrates <baseline-position> with live controls, snippets, and computed inspection.",
+    "specNotes": "Static local snapshot from the MDN CSS Reference index for the June 8, 2026 catalog scope.",
+    "browserNotes": "Part of the MDN standard CSS reference. Verify exact browser coverage for your support matrix.",
+    "fallbackStrategy": "Declare a simple baseline rule first, then layer enhanced values or selectors where supported.",
+    "tags": [
+      "data-type",
+      "typography",
+      "standard"
+    ]
+  },
+  {
+    "slug": "basic-shape",
+    "title": "<basic-shape>",
+    "kind": "data-type",
+    "syntax": "<basic-shape>",
+    "category": "effects",
+    "status": "standard",
+    "mdnUrl": "https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Values/basic-shape",
+    "summary": "A data type entry from the MDN standard CSS reference. This playground demonstrates <basic-shape> with live controls, snippets, and computed inspection.",
+    "specNotes": "Static local snapshot from the MDN CSS Reference index for the June 8, 2026 catalog scope.",
+    "browserNotes": "Part of the MDN standard CSS reference. Verify exact browser coverage for your support matrix.",
+    "fallbackStrategy": "Declare a simple baseline rule first, then layer enhanced values or selectors where supported.",
+    "tags": [
+      "data-type",
+      "effects",
+      "standard"
+    ]
+  },
+  {
+    "slug": "blend-mode",
+    "title": "<blend-mode>",
+    "kind": "data-type",
+    "syntax": "<blend-mode>",
+    "category": "effects",
+    "status": "standard",
+    "mdnUrl": "https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Values/blend-mode",
+    "summary": "A data type entry from the MDN standard CSS reference. This playground demonstrates <blend-mode> with live controls, snippets, and computed inspection.",
+    "specNotes": "Static local snapshot from the MDN CSS Reference index for the June 8, 2026 catalog scope.",
+    "browserNotes": "Part of the MDN standard CSS reference. Verify exact browser coverage for your support matrix.",
+    "fallbackStrategy": "Declare a simple baseline rule first, then layer enhanced values or selectors where supported.",
+    "tags": [
+      "data-type",
+      "effects",
+      "standard"
+    ]
+  },
+  {
+    "slug": "box-edge",
+    "title": "<box-edge>",
+    "kind": "data-type",
+    "syntax": "<box-edge>",
+    "category": "layout",
+    "status": "standard",
+    "mdnUrl": "https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Values/box-edge",
+    "summary": "A data type entry from the MDN standard CSS reference. This playground demonstrates <box-edge> with live controls, snippets, and computed inspection.",
+    "specNotes": "Static local snapshot from the MDN CSS Reference index for the June 8, 2026 catalog scope.",
+    "browserNotes": "Part of the MDN standard CSS reference. Verify exact browser coverage for your support matrix.",
+    "fallbackStrategy": "Declare a simple baseline rule first, then layer enhanced values or selectors where supported.",
+    "tags": [
+      "data-type",
+      "layout",
+      "standard"
+    ]
+  },
+  {
+    "slug": "calc-keyword",
+    "title": "<calc-keyword>",
+    "kind": "data-type",
+    "syntax": "<calc-keyword>",
+    "category": "typography",
+    "status": "standard",
+    "mdnUrl": "https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Values/calc-keyword",
+    "summary": "A data type entry from the MDN standard CSS reference. This playground demonstrates <calc-keyword> with live controls, snippets, and computed inspection.",
+    "specNotes": "Static local snapshot from the MDN CSS Reference index for the June 8, 2026 catalog scope.",
+    "browserNotes": "Part of the MDN standard CSS reference. Verify exact browser coverage for your support matrix.",
+    "fallbackStrategy": "Declare a simple baseline rule first, then layer enhanced values or selectors where supported.",
+    "tags": [
+      "data-type",
+      "typography",
+      "standard"
+    ]
+  },
+  {
+    "slug": "calc-sum",
+    "title": "<calc-sum>",
+    "kind": "data-type",
+    "syntax": "<calc-sum>",
+    "category": "functions",
+    "status": "standard",
+    "mdnUrl": "https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Values/calc-sum",
+    "summary": "A data type entry from the MDN standard CSS reference. This playground demonstrates <calc-sum> with live controls, snippets, and computed inspection.",
+    "specNotes": "Static local snapshot from the MDN CSS Reference index for the June 8, 2026 catalog scope.",
+    "browserNotes": "Part of the MDN standard CSS reference. Verify exact browser coverage for your support matrix.",
+    "fallbackStrategy": "Declare a simple baseline rule first, then layer enhanced values or selectors where supported.",
+    "tags": [
+      "data-type",
+      "functions",
+      "standard"
+    ]
+  },
+  {
+    "slug": "color-interpolation-method",
+    "title": "<color-interpolation-method>",
+    "kind": "data-type",
+    "syntax": "<color-interpolation-method>",
+    "category": "colors",
+    "status": "standard",
+    "mdnUrl": "https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Values/color-interpolation-method",
+    "summary": "A data type entry from the MDN standard CSS reference. This playground demonstrates <color-interpolation-method> with live controls, snippets, and computed inspection.",
+    "specNotes": "Static local snapshot from the MDN CSS Reference index for the June 8, 2026 catalog scope.",
+    "browserNotes": "Part of the MDN standard CSS reference. Verify exact browser coverage for your support matrix.",
+    "fallbackStrategy": "Declare a simple baseline rule first, then layer enhanced values or selectors where supported.",
+    "tags": [
+      "data-type",
+      "colors",
+      "standard"
+    ]
+  },
+  {
+    "slug": "color-data-type",
+    "title": "<color>",
+    "kind": "data-type",
+    "syntax": "<color>",
+    "category": "colors",
+    "status": "standard",
+    "mdnUrl": "https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Values/color_value",
+    "summary": "A data type entry from the MDN standard CSS reference. This playground demonstrates <color> with live controls, snippets, and computed inspection.",
+    "specNotes": "Static local snapshot from the MDN CSS Reference index for the June 8, 2026 catalog scope.",
+    "browserNotes": "Part of the MDN standard CSS reference. Verify exact browser coverage for your support matrix.",
+    "fallbackStrategy": "Declare a simple baseline rule first, then layer enhanced values or selectors where supported.",
+    "tags": [
+      "data-type",
+      "colors",
+      "standard"
+    ]
+  },
+  {
+    "slug": "content-distribution",
+    "title": "<content-distribution>",
+    "kind": "data-type",
+    "syntax": "<content-distribution>",
+    "category": "functions",
+    "status": "standard",
+    "mdnUrl": "https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Values/content-distribution",
+    "summary": "A data type entry from the MDN standard CSS reference. This playground demonstrates <content-distribution> with live controls, snippets, and computed inspection.",
+    "specNotes": "Static local snapshot from the MDN CSS Reference index for the June 8, 2026 catalog scope.",
+    "browserNotes": "Part of the MDN standard CSS reference. Verify exact browser coverage for your support matrix.",
+    "fallbackStrategy": "Declare a simple baseline rule first, then layer enhanced values or selectors where supported.",
+    "tags": [
+      "data-type",
+      "functions",
+      "standard"
+    ]
+  },
+  {
+    "slug": "content-position",
+    "title": "<content-position>",
+    "kind": "data-type",
+    "syntax": "<content-position>",
+    "category": "layout",
+    "status": "standard",
+    "mdnUrl": "https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Values/content-position",
+    "summary": "A data type entry from the MDN standard CSS reference. This playground demonstrates <content-position> with live controls, snippets, and computed inspection.",
+    "specNotes": "Static local snapshot from the MDN CSS Reference index for the June 8, 2026 catalog scope.",
+    "browserNotes": "Part of the MDN standard CSS reference. Verify exact browser coverage for your support matrix.",
+    "fallbackStrategy": "Declare a simple baseline rule first, then layer enhanced values or selectors where supported.",
+    "tags": [
+      "data-type",
+      "layout",
+      "standard"
+    ]
+  },
+  {
+    "slug": "corner-shape-value",
+    "title": "<corner-shape-value>",
+    "kind": "data-type",
+    "syntax": "<corner-shape-value>",
+    "category": "effects",
+    "status": "experimental",
+    "mdnUrl": "https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Values/corner-shape-value",
+    "summary": "A data type entry from the MDN standard CSS reference. This playground demonstrates <corner-shape-value> with live controls, snippets, and computed inspection.",
+    "specNotes": "Static local snapshot from the MDN CSS Reference index for the June 8, 2026 catalog scope.",
+    "browserNotes": "Limited or emerging support. The demo keeps a fallback path and labels support with CSS.supports() when possible.",
+    "fallbackStrategy": "Ship a complete baseline visual first, then place this syntax behind @supports or a syntax-preview note.",
+    "tags": [
+      "data-type",
+      "effects",
+      "experimental"
+    ]
+  },
+  {
+    "slug": "custom-ident",
+    "title": "<custom-ident>",
+    "kind": "data-type",
+    "syntax": "<custom-ident>",
+    "category": "functions",
+    "status": "standard",
+    "mdnUrl": "https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Values/custom-ident",
+    "summary": "A data type entry from the MDN standard CSS reference. This playground demonstrates <custom-ident> with live controls, snippets, and computed inspection.",
+    "specNotes": "Static local snapshot from the MDN CSS Reference index for the June 8, 2026 catalog scope.",
+    "browserNotes": "Part of the MDN standard CSS reference. Verify exact browser coverage for your support matrix.",
+    "fallbackStrategy": "Declare a simple baseline rule first, then layer enhanced values or selectors where supported.",
+    "tags": [
+      "data-type",
+      "functions",
+      "standard"
+    ]
+  },
+  {
+    "slug": "dashed-function",
+    "title": "<dashed-function>",
+    "kind": "data-type",
+    "syntax": "<dashed-function>",
+    "category": "functions",
+    "status": "standard",
+    "mdnUrl": "https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Values/dashed-function",
+    "summary": "A data type entry from the MDN standard CSS reference. This playground demonstrates <dashed-function> with live controls, snippets, and computed inspection.",
+    "specNotes": "Static local snapshot from the MDN CSS Reference index for the June 8, 2026 catalog scope.",
+    "browserNotes": "Part of the MDN standard CSS reference. Verify exact browser coverage for your support matrix.",
+    "fallbackStrategy": "Declare a simple baseline rule first, then layer enhanced values or selectors where supported.",
+    "tags": [
+      "data-type",
+      "functions",
+      "standard"
+    ]
+  },
+  {
+    "slug": "dashed-ident",
+    "title": "<dashed-ident>",
+    "kind": "data-type",
+    "syntax": "<dashed-ident>",
+    "category": "functions",
+    "status": "standard",
+    "mdnUrl": "https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Values/dashed-ident",
+    "summary": "A data type entry from the MDN standard CSS reference. This playground demonstrates <dashed-ident> with live controls, snippets, and computed inspection.",
+    "specNotes": "Static local snapshot from the MDN CSS Reference index for the June 8, 2026 catalog scope.",
+    "browserNotes": "Part of the MDN standard CSS reference. Verify exact browser coverage for your support matrix.",
+    "fallbackStrategy": "Declare a simple baseline rule first, then layer enhanced values or selectors where supported.",
+    "tags": [
+      "data-type",
+      "functions",
+      "standard"
+    ]
+  },
+  {
+    "slug": "dimension",
+    "title": "<dimension>",
+    "kind": "data-type",
+    "syntax": "<dimension>",
+    "category": "functions",
+    "status": "standard",
+    "mdnUrl": "https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Values/dimension",
+    "summary": "A data type entry from the MDN standard CSS reference. This playground demonstrates <dimension> with live controls, snippets, and computed inspection.",
+    "specNotes": "Static local snapshot from the MDN CSS Reference index for the June 8, 2026 catalog scope.",
+    "browserNotes": "Part of the MDN standard CSS reference. Verify exact browser coverage for your support matrix.",
+    "fallbackStrategy": "Declare a simple baseline rule first, then layer enhanced values or selectors where supported.",
+    "tags": [
+      "data-type",
+      "functions",
+      "standard"
+    ]
+  },
+  {
+    "slug": "display-box",
+    "title": "<display-box>",
+    "kind": "data-type",
+    "syntax": "<display-box>",
+    "category": "layout",
+    "status": "standard",
+    "mdnUrl": "https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Values/display-box",
+    "summary": "A data type entry from the MDN standard CSS reference. This playground demonstrates <display-box> with live controls, snippets, and computed inspection.",
+    "specNotes": "Static local snapshot from the MDN CSS Reference index for the June 8, 2026 catalog scope.",
+    "browserNotes": "Part of the MDN standard CSS reference. Verify exact browser coverage for your support matrix.",
+    "fallbackStrategy": "Declare a simple baseline rule first, then layer enhanced values or selectors where supported.",
+    "tags": [
+      "data-type",
+      "layout",
+      "standard"
+    ]
+  },
+  {
+    "slug": "display-inside",
+    "title": "<display-inside>",
+    "kind": "data-type",
+    "syntax": "<display-inside>",
+    "category": "layout",
+    "status": "standard",
+    "mdnUrl": "https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Values/display-inside",
+    "summary": "A data type entry from the MDN standard CSS reference. This playground demonstrates <display-inside> with live controls, snippets, and computed inspection.",
+    "specNotes": "Static local snapshot from the MDN CSS Reference index for the June 8, 2026 catalog scope.",
+    "browserNotes": "Part of the MDN standard CSS reference. Verify exact browser coverage for your support matrix.",
+    "fallbackStrategy": "Declare a simple baseline rule first, then layer enhanced values or selectors where supported.",
+    "tags": [
+      "data-type",
+      "layout",
+      "standard"
+    ]
+  },
+  {
+    "slug": "display-internal",
+    "title": "<display-internal>",
+    "kind": "data-type",
+    "syntax": "<display-internal>",
+    "category": "layout",
+    "status": "standard",
+    "mdnUrl": "https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Values/display-internal",
+    "summary": "A data type entry from the MDN standard CSS reference. This playground demonstrates <display-internal> with live controls, snippets, and computed inspection.",
+    "specNotes": "Static local snapshot from the MDN CSS Reference index for the June 8, 2026 catalog scope.",
+    "browserNotes": "Part of the MDN standard CSS reference. Verify exact browser coverage for your support matrix.",
+    "fallbackStrategy": "Declare a simple baseline rule first, then layer enhanced values or selectors where supported.",
+    "tags": [
+      "data-type",
+      "layout",
+      "standard"
+    ]
+  },
+  {
+    "slug": "display-legacy",
+    "title": "<display-legacy>",
+    "kind": "data-type",
+    "syntax": "<display-legacy>",
+    "category": "layout",
+    "status": "standard",
+    "mdnUrl": "https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Values/display-legacy",
+    "summary": "A data type entry from the MDN standard CSS reference. This playground demonstrates <display-legacy> with live controls, snippets, and computed inspection.",
+    "specNotes": "Static local snapshot from the MDN CSS Reference index for the June 8, 2026 catalog scope.",
+    "browserNotes": "Part of the MDN standard CSS reference. Verify exact browser coverage for your support matrix.",
+    "fallbackStrategy": "Declare a simple baseline rule first, then layer enhanced values or selectors where supported.",
+    "tags": [
+      "data-type",
+      "layout",
+      "standard"
+    ]
+  },
+  {
+    "slug": "display-listitem",
+    "title": "<display-listitem>",
+    "kind": "data-type",
+    "syntax": "<display-listitem>",
+    "category": "layout",
+    "status": "standard",
+    "mdnUrl": "https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Values/display-listitem",
+    "summary": "A data type entry from the MDN standard CSS reference. This playground demonstrates <display-listitem> with live controls, snippets, and computed inspection.",
+    "specNotes": "Static local snapshot from the MDN CSS Reference index for the June 8, 2026 catalog scope.",
+    "browserNotes": "Part of the MDN standard CSS reference. Verify exact browser coverage for your support matrix.",
+    "fallbackStrategy": "Declare a simple baseline rule first, then layer enhanced values or selectors where supported.",
+    "tags": [
+      "data-type",
+      "layout",
+      "standard"
+    ]
+  },
+  {
+    "slug": "display-outside",
+    "title": "<display-outside>",
+    "kind": "data-type",
+    "syntax": "<display-outside>",
+    "category": "layout",
+    "status": "standard",
+    "mdnUrl": "https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Values/display-outside",
+    "summary": "A data type entry from the MDN standard CSS reference. This playground demonstrates <display-outside> with live controls, snippets, and computed inspection.",
+    "specNotes": "Static local snapshot from the MDN CSS Reference index for the June 8, 2026 catalog scope.",
+    "browserNotes": "Part of the MDN standard CSS reference. Verify exact browser coverage for your support matrix.",
+    "fallbackStrategy": "Declare a simple baseline rule first, then layer enhanced values or selectors where supported.",
+    "tags": [
+      "data-type",
+      "layout",
+      "standard"
+    ]
+  },
+  {
+    "slug": "easing-function",
+    "title": "<easing-function>",
+    "kind": "data-type",
+    "syntax": "<easing-function>",
+    "category": "motion",
+    "status": "standard",
+    "mdnUrl": "https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Values/easing-function",
+    "summary": "A data type entry from the MDN standard CSS reference. This playground demonstrates <easing-function> with live controls, snippets, and computed inspection.",
+    "specNotes": "Static local snapshot from the MDN CSS Reference index for the June 8, 2026 catalog scope.",
+    "browserNotes": "Part of the MDN standard CSS reference. Verify exact browser coverage for your support matrix.",
+    "fallbackStrategy": "Declare a simple baseline rule first, then layer enhanced values or selectors where supported.",
+    "tags": [
+      "data-type",
+      "motion",
+      "standard"
+    ]
+  },
+  {
+    "slug": "filter-function",
+    "title": "<filter-function>",
+    "kind": "data-type",
+    "syntax": "<filter-function>",
+    "category": "effects",
+    "status": "standard",
+    "mdnUrl": "https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Values/filter-function",
+    "summary": "A data type entry from the MDN standard CSS reference. This playground demonstrates <filter-function> with live controls, snippets, and computed inspection.",
+    "specNotes": "Static local snapshot from the MDN CSS Reference index for the June 8, 2026 catalog scope.",
+    "browserNotes": "Part of the MDN standard CSS reference. Verify exact browser coverage for your support matrix.",
+    "fallbackStrategy": "Declare a simple baseline rule first, then layer enhanced values or selectors where supported.",
+    "tags": [
+      "data-type",
+      "effects",
+      "standard"
+    ]
+  },
+  {
+    "slug": "flex-data-type",
+    "title": "<flex>",
+    "kind": "data-type",
+    "syntax": "<flex>",
+    "category": "layout",
+    "status": "standard",
+    "mdnUrl": "https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Values/flex_value",
+    "summary": "A data type entry from the MDN standard CSS reference. This playground demonstrates <flex> with live controls, snippets, and computed inspection.",
+    "specNotes": "Static local snapshot from the MDN CSS Reference index for the June 8, 2026 catalog scope.",
+    "browserNotes": "Part of the MDN standard CSS reference. Verify exact browser coverage for your support matrix.",
+    "fallbackStrategy": "Declare a simple baseline rule first, then layer enhanced values or selectors where supported.",
+    "tags": [
+      "data-type",
+      "layout",
+      "standard"
+    ]
+  },
+  {
+    "slug": "frequency-percentage",
+    "title": "<frequency-percentage>",
+    "kind": "data-type",
+    "syntax": "<frequency-percentage>",
+    "category": "functions",
+    "status": "standard",
+    "mdnUrl": "https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Values/frequency-percentage",
+    "summary": "A data type entry from the MDN standard CSS reference. This playground demonstrates <frequency-percentage> with live controls, snippets, and computed inspection.",
+    "specNotes": "Static local snapshot from the MDN CSS Reference index for the June 8, 2026 catalog scope.",
+    "browserNotes": "Part of the MDN standard CSS reference. Verify exact browser coverage for your support matrix.",
+    "fallbackStrategy": "Declare a simple baseline rule first, then layer enhanced values or selectors where supported.",
+    "tags": [
+      "data-type",
+      "functions",
+      "standard"
+    ]
+  },
+  {
+    "slug": "frequency",
+    "title": "<frequency>",
+    "kind": "data-type",
+    "syntax": "<frequency>",
+    "category": "functions",
+    "status": "standard",
+    "mdnUrl": "https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Values/frequency",
+    "summary": "A data type entry from the MDN standard CSS reference. This playground demonstrates <frequency> with live controls, snippets, and computed inspection.",
+    "specNotes": "Static local snapshot from the MDN CSS Reference index for the June 8, 2026 catalog scope.",
+    "browserNotes": "Part of the MDN standard CSS reference. Verify exact browser coverage for your support matrix.",
+    "fallbackStrategy": "Declare a simple baseline rule first, then layer enhanced values or selectors where supported.",
+    "tags": [
+      "data-type",
+      "functions",
+      "standard"
+    ]
+  },
+  {
+    "slug": "generic-family",
+    "title": "<generic-family>",
+    "kind": "data-type",
+    "syntax": "<generic-family>",
+    "category": "functions",
+    "status": "standard",
+    "mdnUrl": "https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Values/generic-family",
+    "summary": "A data type entry from the MDN standard CSS reference. This playground demonstrates <generic-family> with live controls, snippets, and computed inspection.",
+    "specNotes": "Static local snapshot from the MDN CSS Reference index for the June 8, 2026 catalog scope.",
+    "browserNotes": "Part of the MDN standard CSS reference. Verify exact browser coverage for your support matrix.",
+    "fallbackStrategy": "Declare a simple baseline rule first, then layer enhanced values or selectors where supported.",
+    "tags": [
+      "data-type",
+      "functions",
+      "standard"
+    ]
+  },
+  {
+    "slug": "gradient",
+    "title": "<gradient>",
+    "kind": "data-type",
+    "syntax": "<gradient>",
+    "category": "functions",
+    "status": "standard",
+    "mdnUrl": "https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Values/gradient",
+    "summary": "A data type entry from the MDN standard CSS reference. This playground demonstrates <gradient> with live controls, snippets, and computed inspection.",
+    "specNotes": "Static local snapshot from the MDN CSS Reference index for the June 8, 2026 catalog scope.",
+    "browserNotes": "Part of the MDN standard CSS reference. Verify exact browser coverage for your support matrix.",
+    "fallbackStrategy": "Declare a simple baseline rule first, then layer enhanced values or selectors where supported.",
+    "tags": [
+      "data-type",
+      "functions",
+      "standard"
+    ]
+  },
+  {
+    "slug": "hex-color",
+    "title": "<hex-color>",
+    "kind": "data-type",
+    "syntax": "<hex-color>",
+    "category": "colors",
+    "status": "standard",
+    "mdnUrl": "https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Values/hex-color",
+    "summary": "A data type entry from the MDN standard CSS reference. This playground demonstrates <hex-color> with live controls, snippets, and computed inspection.",
+    "specNotes": "Static local snapshot from the MDN CSS Reference index for the June 8, 2026 catalog scope.",
+    "browserNotes": "Part of the MDN standard CSS reference. Verify exact browser coverage for your support matrix.",
+    "fallbackStrategy": "Declare a simple baseline rule first, then layer enhanced values or selectors where supported.",
+    "tags": [
+      "data-type",
+      "colors",
+      "standard"
+    ]
+  },
+  {
+    "slug": "hue-interpolation-method",
+    "title": "<hue-interpolation-method>",
+    "kind": "data-type",
+    "syntax": "<hue-interpolation-method>",
+    "category": "colors",
+    "status": "standard",
+    "mdnUrl": "https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Values/hue-interpolation-method",
+    "summary": "A data type entry from the MDN standard CSS reference. This playground demonstrates <hue-interpolation-method> with live controls, snippets, and computed inspection.",
+    "specNotes": "Static local snapshot from the MDN CSS Reference index for the June 8, 2026 catalog scope.",
+    "browserNotes": "Part of the MDN standard CSS reference. Verify exact browser coverage for your support matrix.",
+    "fallbackStrategy": "Declare a simple baseline rule first, then layer enhanced values or selectors where supported.",
+    "tags": [
+      "data-type",
+      "colors",
+      "standard"
+    ]
+  },
+  {
+    "slug": "hue",
+    "title": "<hue>",
+    "kind": "data-type",
+    "syntax": "<hue>",
+    "category": "colors",
+    "status": "standard",
+    "mdnUrl": "https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Values/hue",
+    "summary": "A data type entry from the MDN standard CSS reference. This playground demonstrates <hue> with live controls, snippets, and computed inspection.",
+    "specNotes": "Static local snapshot from the MDN CSS Reference index for the June 8, 2026 catalog scope.",
+    "browserNotes": "Part of the MDN standard CSS reference. Verify exact browser coverage for your support matrix.",
+    "fallbackStrategy": "Declare a simple baseline rule first, then layer enhanced values or selectors where supported.",
+    "tags": [
+      "data-type",
+      "colors",
+      "standard"
+    ]
+  },
+  {
+    "slug": "ident",
+    "title": "<ident>",
+    "kind": "data-type",
+    "syntax": "<ident>",
+    "category": "functions",
+    "status": "standard",
+    "mdnUrl": "https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Values/ident",
+    "summary": "A data type entry from the MDN standard CSS reference. This playground demonstrates <ident> with live controls, snippets, and computed inspection.",
+    "specNotes": "Static local snapshot from the MDN CSS Reference index for the June 8, 2026 catalog scope.",
+    "browserNotes": "Part of the MDN standard CSS reference. Verify exact browser coverage for your support matrix.",
+    "fallbackStrategy": "Declare a simple baseline rule first, then layer enhanced values or selectors where supported.",
+    "tags": [
+      "data-type",
+      "functions",
+      "standard"
+    ]
+  },
+  {
+    "slug": "image",
+    "title": "<image>",
+    "kind": "data-type",
+    "syntax": "<image>",
+    "category": "effects",
+    "status": "standard",
+    "mdnUrl": "https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Values/image",
+    "summary": "A data type entry from the MDN standard CSS reference. This playground demonstrates <image> with live controls, snippets, and computed inspection.",
+    "specNotes": "Static local snapshot from the MDN CSS Reference index for the June 8, 2026 catalog scope.",
+    "browserNotes": "Part of the MDN standard CSS reference. Verify exact browser coverage for your support matrix.",
+    "fallbackStrategy": "Declare a simple baseline rule first, then layer enhanced values or selectors where supported.",
+    "tags": [
+      "data-type",
+      "effects",
+      "standard"
+    ]
+  },
+  {
+    "slug": "integer",
+    "title": "<integer>",
+    "kind": "data-type",
+    "syntax": "<integer>",
+    "category": "functions",
+    "status": "standard",
+    "mdnUrl": "https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Values/integer",
+    "summary": "A data type entry from the MDN standard CSS reference. This playground demonstrates <integer> with live controls, snippets, and computed inspection.",
+    "specNotes": "Static local snapshot from the MDN CSS Reference index for the June 8, 2026 catalog scope.",
+    "browserNotes": "Part of the MDN standard CSS reference. Verify exact browser coverage for your support matrix.",
+    "fallbackStrategy": "Declare a simple baseline rule first, then layer enhanced values or selectors where supported.",
+    "tags": [
+      "data-type",
+      "functions",
+      "standard"
+    ]
+  },
+  {
+    "slug": "length-percentage",
+    "title": "<length-percentage>",
+    "kind": "data-type",
+    "syntax": "<length-percentage>",
+    "category": "functions",
+    "status": "standard",
+    "mdnUrl": "https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Values/length-percentage",
+    "summary": "A data type entry from the MDN standard CSS reference. This playground demonstrates <length-percentage> with live controls, snippets, and computed inspection.",
+    "specNotes": "Static local snapshot from the MDN CSS Reference index for the June 8, 2026 catalog scope.",
+    "browserNotes": "Part of the MDN standard CSS reference. Verify exact browser coverage for your support matrix.",
+    "fallbackStrategy": "Declare a simple baseline rule first, then layer enhanced values or selectors where supported.",
+    "tags": [
+      "data-type",
+      "functions",
+      "standard"
+    ]
+  },
+  {
+    "slug": "length",
+    "title": "<length>",
+    "kind": "data-type",
+    "syntax": "<length>",
+    "category": "functions",
+    "status": "standard",
+    "mdnUrl": "https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Values/length",
+    "summary": "A data type entry from the MDN standard CSS reference. This playground demonstrates <length> with live controls, snippets, and computed inspection.",
+    "specNotes": "Static local snapshot from the MDN CSS Reference index for the June 8, 2026 catalog scope.",
+    "browserNotes": "Part of the MDN standard CSS reference. Verify exact browser coverage for your support matrix.",
+    "fallbackStrategy": "Declare a simple baseline rule first, then layer enhanced values or selectors where supported.",
+    "tags": [
+      "data-type",
+      "functions",
+      "standard"
+    ]
+  },
+  {
+    "slug": "line-style",
+    "title": "<line-style>",
+    "kind": "data-type",
+    "syntax": "<line-style>",
+    "category": "typography",
+    "status": "standard",
+    "mdnUrl": "https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Values/line-style",
+    "summary": "A data type entry from the MDN standard CSS reference. This playground demonstrates <line-style> with live controls, snippets, and computed inspection.",
+    "specNotes": "Static local snapshot from the MDN CSS Reference index for the June 8, 2026 catalog scope.",
+    "browserNotes": "Part of the MDN standard CSS reference. Verify exact browser coverage for your support matrix.",
+    "fallbackStrategy": "Declare a simple baseline rule first, then layer enhanced values or selectors where supported.",
+    "tags": [
+      "data-type",
+      "typography",
+      "standard"
+    ]
+  },
+  {
+    "slug": "named-color",
+    "title": "<named-color>",
+    "kind": "data-type",
+    "syntax": "<named-color>",
+    "category": "colors",
+    "status": "standard",
+    "mdnUrl": "https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Values/named-color",
+    "summary": "A data type entry from the MDN standard CSS reference. This playground demonstrates <named-color> with live controls, snippets, and computed inspection.",
+    "specNotes": "Static local snapshot from the MDN CSS Reference index for the June 8, 2026 catalog scope.",
+    "browserNotes": "Part of the MDN standard CSS reference. Verify exact browser coverage for your support matrix.",
+    "fallbackStrategy": "Declare a simple baseline rule first, then layer enhanced values or selectors where supported.",
+    "tags": [
+      "data-type",
+      "colors",
+      "standard"
+    ]
+  },
+  {
+    "slug": "number",
+    "title": "<number>",
+    "kind": "data-type",
+    "syntax": "<number>",
+    "category": "functions",
+    "status": "standard",
+    "mdnUrl": "https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Values/number",
+    "summary": "A data type entry from the MDN standard CSS reference. This playground demonstrates <number> with live controls, snippets, and computed inspection.",
+    "specNotes": "Static local snapshot from the MDN CSS Reference index for the June 8, 2026 catalog scope.",
+    "browserNotes": "Part of the MDN standard CSS reference. Verify exact browser coverage for your support matrix.",
+    "fallbackStrategy": "Declare a simple baseline rule first, then layer enhanced values or selectors where supported.",
+    "tags": [
+      "data-type",
+      "functions",
+      "standard"
+    ]
+  },
+  {
+    "slug": "overflow-position",
+    "title": "<overflow-position>",
+    "kind": "data-type",
+    "syntax": "<overflow-position>",
+    "category": "layout",
+    "status": "standard",
+    "mdnUrl": "https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Values/overflow-position",
+    "summary": "A data type entry from the MDN standard CSS reference. This playground demonstrates <overflow-position> with live controls, snippets, and computed inspection.",
+    "specNotes": "Static local snapshot from the MDN CSS Reference index for the June 8, 2026 catalog scope.",
+    "browserNotes": "Part of the MDN standard CSS reference. Verify exact browser coverage for your support matrix.",
+    "fallbackStrategy": "Declare a simple baseline rule first, then layer enhanced values or selectors where supported.",
+    "tags": [
+      "data-type",
+      "layout",
+      "standard"
+    ]
+  },
+  {
+    "slug": "overflow-data-type",
+    "title": "<overflow>",
+    "kind": "data-type",
+    "syntax": "<overflow>",
+    "category": "layout",
+    "status": "standard",
+    "mdnUrl": "https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Values/overflow_value",
+    "summary": "A data type entry from the MDN standard CSS reference. This playground demonstrates <overflow> with live controls, snippets, and computed inspection.",
+    "specNotes": "Static local snapshot from the MDN CSS Reference index for the June 8, 2026 catalog scope.",
+    "browserNotes": "Part of the MDN standard CSS reference. Verify exact browser coverage for your support matrix.",
+    "fallbackStrategy": "Declare a simple baseline rule first, then layer enhanced values or selectors where supported.",
+    "tags": [
+      "data-type",
+      "layout",
+      "standard"
+    ]
+  },
+  {
+    "slug": "percentage",
+    "title": "<percentage>",
+    "kind": "data-type",
+    "syntax": "<percentage>",
+    "category": "functions",
+    "status": "standard",
+    "mdnUrl": "https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Values/percentage",
+    "summary": "A data type entry from the MDN standard CSS reference. This playground demonstrates <percentage> with live controls, snippets, and computed inspection.",
+    "specNotes": "Static local snapshot from the MDN CSS Reference index for the June 8, 2026 catalog scope.",
+    "browserNotes": "Part of the MDN standard CSS reference. Verify exact browser coverage for your support matrix.",
+    "fallbackStrategy": "Declare a simple baseline rule first, then layer enhanced values or selectors where supported.",
+    "tags": [
+      "data-type",
+      "functions",
+      "standard"
+    ]
+  },
+  {
+    "slug": "position-area-data-type",
+    "title": "<position-area>",
+    "kind": "data-type",
+    "syntax": "<position-area>",
+    "category": "layout",
+    "status": "standard",
+    "mdnUrl": "https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Values/position-area_value",
+    "summary": "A data type entry from the MDN standard CSS reference. This playground demonstrates <position-area> with live controls, snippets, and computed inspection.",
+    "specNotes": "Static local snapshot from the MDN CSS Reference index for the June 8, 2026 catalog scope.",
+    "browserNotes": "Part of the MDN standard CSS reference. Verify exact browser coverage for your support matrix.",
+    "fallbackStrategy": "Declare a simple baseline rule first, then layer enhanced values or selectors where supported.",
+    "tags": [
+      "data-type",
+      "layout",
+      "standard"
+    ]
+  },
+  {
+    "slug": "position-data-type",
+    "title": "<position>",
+    "kind": "data-type",
+    "syntax": "<position>",
+    "category": "layout",
+    "status": "standard",
+    "mdnUrl": "https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Values/position_value",
+    "summary": "A data type entry from the MDN standard CSS reference. This playground demonstrates <position> with live controls, snippets, and computed inspection.",
+    "specNotes": "Static local snapshot from the MDN CSS Reference index for the June 8, 2026 catalog scope.",
+    "browserNotes": "Part of the MDN standard CSS reference. Verify exact browser coverage for your support matrix.",
+    "fallbackStrategy": "Declare a simple baseline rule first, then layer enhanced values or selectors where supported.",
+    "tags": [
+      "data-type",
+      "layout",
+      "standard"
+    ]
+  },
+  {
+    "slug": "ratio",
+    "title": "<ratio>",
+    "kind": "data-type",
+    "syntax": "<ratio>",
+    "category": "functions",
+    "status": "standard",
+    "mdnUrl": "https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Values/ratio",
+    "summary": "A data type entry from the MDN standard CSS reference. This playground demonstrates <ratio> with live controls, snippets, and computed inspection.",
+    "specNotes": "Static local snapshot from the MDN CSS Reference index for the June 8, 2026 catalog scope.",
+    "browserNotes": "Part of the MDN standard CSS reference. Verify exact browser coverage for your support matrix.",
+    "fallbackStrategy": "Declare a simple baseline rule first, then layer enhanced values or selectors where supported.",
+    "tags": [
+      "data-type",
+      "functions",
+      "standard"
+    ]
+  },
+  {
+    "slug": "relative-size",
+    "title": "<relative-size>",
+    "kind": "data-type",
+    "syntax": "<relative-size>",
+    "category": "layout",
+    "status": "standard",
+    "mdnUrl": "https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Values/relative-size",
+    "summary": "A data type entry from the MDN standard CSS reference. This playground demonstrates <relative-size> with live controls, snippets, and computed inspection.",
+    "specNotes": "Static local snapshot from the MDN CSS Reference index for the June 8, 2026 catalog scope.",
+    "browserNotes": "Part of the MDN standard CSS reference. Verify exact browser coverage for your support matrix.",
+    "fallbackStrategy": "Declare a simple baseline rule first, then layer enhanced values or selectors where supported.",
+    "tags": [
+      "data-type",
+      "layout",
+      "standard"
+    ]
+  },
+  {
+    "slug": "resolution",
+    "title": "<resolution>",
+    "kind": "data-type",
+    "syntax": "<resolution>",
+    "category": "functions",
+    "status": "standard",
+    "mdnUrl": "https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Values/resolution",
+    "summary": "A data type entry from the MDN standard CSS reference. This playground demonstrates <resolution> with live controls, snippets, and computed inspection.",
+    "specNotes": "Static local snapshot from the MDN CSS Reference index for the June 8, 2026 catalog scope.",
+    "browserNotes": "Part of the MDN standard CSS reference. Verify exact browser coverage for your support matrix.",
+    "fallbackStrategy": "Declare a simple baseline rule first, then layer enhanced values or selectors where supported.",
+    "tags": [
+      "data-type",
+      "functions",
+      "standard"
+    ]
+  },
+  {
+    "slug": "rule-list",
+    "title": "<rule-list>",
+    "kind": "data-type",
+    "syntax": "<rule-list>",
+    "category": "functions",
+    "status": "standard",
+    "mdnUrl": "https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Values/rule-list",
+    "summary": "A data type entry from the MDN standard CSS reference. This playground demonstrates <rule-list> with live controls, snippets, and computed inspection.",
+    "specNotes": "Static local snapshot from the MDN CSS Reference index for the June 8, 2026 catalog scope.",
+    "browserNotes": "Part of the MDN standard CSS reference. Verify exact browser coverage for your support matrix.",
+    "fallbackStrategy": "Declare a simple baseline rule first, then layer enhanced values or selectors where supported.",
+    "tags": [
+      "data-type",
+      "functions",
+      "standard"
+    ]
+  },
+  {
+    "slug": "self-position",
+    "title": "<self-position>",
+    "kind": "data-type",
+    "syntax": "<self-position>",
+    "category": "layout",
+    "status": "standard",
+    "mdnUrl": "https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Values/self-position",
+    "summary": "A data type entry from the MDN standard CSS reference. This playground demonstrates <self-position> with live controls, snippets, and computed inspection.",
+    "specNotes": "Static local snapshot from the MDN CSS Reference index for the June 8, 2026 catalog scope.",
+    "browserNotes": "Part of the MDN standard CSS reference. Verify exact browser coverage for your support matrix.",
+    "fallbackStrategy": "Declare a simple baseline rule first, then layer enhanced values or selectors where supported.",
+    "tags": [
+      "data-type",
+      "layout",
+      "standard"
+    ]
+  },
+  {
+    "slug": "string",
+    "title": "<string>",
+    "kind": "data-type",
+    "syntax": "<string>",
+    "category": "functions",
+    "status": "standard",
+    "mdnUrl": "https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Values/string",
+    "summary": "A data type entry from the MDN standard CSS reference. This playground demonstrates <string> with live controls, snippets, and computed inspection.",
+    "specNotes": "Static local snapshot from the MDN CSS Reference index for the June 8, 2026 catalog scope.",
+    "browserNotes": "Part of the MDN standard CSS reference. Verify exact browser coverage for your support matrix.",
+    "fallbackStrategy": "Declare a simple baseline rule first, then layer enhanced values or selectors where supported.",
+    "tags": [
+      "data-type",
+      "functions",
+      "standard"
+    ]
+  },
+  {
+    "slug": "system-color",
+    "title": "<system-color>",
+    "kind": "data-type",
+    "syntax": "<system-color>",
+    "category": "colors",
+    "status": "standard",
+    "mdnUrl": "https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Values/system-color",
+    "summary": "A data type entry from the MDN standard CSS reference. This playground demonstrates <system-color> with live controls, snippets, and computed inspection.",
+    "specNotes": "Static local snapshot from the MDN CSS Reference index for the June 8, 2026 catalog scope.",
+    "browserNotes": "Part of the MDN standard CSS reference. Verify exact browser coverage for your support matrix.",
+    "fallbackStrategy": "Declare a simple baseline rule first, then layer enhanced values or selectors where supported.",
+    "tags": [
+      "data-type",
+      "colors",
+      "standard"
+    ]
+  },
+  {
+    "slug": "text-edge",
+    "title": "<text-edge>",
+    "kind": "data-type",
+    "syntax": "<text-edge>",
+    "category": "typography",
+    "status": "standard",
+    "mdnUrl": "https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Values/text-edge",
+    "summary": "A data type entry from the MDN standard CSS reference. This playground demonstrates <text-edge> with live controls, snippets, and computed inspection.",
+    "specNotes": "Static local snapshot from the MDN CSS Reference index for the June 8, 2026 catalog scope.",
+    "browserNotes": "Part of the MDN standard CSS reference. Verify exact browser coverage for your support matrix.",
+    "fallbackStrategy": "Declare a simple baseline rule first, then layer enhanced values or selectors where supported.",
+    "tags": [
+      "data-type",
+      "typography",
+      "standard"
+    ]
+  },
+  {
+    "slug": "time-percentage",
+    "title": "<time-percentage>",
+    "kind": "data-type",
+    "syntax": "<time-percentage>",
+    "category": "functions",
+    "status": "standard",
+    "mdnUrl": "https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Values/time-percentage",
+    "summary": "A data type entry from the MDN standard CSS reference. This playground demonstrates <time-percentage> with live controls, snippets, and computed inspection.",
+    "specNotes": "Static local snapshot from the MDN CSS Reference index for the June 8, 2026 catalog scope.",
+    "browserNotes": "Part of the MDN standard CSS reference. Verify exact browser coverage for your support matrix.",
+    "fallbackStrategy": "Declare a simple baseline rule first, then layer enhanced values or selectors where supported.",
+    "tags": [
+      "data-type",
+      "functions",
+      "standard"
+    ]
+  },
+  {
+    "slug": "time",
+    "title": "<time>",
+    "kind": "data-type",
+    "syntax": "<time>",
+    "category": "functions",
+    "status": "standard",
+    "mdnUrl": "https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Values/time",
+    "summary": "A data type entry from the MDN standard CSS reference. This playground demonstrates <time> with live controls, snippets, and computed inspection.",
+    "specNotes": "Static local snapshot from the MDN CSS Reference index for the June 8, 2026 catalog scope.",
+    "browserNotes": "Part of the MDN standard CSS reference. Verify exact browser coverage for your support matrix.",
+    "fallbackStrategy": "Declare a simple baseline rule first, then layer enhanced values or selectors where supported.",
+    "tags": [
+      "data-type",
+      "functions",
+      "standard"
+    ]
+  },
+  {
+    "slug": "timeline-range-name",
+    "title": "<timeline-range-name>",
+    "kind": "data-type",
+    "syntax": "<timeline-range-name>",
+    "category": "typography",
+    "status": "standard",
+    "mdnUrl": "https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Values/timeline-range-name",
+    "summary": "A data type entry from the MDN standard CSS reference. This playground demonstrates <timeline-range-name> with live controls, snippets, and computed inspection.",
+    "specNotes": "Static local snapshot from the MDN CSS Reference index for the June 8, 2026 catalog scope.",
+    "browserNotes": "Part of the MDN standard CSS reference. Verify exact browser coverage for your support matrix.",
+    "fallbackStrategy": "Declare a simple baseline rule first, then layer enhanced values or selectors where supported.",
+    "tags": [
+      "data-type",
+      "typography",
+      "standard"
+    ]
+  },
+  {
+    "slug": "transform-function",
+    "title": "<transform-function>",
+    "kind": "data-type",
+    "syntax": "<transform-function>",
+    "category": "motion",
+    "status": "standard",
+    "mdnUrl": "https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Values/transform-function",
+    "summary": "A data type entry from the MDN standard CSS reference. This playground demonstrates <transform-function> with live controls, snippets, and computed inspection.",
+    "specNotes": "Static local snapshot from the MDN CSS Reference index for the June 8, 2026 catalog scope.",
+    "browserNotes": "Part of the MDN standard CSS reference. Verify exact browser coverage for your support matrix.",
+    "fallbackStrategy": "Declare a simple baseline rule first, then layer enhanced values or selectors where supported.",
+    "tags": [
+      "data-type",
+      "motion",
+      "standard"
+    ]
+  },
+  {
+    "slug": "url",
+    "title": "<url>",
+    "kind": "data-type",
+    "syntax": "<url>",
+    "category": "functions",
+    "status": "standard",
+    "mdnUrl": "https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Values/url_value",
+    "summary": "A data type entry from the MDN standard CSS reference. This playground demonstrates <url> with live controls, snippets, and computed inspection.",
+    "specNotes": "Static local snapshot from the MDN CSS Reference index for the June 8, 2026 catalog scope.",
+    "browserNotes": "Part of the MDN standard CSS reference. Verify exact browser coverage for your support matrix.",
+    "fallbackStrategy": "Declare a simple baseline rule first, then layer enhanced values or selectors where supported.",
+    "tags": [
+      "data-type",
+      "functions",
+      "standard"
+    ]
+  }
+]

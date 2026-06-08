@@ -1,0 +1,182 @@
+[
+  {
+    "slug": "fit-content-css-keyword",
+    "title": "fit-content CSS keyword",
+    "kind": "value",
+    "syntax": "fit-content CSS keyword",
+    "category": "typography",
+    "status": "standard",
+    "mdnUrl": "https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Values/fit-content",
+    "summary": "A value entry from the MDN standard CSS reference. This playground demonstrates fit-content CSS keyword with live controls, snippets, and computed inspection.",
+    "specNotes": "Static local snapshot from the MDN CSS Reference index for the June 8, 2026 catalog scope.",
+    "browserNotes": "Part of the MDN standard CSS reference. Verify exact browser coverage for your support matrix.",
+    "fallbackStrategy": "Declare a simple baseline rule first, then layer enhanced values or selectors where supported.",
+    "tags": [
+      "value",
+      "typography",
+      "standard"
+    ]
+  },
+  {
+    "slug": "important-css-keyword",
+    "title": "!important CSS keyword",
+    "kind": "value",
+    "syntax": "!important CSS keyword",
+    "category": "architecture",
+    "status": "standard",
+    "mdnUrl": "https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Values/important",
+    "summary": "A value entry from the MDN standard CSS reference. This playground demonstrates !important CSS keyword with live controls, snippets, and computed inspection.",
+    "specNotes": "Static local snapshot from the MDN CSS Reference index for the June 8, 2026 catalog scope.",
+    "browserNotes": "Part of the MDN standard CSS reference. Verify exact browser coverage for your support matrix.",
+    "fallbackStrategy": "Declare a simple baseline rule first, then layer enhanced values or selectors where supported.",
+    "tags": [
+      "value",
+      "architecture",
+      "standard"
+    ]
+  },
+  {
+    "slug": "inherit-css-keyword",
+    "title": "inherit CSS keyword",
+    "kind": "value",
+    "syntax": "inherit CSS keyword",
+    "category": "typography",
+    "status": "standard",
+    "mdnUrl": "https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Values/inherit",
+    "summary": "A value entry from the MDN standard CSS reference. This playground demonstrates inherit CSS keyword with live controls, snippets, and computed inspection.",
+    "specNotes": "Static local snapshot from the MDN CSS Reference index for the June 8, 2026 catalog scope.",
+    "browserNotes": "Part of the MDN standard CSS reference. Verify exact browser coverage for your support matrix.",
+    "fallbackStrategy": "Declare a simple baseline rule first, then layer enhanced values or selectors where supported.",
+    "tags": [
+      "value",
+      "typography",
+      "standard"
+    ]
+  },
+  {
+    "slug": "initial-css-keyword",
+    "title": "initial CSS keyword",
+    "kind": "value",
+    "syntax": "initial CSS keyword",
+    "category": "typography",
+    "status": "standard",
+    "mdnUrl": "https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Values/initial",
+    "summary": "A value entry from the MDN standard CSS reference. This playground demonstrates initial CSS keyword with live controls, snippets, and computed inspection.",
+    "specNotes": "Static local snapshot from the MDN CSS Reference index for the June 8, 2026 catalog scope.",
+    "browserNotes": "Part of the MDN standard CSS reference. Verify exact browser coverage for your support matrix.",
+    "fallbackStrategy": "Declare a simple baseline rule first, then layer enhanced values or selectors where supported.",
+    "tags": [
+      "value",
+      "typography",
+      "standard"
+    ]
+  },
+  {
+    "slug": "max-content-css-keyword",
+    "title": "max-content CSS keyword",
+    "kind": "value",
+    "syntax": "max-content CSS keyword",
+    "category": "typography",
+    "status": "standard",
+    "mdnUrl": "https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Values/max-content",
+    "summary": "A value entry from the MDN standard CSS reference. This playground demonstrates max-content CSS keyword with live controls, snippets, and computed inspection.",
+    "specNotes": "Static local snapshot from the MDN CSS Reference index for the June 8, 2026 catalog scope.",
+    "browserNotes": "Part of the MDN standard CSS reference. Verify exact browser coverage for your support matrix.",
+    "fallbackStrategy": "Declare a simple baseline rule first, then layer enhanced values or selectors where supported.",
+    "tags": [
+      "value",
+      "typography",
+      "standard"
+    ]
+  },
+  {
+    "slug": "min-content-css-keyword",
+    "title": "min-content CSS keyword",
+    "kind": "value",
+    "syntax": "min-content CSS keyword",
+    "category": "typography",
+    "status": "standard",
+    "mdnUrl": "https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Values/min-content",
+    "summary": "A value entry from the MDN standard CSS reference. This playground demonstrates min-content CSS keyword with live controls, snippets, and computed inspection.",
+    "specNotes": "Static local snapshot from the MDN CSS Reference index for the June 8, 2026 catalog scope.",
+    "browserNotes": "Part of the MDN standard CSS reference. Verify exact browser coverage for your support matrix.",
+    "fallbackStrategy": "Declare a simple baseline rule first, then layer enhanced values or selectors where supported.",
+    "tags": [
+      "value",
+      "typography",
+      "standard"
+    ]
+  },
+  {
+    "slug": "revert-css-keyword",
+    "title": "revert CSS keyword",
+    "kind": "value",
+    "syntax": "revert CSS keyword",
+    "category": "typography",
+    "status": "standard",
+    "mdnUrl": "https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Values/revert",
+    "summary": "A value entry from the MDN standard CSS reference. This playground demonstrates revert CSS keyword with live controls, snippets, and computed inspection.",
+    "specNotes": "Static local snapshot from the MDN CSS Reference index for the June 8, 2026 catalog scope.",
+    "browserNotes": "Part of the MDN standard CSS reference. Verify exact browser coverage for your support matrix.",
+    "fallbackStrategy": "Declare a simple baseline rule first, then layer enhanced values or selectors where supported.",
+    "tags": [
+      "value",
+      "typography",
+      "standard"
+    ]
+  },
+  {
+    "slug": "revert-layer-css-keyword",
+    "title": "revert-layer CSS keyword",
+    "kind": "value",
+    "syntax": "revert-layer CSS keyword",
+    "category": "architecture",
+    "status": "standard",
+    "mdnUrl": "https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Values/revert-layer",
+    "summary": "A value entry from the MDN standard CSS reference. This playground demonstrates revert-layer CSS keyword with live controls, snippets, and computed inspection.",
+    "specNotes": "Static local snapshot from the MDN CSS Reference index for the June 8, 2026 catalog scope.",
+    "browserNotes": "Part of the MDN standard CSS reference. Verify exact browser coverage for your support matrix.",
+    "fallbackStrategy": "Declare a simple baseline rule first, then layer enhanced values or selectors where supported.",
+    "tags": [
+      "value",
+      "architecture",
+      "standard"
+    ]
+  },
+  {
+    "slug": "revert-rule",
+    "title": "revert-rule",
+    "kind": "value",
+    "syntax": "revert-rule",
+    "category": "functions",
+    "status": "standard",
+    "mdnUrl": "https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Values/revert-rule",
+    "summary": "A value entry from the MDN standard CSS reference. This playground demonstrates revert-rule with live controls, snippets, and computed inspection.",
+    "specNotes": "Static local snapshot from the MDN CSS Reference index for the June 8, 2026 catalog scope.",
+    "browserNotes": "Part of the MDN standard CSS reference. Verify exact browser coverage for your support matrix.",
+    "fallbackStrategy": "Declare a simple baseline rule first, then layer enhanced values or selectors where supported.",
+    "tags": [
+      "value",
+      "functions",
+      "standard"
+    ]
+  },
+  {
+    "slug": "unset-css-keyword",
+    "title": "unset CSS keyword",
+    "kind": "value",
+    "syntax": "unset CSS keyword",
+    "category": "typography",
+    "status": "standard",
+    "mdnUrl": "https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Values/unset",
+    "summary": "A value entry from the MDN standard CSS reference. This playground demonstrates unset CSS keyword with live controls, snippets, and computed inspection.",
+    "specNotes": "Static local snapshot from the MDN CSS Reference index for the June 8, 2026 catalog scope.",
+    "browserNotes": "Part of the MDN standard CSS reference. Verify exact browser coverage for your support matrix.",
+    "fallbackStrategy": "Declare a simple baseline rule first, then layer enhanced values or selectors where supported.",
+    "tags": [
+      "value",
+      "typography",
+      "standard"
+    ]
+  }
+]

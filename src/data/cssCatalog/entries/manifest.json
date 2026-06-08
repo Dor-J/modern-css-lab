@@ -1,0 +1,23 @@
+{
+  "source": "MDN CSS Reference",
+  "sourceUrl": "https://developer.mozilla.org/en-US/docs/Web/CSS/Reference",
+  "snapshotDate": "2026-06-08",
+  "excluded": [
+    "vendor-prefixed -webkit-* entries",
+    "SVG-exclusive presentation attributes omitted by the MDN CSS Reference index",
+    "non-standard entries when marked as such in the index label"
+  ],
+  "totalEntries": 868,
+  "countsByKind": {
+    "property": 510,
+    "at-rule": 21,
+    "descriptor": 33,
+    "selector": 9,
+    "pseudo-class": 80,
+    "pseudo-element": 30,
+    "function": 112,
+    "data-type": 62,
+    "value": 10,
+    "concept": 1
+  }
+}

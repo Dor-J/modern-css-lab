@@ -1,0 +1,596 @@
+[
+  {
+    "slug": "additive-symbols",
+    "title": "additive-symbols",
+    "kind": "descriptor",
+    "syntax": "additive-symbols",
+    "category": "architecture",
+    "status": "standard",
+    "mdnUrl": "https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/At-rules/@counter-style/additive-symbols",
+    "summary": "A descriptor entry from the MDN standard CSS reference. This playground demonstrates additive-symbols with live controls, snippets, and computed inspection.",
+    "specNotes": "Static local snapshot from the MDN CSS Reference index for the June 8, 2026 catalog scope.",
+    "browserNotes": "Part of the MDN standard CSS reference. Verify exact browser coverage for your support matrix.",
+    "fallbackStrategy": "Declare a simple baseline rule first, then layer enhanced values or selectors where supported.",
+    "tags": [
+      "descriptor",
+      "architecture",
+      "standard"
+    ]
+  },
+  {
+    "slug": "ascent-override",
+    "title": "ascent-override",
+    "kind": "descriptor",
+    "syntax": "ascent-override",
+    "category": "architecture",
+    "status": "standard",
+    "mdnUrl": "https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/At-rules/@font-face/ascent-override",
+    "summary": "A descriptor entry from the MDN standard CSS reference. This playground demonstrates ascent-override with live controls, snippets, and computed inspection.",
+    "specNotes": "Static local snapshot from the MDN CSS Reference index for the June 8, 2026 catalog scope.",
+    "browserNotes": "Part of the MDN standard CSS reference. Verify exact browser coverage for your support matrix.",
+    "fallbackStrategy": "Declare a simple baseline rule first, then layer enhanced values or selectors where supported.",
+    "tags": [
+      "descriptor",
+      "architecture",
+      "standard"
+    ]
+  },
+  {
+    "slug": "base-palette",
+    "title": "base-palette",
+    "kind": "descriptor",
+    "syntax": "base-palette",
+    "category": "architecture",
+    "status": "standard",
+    "mdnUrl": "https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/At-rules/@font-palette-values/base-palette",
+    "summary": "A descriptor entry from the MDN standard CSS reference. This playground demonstrates base-palette with live controls, snippets, and computed inspection.",
+    "specNotes": "Static local snapshot from the MDN CSS Reference index for the June 8, 2026 catalog scope.",
+    "browserNotes": "Part of the MDN standard CSS reference. Verify exact browser coverage for your support matrix.",
+    "fallbackStrategy": "Declare a simple baseline rule first, then layer enhanced values or selectors where supported.",
+    "tags": [
+      "descriptor",
+      "architecture",
+      "standard"
+    ]
+  },
+  {
+    "slug": "descent-override",
+    "title": "descent-override",
+    "kind": "descriptor",
+    "syntax": "descent-override",
+    "category": "architecture",
+    "status": "standard",
+    "mdnUrl": "https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/At-rules/@font-face/descent-override",
+    "summary": "A descriptor entry from the MDN standard CSS reference. This playground demonstrates descent-override with live controls, snippets, and computed inspection.",
+    "specNotes": "Static local snapshot from the MDN CSS Reference index for the June 8, 2026 catalog scope.",
+    "browserNotes": "Part of the MDN standard CSS reference. Verify exact browser coverage for your support matrix.",
+    "fallbackStrategy": "Declare a simple baseline rule first, then layer enhanced values or selectors where supported.",
+    "tags": [
+      "descriptor",
+      "architecture",
+      "standard"
+    ]
+  },
+  {
+    "slug": "fallback",
+    "title": "fallback",
+    "kind": "descriptor",
+    "syntax": "fallback",
+    "category": "architecture",
+    "status": "standard",
+    "mdnUrl": "https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/At-rules/@counter-style/fallback",
+    "summary": "A descriptor entry from the MDN standard CSS reference. This playground demonstrates fallback with live controls, snippets, and computed inspection.",
+    "specNotes": "Static local snapshot from the MDN CSS Reference index for the June 8, 2026 catalog scope.",
+    "browserNotes": "Part of the MDN standard CSS reference. Verify exact browser coverage for your support matrix.",
+    "fallbackStrategy": "Declare a simple baseline rule first, then layer enhanced values or selectors where supported.",
+    "tags": [
+      "descriptor",
+      "architecture",
+      "standard"
+    ]
+  },
+  {
+    "slug": "font-display",
+    "title": "font-display",
+    "kind": "descriptor",
+    "syntax": "font-display",
+    "category": "architecture",
+    "status": "standard",
+    "mdnUrl": "https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/At-rules/@font-face/font-display",
+    "summary": "A descriptor entry from the MDN standard CSS reference. This playground demonstrates font-display with live controls, snippets, and computed inspection.",
+    "specNotes": "Static local snapshot from the MDN CSS Reference index for the June 8, 2026 catalog scope.",
+    "browserNotes": "Part of the MDN standard CSS reference. Verify exact browser coverage for your support matrix.",
+    "fallbackStrategy": "Declare a simple baseline rule first, then layer enhanced values or selectors where supported.",
+    "tags": [
+      "descriptor",
+      "architecture",
+      "standard"
+    ]
+  },
+  {
+    "slug": "font-display-descriptor",
+    "title": "font-display",
+    "kind": "descriptor",
+    "syntax": "font-display",
+    "category": "architecture",
+    "status": "standard",
+    "mdnUrl": "https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/At-rules/@font-feature-values/font-display",
+    "summary": "A descriptor entry from the MDN standard CSS reference. This playground demonstrates font-display with live controls, snippets, and computed inspection.",
+    "specNotes": "Static local snapshot from the MDN CSS Reference index for the June 8, 2026 catalog scope.",
+    "browserNotes": "Part of the MDN standard CSS reference. Verify exact browser coverage for your support matrix.",
+    "fallbackStrategy": "Declare a simple baseline rule first, then layer enhanced values or selectors where supported.",
+    "tags": [
+      "descriptor",
+      "architecture",
+      "standard"
+    ]
+  },
+  {
+    "slug": "font-family",
+    "title": "font-family",
+    "kind": "descriptor",
+    "syntax": "font-family",
+    "category": "architecture",
+    "status": "standard",
+    "mdnUrl": "https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/At-rules/@font-face/font-family",
+    "summary": "A descriptor entry from the MDN standard CSS reference. This playground demonstrates font-family with live controls, snippets, and computed inspection.",
+    "specNotes": "Static local snapshot from the MDN CSS Reference index for the June 8, 2026 catalog scope.",
+    "browserNotes": "Part of the MDN standard CSS reference. Verify exact browser coverage for your support matrix.",
+    "fallbackStrategy": "Declare a simple baseline rule first, then layer enhanced values or selectors where supported.",
+    "tags": [
+      "descriptor",
+      "architecture",
+      "standard"
+    ]
+  },
+  {
+    "slug": "font-family-descriptor",
+    "title": "font-family",
+    "kind": "descriptor",
+    "syntax": "font-family",
+    "category": "architecture",
+    "status": "standard",
+    "mdnUrl": "https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/At-rules/@font-palette-values/font-family",
+    "summary": "A descriptor entry from the MDN standard CSS reference. This playground demonstrates font-family with live controls, snippets, and computed inspection.",
+    "specNotes": "Static local snapshot from the MDN CSS Reference index for the June 8, 2026 catalog scope.",
+    "browserNotes": "Part of the MDN standard CSS reference. Verify exact browser coverage for your support matrix.",
+    "fallbackStrategy": "Declare a simple baseline rule first, then layer enhanced values or selectors where supported.",
+    "tags": [
+      "descriptor",
+      "architecture",
+      "standard"
+    ]
+  },
+  {
+    "slug": "font-feature-settings",
+    "title": "font-feature-settings",
+    "kind": "descriptor",
+    "syntax": "font-feature-settings",
+    "category": "architecture",
+    "status": "standard",
+    "mdnUrl": "https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/At-rules/@font-face/font-feature-settings",
+    "summary": "A descriptor entry from the MDN standard CSS reference. This playground demonstrates font-feature-settings with live controls, snippets, and computed inspection.",
+    "specNotes": "Static local snapshot from the MDN CSS Reference index for the June 8, 2026 catalog scope.",
+    "browserNotes": "Part of the MDN standard CSS reference. Verify exact browser coverage for your support matrix.",
+    "fallbackStrategy": "Declare a simple baseline rule first, then layer enhanced values or selectors where supported.",
+    "tags": [
+      "descriptor",
+      "architecture",
+      "standard"
+    ]
+  },
+  {
+    "slug": "font-stretch",
+    "title": "font-stretch",
+    "kind": "descriptor",
+    "syntax": "font-stretch",
+    "category": "architecture",
+    "status": "standard",
+    "mdnUrl": "https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/At-rules/@font-face/font-stretch",
+    "summary": "A descriptor entry from the MDN standard CSS reference. This playground demonstrates font-stretch with live controls, snippets, and computed inspection.",
+    "specNotes": "Static local snapshot from the MDN CSS Reference index for the June 8, 2026 catalog scope.",
+    "browserNotes": "Part of the MDN standard CSS reference. Verify exact browser coverage for your support matrix.",
+    "fallbackStrategy": "Declare a simple baseline rule first, then layer enhanced values or selectors where supported.",
+    "tags": [
+      "descriptor",
+      "architecture",
+      "standard"
+    ]
+  },
+  {
+    "slug": "font-style",
+    "title": "font-style",
+    "kind": "descriptor",
+    "syntax": "font-style",
+    "category": "architecture",
+    "status": "standard",
+    "mdnUrl": "https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/At-rules/@font-face/font-style",
+    "summary": "A descriptor entry from the MDN standard CSS reference. This playground demonstrates font-style with live controls, snippets, and computed inspection.",
+    "specNotes": "Static local snapshot from the MDN CSS Reference index for the June 8, 2026 catalog scope.",
+    "browserNotes": "Part of the MDN standard CSS reference. Verify exact browser coverage for your support matrix.",
+    "fallbackStrategy": "Declare a simple baseline rule first, then layer enhanced values or selectors where supported.",
+    "tags": [
+      "descriptor",
+      "architecture",
+      "standard"
+    ]
+  },
+  {
+    "slug": "font-variation-settings",
+    "title": "font-variation-settings",
+    "kind": "descriptor",
+    "syntax": "font-variation-settings",
+    "category": "architecture",
+    "status": "standard",
+    "mdnUrl": "https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/At-rules/@font-face/font-variation-settings",
+    "summary": "A descriptor entry from the MDN standard CSS reference. This playground demonstrates font-variation-settings with live controls, snippets, and computed inspection.",
+    "specNotes": "Static local snapshot from the MDN CSS Reference index for the June 8, 2026 catalog scope.",
+    "browserNotes": "Part of the MDN standard CSS reference. Verify exact browser coverage for your support matrix.",
+    "fallbackStrategy": "Declare a simple baseline rule first, then layer enhanced values or selectors where supported.",
+    "tags": [
+      "descriptor",
+      "architecture",
+      "standard"
+    ]
+  },
+  {
+    "slug": "font-weight",
+    "title": "font-weight",
+    "kind": "descriptor",
+    "syntax": "font-weight",
+    "category": "architecture",
+    "status": "standard",
+    "mdnUrl": "https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/At-rules/@font-face/font-weight",
+    "summary": "A descriptor entry from the MDN standard CSS reference. This playground demonstrates font-weight with live controls, snippets, and computed inspection.",
+    "specNotes": "Static local snapshot from the MDN CSS Reference index for the June 8, 2026 catalog scope.",
+    "browserNotes": "Part of the MDN standard CSS reference. Verify exact browser coverage for your support matrix.",
+    "fallbackStrategy": "Declare a simple baseline rule first, then layer enhanced values or selectors where supported.",
+    "tags": [
+      "descriptor",
+      "architecture",
+      "standard"
+    ]
+  },
+  {
+    "slug": "font-width",
+    "title": "font-width",
+    "kind": "descriptor",
+    "syntax": "font-width",
+    "category": "architecture",
+    "status": "standard",
+    "mdnUrl": "https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/At-rules/@font-face/font-width",
+    "summary": "A descriptor entry from the MDN standard CSS reference. This playground demonstrates font-width with live controls, snippets, and computed inspection.",
+    "specNotes": "Static local snapshot from the MDN CSS Reference index for the June 8, 2026 catalog scope.",
+    "browserNotes": "Part of the MDN standard CSS reference. Verify exact browser coverage for your support matrix.",
+    "fallbackStrategy": "Declare a simple baseline rule first, then layer enhanced values or selectors where supported.",
+    "tags": [
+      "descriptor",
+      "architecture",
+      "standard"
+    ]
+  },
+  {
+    "slug": "inherits",
+    "title": "inherits",
+    "kind": "descriptor",
+    "syntax": "inherits",
+    "category": "architecture",
+    "status": "standard",
+    "mdnUrl": "https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/At-rules/@property/inherits",
+    "summary": "A descriptor entry from the MDN standard CSS reference. This playground demonstrates inherits with live controls, snippets, and computed inspection.",
+    "specNotes": "Static local snapshot from the MDN CSS Reference index for the June 8, 2026 catalog scope.",
+    "browserNotes": "Part of the MDN standard CSS reference. Verify exact browser coverage for your support matrix.",
+    "fallbackStrategy": "Declare a simple baseline rule first, then layer enhanced values or selectors where supported.",
+    "tags": [
+      "descriptor",
+      "architecture",
+      "standard"
+    ]
+  },
+  {
+    "slug": "initial-value",
+    "title": "initial-value",
+    "kind": "descriptor",
+    "syntax": "initial-value",
+    "category": "architecture",
+    "status": "standard",
+    "mdnUrl": "https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/At-rules/@property/initial-value",
+    "summary": "A descriptor entry from the MDN standard CSS reference. This playground demonstrates initial-value with live controls, snippets, and computed inspection.",
+    "specNotes": "Static local snapshot from the MDN CSS Reference index for the June 8, 2026 catalog scope.",
+    "browserNotes": "Part of the MDN standard CSS reference. Verify exact browser coverage for your support matrix.",
+    "fallbackStrategy": "Declare a simple baseline rule first, then layer enhanced values or selectors where supported.",
+    "tags": [
+      "descriptor",
+      "architecture",
+      "standard"
+    ]
+  },
+  {
+    "slug": "line-gap-override",
+    "title": "line-gap-override",
+    "kind": "descriptor",
+    "syntax": "line-gap-override",
+    "category": "architecture",
+    "status": "standard",
+    "mdnUrl": "https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/At-rules/@font-face/line-gap-override",
+    "summary": "A descriptor entry from the MDN standard CSS reference. This playground demonstrates line-gap-override with live controls, snippets, and computed inspection.",
+    "specNotes": "Static local snapshot from the MDN CSS Reference index for the June 8, 2026 catalog scope.",
+    "browserNotes": "Part of the MDN standard CSS reference. Verify exact browser coverage for your support matrix.",
+    "fallbackStrategy": "Declare a simple baseline rule first, then layer enhanced values or selectors where supported.",
+    "tags": [
+      "descriptor",
+      "architecture",
+      "standard"
+    ]
+  },
+  {
+    "slug": "negative",
+    "title": "negative",
+    "kind": "descriptor",
+    "syntax": "negative",
+    "category": "architecture",
+    "status": "standard",
+    "mdnUrl": "https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/At-rules/@counter-style/negative",
+    "summary": "A descriptor entry from the MDN standard CSS reference. This playground demonstrates negative with live controls, snippets, and computed inspection.",
+    "specNotes": "Static local snapshot from the MDN CSS Reference index for the June 8, 2026 catalog scope.",
+    "browserNotes": "Part of the MDN standard CSS reference. Verify exact browser coverage for your support matrix.",
+    "fallbackStrategy": "Declare a simple baseline rule first, then layer enhanced values or selectors where supported.",
+    "tags": [
+      "descriptor",
+      "architecture",
+      "standard"
+    ]
+  },
+  {
+    "slug": "override-colors",
+    "title": "override-colors",
+    "kind": "descriptor",
+    "syntax": "override-colors",
+    "category": "architecture",
+    "status": "standard",
+    "mdnUrl": "https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/At-rules/@font-palette-values/override-colors",
+    "summary": "A descriptor entry from the MDN standard CSS reference. This playground demonstrates override-colors with live controls, snippets, and computed inspection.",
+    "specNotes": "Static local snapshot from the MDN CSS Reference index for the June 8, 2026 catalog scope.",
+    "browserNotes": "Part of the MDN standard CSS reference. Verify exact browser coverage for your support matrix.",
+    "fallbackStrategy": "Declare a simple baseline rule first, then layer enhanced values or selectors where supported.",
+    "tags": [
+      "descriptor",
+      "architecture",
+      "standard"
+    ]
+  },
+  {
+    "slug": "pad",
+    "title": "pad",
+    "kind": "descriptor",
+    "syntax": "pad",
+    "category": "architecture",
+    "status": "standard",
+    "mdnUrl": "https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/At-rules/@counter-style/pad",
+    "summary": "A descriptor entry from the MDN standard CSS reference. This playground demonstrates pad with live controls, snippets, and computed inspection.",
+    "specNotes": "Static local snapshot from the MDN CSS Reference index for the June 8, 2026 catalog scope.",
+    "browserNotes": "Part of the MDN standard CSS reference. Verify exact browser coverage for your support matrix.",
+    "fallbackStrategy": "Declare a simple baseline rule first, then layer enhanced values or selectors where supported.",
+    "tags": [
+      "descriptor",
+      "architecture",
+      "standard"
+    ]
+  },
+  {
+    "slug": "page-orientation",
+    "title": "page-orientation",
+    "kind": "descriptor",
+    "syntax": "page-orientation",
+    "category": "architecture",
+    "status": "standard",
+    "mdnUrl": "https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/At-rules/@page/page-orientation",
+    "summary": "A descriptor entry from the MDN standard CSS reference. This playground demonstrates page-orientation with live controls, snippets, and computed inspection.",
+    "specNotes": "Static local snapshot from the MDN CSS Reference index for the June 8, 2026 catalog scope.",
+    "browserNotes": "Part of the MDN standard CSS reference. Verify exact browser coverage for your support matrix.",
+    "fallbackStrategy": "Declare a simple baseline rule first, then layer enhanced values or selectors where supported.",
+    "tags": [
+      "descriptor",
+      "architecture",
+      "standard"
+    ]
+  },
+  {
+    "slug": "prefix",
+    "title": "prefix",
+    "kind": "descriptor",
+    "syntax": "prefix",
+    "category": "architecture",
+    "status": "standard",
+    "mdnUrl": "https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/At-rules/@counter-style/prefix",
+    "summary": "A descriptor entry from the MDN standard CSS reference. This playground demonstrates prefix with live controls, snippets, and computed inspection.",
+    "specNotes": "Static local snapshot from the MDN CSS Reference index for the June 8, 2026 catalog scope.",
+    "browserNotes": "Part of the MDN standard CSS reference. Verify exact browser coverage for your support matrix.",
+    "fallbackStrategy": "Declare a simple baseline rule first, then layer enhanced values or selectors where supported.",
+    "tags": [
+      "descriptor",
+      "architecture",
+      "standard"
+    ]
+  },
+  {
+    "slug": "range",
+    "title": "range",
+    "kind": "descriptor",
+    "syntax": "range",
+    "category": "architecture",
+    "status": "standard",
+    "mdnUrl": "https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/At-rules/@counter-style/range",
+    "summary": "A descriptor entry from the MDN standard CSS reference. This playground demonstrates range with live controls, snippets, and computed inspection.",
+    "specNotes": "Static local snapshot from the MDN CSS Reference index for the June 8, 2026 catalog scope.",
+    "browserNotes": "Part of the MDN standard CSS reference. Verify exact browser coverage for your support matrix.",
+    "fallbackStrategy": "Declare a simple baseline rule first, then layer enhanced values or selectors where supported.",
+    "tags": [
+      "descriptor",
+      "architecture",
+      "standard"
+    ]
+  },
+  {
+    "slug": "size",
+    "title": "size",
+    "kind": "descriptor",
+    "syntax": "size",
+    "category": "architecture",
+    "status": "standard",
+    "mdnUrl": "https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/At-rules/@page/size",
+    "summary": "A descriptor entry from the MDN standard CSS reference. This playground demonstrates size with live controls, snippets, and computed inspection.",
+    "specNotes": "Static local snapshot from the MDN CSS Reference index for the June 8, 2026 catalog scope.",
+    "browserNotes": "Part of the MDN standard CSS reference. Verify exact browser coverage for your support matrix.",
+    "fallbackStrategy": "Declare a simple baseline rule first, then layer enhanced values or selectors where supported.",
+    "tags": [
+      "descriptor",
+      "architecture",
+      "standard"
+    ]
+  },
+  {
+    "slug": "size-adjust",
+    "title": "size-adjust",
+    "kind": "descriptor",
+    "syntax": "size-adjust",
+    "category": "architecture",
+    "status": "standard",
+    "mdnUrl": "https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/At-rules/@font-face/size-adjust",
+    "summary": "A descriptor entry from the MDN standard CSS reference. This playground demonstrates size-adjust with live controls, snippets, and computed inspection.",
+    "specNotes": "Static local snapshot from the MDN CSS Reference index for the June 8, 2026 catalog scope.",
+    "browserNotes": "Part of the MDN standard CSS reference. Verify exact browser coverage for your support matrix.",
+    "fallbackStrategy": "Declare a simple baseline rule first, then layer enhanced values or selectors where supported.",
+    "tags": [
+      "descriptor",
+      "architecture",
+      "standard"
+    ]
+  },
+  {
+    "slug": "speak-as",
+    "title": "speak-as",
+    "kind": "descriptor",
+    "syntax": "speak-as",
+    "category": "architecture",
+    "status": "deprecated",
+    "mdnUrl": "https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/At-rules/@counter-style/speak-as",
+    "summary": "A descriptor entry from the MDN standard CSS reference. This playground demonstrates speak-as with live controls, snippets, and computed inspection.",
+    "specNotes": "Static local snapshot from the MDN CSS Reference index for the June 8, 2026 catalog scope.",
+    "browserNotes": "Deprecated or legacy CSS. Included for reference, but avoid new production usage unless maintaining older code.",
+    "fallbackStrategy": "Declare a simple baseline rule first, then layer enhanced values or selectors where supported.",
+    "tags": [
+      "descriptor",
+      "architecture",
+      "deprecated"
+    ]
+  },
+  {
+    "slug": "src",
+    "title": "src",
+    "kind": "descriptor",
+    "syntax": "src",
+    "category": "architecture",
+    "status": "standard",
+    "mdnUrl": "https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/At-rules/@font-face/src",
+    "summary": "A descriptor entry from the MDN standard CSS reference. This playground demonstrates src with live controls, snippets, and computed inspection.",
+    "specNotes": "Static local snapshot from the MDN CSS Reference index for the June 8, 2026 catalog scope.",
+    "browserNotes": "Part of the MDN standard CSS reference. Verify exact browser coverage for your support matrix.",
+    "fallbackStrategy": "Declare a simple baseline rule first, then layer enhanced values or selectors where supported.",
+    "tags": [
+      "descriptor",
+      "architecture",
+      "standard"
+    ]
+  },
+  {
+    "slug": "suffix",
+    "title": "suffix",
+    "kind": "descriptor",
+    "syntax": "suffix",
+    "category": "architecture",
+    "status": "standard",
+    "mdnUrl": "https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/At-rules/@counter-style/suffix",
+    "summary": "A descriptor entry from the MDN standard CSS reference. This playground demonstrates suffix with live controls, snippets, and computed inspection.",
+    "specNotes": "Static local snapshot from the MDN CSS Reference index for the June 8, 2026 catalog scope.",
+    "browserNotes": "Part of the MDN standard CSS reference. Verify exact browser coverage for your support matrix.",
+    "fallbackStrategy": "Declare a simple baseline rule first, then layer enhanced values or selectors where supported.",
+    "tags": [
+      "descriptor",
+      "architecture",
+      "standard"
+    ]
+  },
+  {
+    "slug": "symbols",
+    "title": "symbols",
+    "kind": "descriptor",
+    "syntax": "symbols",
+    "category": "architecture",
+    "status": "standard",
+    "mdnUrl": "https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/At-rules/@counter-style/symbols",
+    "summary": "A descriptor entry from the MDN standard CSS reference. This playground demonstrates symbols with live controls, snippets, and computed inspection.",
+    "specNotes": "Static local snapshot from the MDN CSS Reference index for the June 8, 2026 catalog scope.",
+    "browserNotes": "Part of the MDN standard CSS reference. Verify exact browser coverage for your support matrix.",
+    "fallbackStrategy": "Declare a simple baseline rule first, then layer enhanced values or selectors where supported.",
+    "tags": [
+      "descriptor",
+      "architecture",
+      "standard"
+    ]
+  },
+  {
+    "slug": "syntax",
+    "title": "syntax",
+    "kind": "descriptor",
+    "syntax": "syntax",
+    "category": "architecture",
+    "status": "standard",
+    "mdnUrl": "https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/At-rules/@property/syntax",
+    "summary": "A descriptor entry from the MDN standard CSS reference. This playground demonstrates syntax with live controls, snippets, and computed inspection.",
+    "specNotes": "Static local snapshot from the MDN CSS Reference index for the June 8, 2026 catalog scope.",
+    "browserNotes": "Part of the MDN standard CSS reference. Verify exact browser coverage for your support matrix.",
+    "fallbackStrategy": "Declare a simple baseline rule first, then layer enhanced values or selectors where supported.",
+    "tags": [
+      "descriptor",
+      "architecture",
+      "standard"
+    ]
+  },
+  {
+    "slug": "system",
+    "title": "system",
+    "kind": "descriptor",
+    "syntax": "system",
+    "category": "architecture",
+    "status": "standard",
+    "mdnUrl": "https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/At-rules/@counter-style/system",
+    "summary": "A descriptor entry from the MDN standard CSS reference. This playground demonstrates system with live controls, snippets, and computed inspection.",
+    "specNotes": "Static local snapshot from the MDN CSS Reference index for the June 8, 2026 catalog scope.",
+    "browserNotes": "Part of the MDN standard CSS reference. Verify exact browser coverage for your support matrix.",
+    "fallbackStrategy": "Declare a simple baseline rule first, then layer enhanced values or selectors where supported.",
+    "tags": [
+      "descriptor",
+      "architecture",
+      "standard"
+    ]
+  },
+  {
+    "slug": "unicode-range",
+    "title": "unicode-range",
+    "kind": "descriptor",
+    "syntax": "unicode-range",
+    "category": "architecture",
+    "status": "standard",
+    "mdnUrl": "https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/At-rules/@font-face/unicode-range",
+    "summary": "A descriptor entry from the MDN standard CSS reference. This playground demonstrates unicode-range with live controls, snippets, and computed inspection.",
+    "specNotes": "Static local snapshot from the MDN CSS Reference index for the June 8, 2026 catalog scope.",
+    "browserNotes": "Part of the MDN standard CSS reference. Verify exact browser coverage for your support matrix.",
+    "fallbackStrategy": "Declare a simple baseline rule first, then layer enhanced values or selectors where supported.",
+    "tags": [
+      "descriptor",
+      "architecture",
+      "standard"
+    ]
+  }
+]

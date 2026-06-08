@@ -1,0 +1,164 @@
+[
+  {
+    "slug": "attribute-selectors",
+    "title": "Attribute selectors",
+    "kind": "selector",
+    "syntax": "[attr]",
+    "category": "selectors",
+    "status": "standard",
+    "mdnUrl": "https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Selectors/Attribute_selectors",
+    "summary": "A selector entry from the MDN standard CSS reference. This playground demonstrates [attr] with live controls, snippets, and computed inspection.",
+    "specNotes": "Static local snapshot from the MDN CSS Reference index for the June 8, 2026 catalog scope.",
+    "browserNotes": "Part of the MDN standard CSS reference. Verify exact browser coverage for your support matrix.",
+    "fallbackStrategy": "Declare a simple baseline rule first, then layer enhanced values or selectors where supported.",
+    "tags": [
+      "selector",
+      "selectors",
+      "standard"
+    ]
+  },
+  {
+    "slug": "class-selectors",
+    "title": "Class selectors",
+    "kind": "selector",
+    "syntax": ".class",
+    "category": "selectors",
+    "status": "standard",
+    "mdnUrl": "https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Selectors/Class_selectors",
+    "summary": "A selector entry from the MDN standard CSS reference. This playground demonstrates .class with live controls, snippets, and computed inspection.",
+    "specNotes": "Static local snapshot from the MDN CSS Reference index for the June 8, 2026 catalog scope.",
+    "browserNotes": "Part of the MDN standard CSS reference. Verify exact browser coverage for your support matrix.",
+    "fallbackStrategy": "Declare a simple baseline rule first, then layer enhanced values or selectors where supported.",
+    "tags": [
+      "selector",
+      "selectors",
+      "standard"
+    ]
+  },
+  {
+    "slug": "id-selectors",
+    "title": "ID selectors",
+    "kind": "selector",
+    "syntax": "#id",
+    "category": "selectors",
+    "status": "standard",
+    "mdnUrl": "https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Selectors/ID_selectors",
+    "summary": "A selector entry from the MDN standard CSS reference. This playground demonstrates #id with live controls, snippets, and computed inspection.",
+    "specNotes": "Static local snapshot from the MDN CSS Reference index for the June 8, 2026 catalog scope.",
+    "browserNotes": "Part of the MDN standard CSS reference. Verify exact browser coverage for your support matrix.",
+    "fallbackStrategy": "Declare a simple baseline rule first, then layer enhanced values or selectors where supported.",
+    "tags": [
+      "selector",
+      "selectors",
+      "standard"
+    ]
+  },
+  {
+    "slug": "keyframe-selectors",
+    "title": "Keyframe selectors",
+    "kind": "selector",
+    "syntax": "Keyframe selectors",
+    "category": "selectors",
+    "status": "standard",
+    "mdnUrl": "https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Selectors/Keyframe_selectors",
+    "summary": "A selector entry from the MDN standard CSS reference. This playground demonstrates Keyframe selectors with live controls, snippets, and computed inspection.",
+    "specNotes": "Static local snapshot from the MDN CSS Reference index for the June 8, 2026 catalog scope.",
+    "browserNotes": "Part of the MDN standard CSS reference. Verify exact browser coverage for your support matrix.",
+    "fallbackStrategy": "Declare a simple baseline rule first, then layer enhanced values or selectors where supported.",
+    "tags": [
+      "selector",
+      "selectors",
+      "standard"
+    ]
+  },
+  {
+    "slug": "namespace-separator",
+    "title": "Namespace separator",
+    "kind": "selector",
+    "syntax": "|",
+    "category": "selectors",
+    "status": "standard",
+    "mdnUrl": "https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Selectors/Namespace_separator",
+    "summary": "A selector entry from the MDN standard CSS reference. This playground demonstrates | with live controls, snippets, and computed inspection.",
+    "specNotes": "Static local snapshot from the MDN CSS Reference index for the June 8, 2026 catalog scope.",
+    "browserNotes": "Part of the MDN standard CSS reference. Verify exact browser coverage for your support matrix.",
+    "fallbackStrategy": "Declare a simple baseline rule first, then layer enhanced values or selectors where supported.",
+    "tags": [
+      "selector",
+      "selectors",
+      "standard"
+    ]
+  },
+  {
+    "slug": "nesting-selector",
+    "title": "& nesting selector",
+    "kind": "selector",
+    "syntax": "& nesting selector",
+    "category": "selectors",
+    "status": "standard",
+    "mdnUrl": "https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Selectors/Nesting_selector",
+    "summary": "A selector entry from the MDN standard CSS reference. This playground demonstrates & nesting selector with live controls, snippets, and computed inspection.",
+    "specNotes": "Static local snapshot from the MDN CSS Reference index for the June 8, 2026 catalog scope.",
+    "browserNotes": "Part of the MDN standard CSS reference. Verify exact browser coverage for your support matrix.",
+    "fallbackStrategy": "Declare a simple baseline rule first, then layer enhanced values or selectors where supported.",
+    "tags": [
+      "selector",
+      "selectors",
+      "standard"
+    ]
+  },
+  {
+    "slug": "selector-list",
+    "title": "Selector list",
+    "kind": "selector",
+    "syntax": "A, B",
+    "category": "selectors",
+    "status": "standard",
+    "mdnUrl": "https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Selectors/Selector_list",
+    "summary": "A selector entry from the MDN standard CSS reference. This playground demonstrates A, B with live controls, snippets, and computed inspection.",
+    "specNotes": "Static local snapshot from the MDN CSS Reference index for the June 8, 2026 catalog scope.",
+    "browserNotes": "Part of the MDN standard CSS reference. Verify exact browser coverage for your support matrix.",
+    "fallbackStrategy": "Declare a simple baseline rule first, then layer enhanced values or selectors where supported.",
+    "tags": [
+      "selector",
+      "selectors",
+      "standard"
+    ]
+  },
+  {
+    "slug": "type-selectors",
+    "title": "Type selectors",
+    "kind": "selector",
+    "syntax": "element",
+    "category": "selectors",
+    "status": "standard",
+    "mdnUrl": "https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Selectors/Type_selectors",
+    "summary": "A selector entry from the MDN standard CSS reference. This playground demonstrates element with live controls, snippets, and computed inspection.",
+    "specNotes": "Static local snapshot from the MDN CSS Reference index for the June 8, 2026 catalog scope.",
+    "browserNotes": "Part of the MDN standard CSS reference. Verify exact browser coverage for your support matrix.",
+    "fallbackStrategy": "Declare a simple baseline rule first, then layer enhanced values or selectors where supported.",
+    "tags": [
+      "selector",
+      "selectors",
+      "standard"
+    ]
+  },
+  {
+    "slug": "universal-selectors",
+    "title": "Universal selectors",
+    "kind": "selector",
+    "syntax": "*",
+    "category": "selectors",
+    "status": "standard",
+    "mdnUrl": "https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Selectors/Universal_selectors",
+    "summary": "A selector entry from the MDN standard CSS reference. This playground demonstrates * with live controls, snippets, and computed inspection.",
+    "specNotes": "Static local snapshot from the MDN CSS Reference index for the June 8, 2026 catalog scope.",
+    "browserNotes": "Part of the MDN standard CSS reference. Verify exact browser coverage for your support matrix.",
+    "fallbackStrategy": "Declare a simple baseline rule first, then layer enhanced values or selectors where supported.",
+    "tags": [
+      "selector",
+      "selectors",
+      "standard"
+    ]
+  }
+]

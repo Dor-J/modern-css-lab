@@ -1,0 +1,2018 @@
+[
+  {
+    "slug": "abs-function",
+    "title": "abs()",
+    "kind": "function",
+    "syntax": "abs()",
+    "category": "functions",
+    "status": "standard",
+    "mdnUrl": "https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Values/abs",
+    "summary": "A function entry from the MDN standard CSS reference. This playground demonstrates abs() with live controls, snippets, and computed inspection.",
+    "specNotes": "Static local snapshot from the MDN CSS Reference index for the June 8, 2026 catalog scope.",
+    "browserNotes": "Part of the MDN standard CSS reference. Verify exact browser coverage for your support matrix.",
+    "fallbackStrategy": "Declare a simple baseline rule first, then layer enhanced values or selectors where supported.",
+    "tags": [
+      "function",
+      "functions",
+      "standard"
+    ]
+  },
+  {
+    "slug": "acos-function",
+    "title": "acos()",
+    "kind": "function",
+    "syntax": "acos()",
+    "category": "functions",
+    "status": "standard",
+    "mdnUrl": "https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Values/acos",
+    "summary": "A function entry from the MDN standard CSS reference. This playground demonstrates acos() with live controls, snippets, and computed inspection.",
+    "specNotes": "Static local snapshot from the MDN CSS Reference index for the June 8, 2026 catalog scope.",
+    "browserNotes": "Part of the MDN standard CSS reference. Verify exact browser coverage for your support matrix.",
+    "fallbackStrategy": "Declare a simple baseline rule first, then layer enhanced values or selectors where supported.",
+    "tags": [
+      "function",
+      "functions",
+      "standard"
+    ]
+  },
+  {
+    "slug": "anchor-function",
+    "title": "anchor()",
+    "kind": "function",
+    "syntax": "anchor()",
+    "category": "layout",
+    "status": "standard",
+    "mdnUrl": "https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Values/anchor",
+    "summary": "A function entry from the MDN standard CSS reference. This playground demonstrates anchor() with live controls, snippets, and computed inspection.",
+    "specNotes": "Static local snapshot from the MDN CSS Reference index for the June 8, 2026 catalog scope.",
+    "browserNotes": "Part of the MDN standard CSS reference. Verify exact browser coverage for your support matrix.",
+    "fallbackStrategy": "Declare a simple baseline rule first, then layer enhanced values or selectors where supported.",
+    "tags": [
+      "function",
+      "layout",
+      "standard"
+    ]
+  },
+  {
+    "slug": "anchor-size-function",
+    "title": "anchor-size()",
+    "kind": "function",
+    "syntax": "anchor-size()",
+    "category": "layout",
+    "status": "standard",
+    "mdnUrl": "https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Values/anchor-size",
+    "summary": "A function entry from the MDN standard CSS reference. This playground demonstrates anchor-size() with live controls, snippets, and computed inspection.",
+    "specNotes": "Static local snapshot from the MDN CSS Reference index for the June 8, 2026 catalog scope.",
+    "browserNotes": "Part of the MDN standard CSS reference. Verify exact browser coverage for your support matrix.",
+    "fallbackStrategy": "Declare a simple baseline rule first, then layer enhanced values or selectors where supported.",
+    "tags": [
+      "function",
+      "layout",
+      "standard"
+    ]
+  },
+  {
+    "slug": "asin-function",
+    "title": "asin()",
+    "kind": "function",
+    "syntax": "asin()",
+    "category": "functions",
+    "status": "standard",
+    "mdnUrl": "https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Values/asin",
+    "summary": "A function entry from the MDN standard CSS reference. This playground demonstrates asin() with live controls, snippets, and computed inspection.",
+    "specNotes": "Static local snapshot from the MDN CSS Reference index for the June 8, 2026 catalog scope.",
+    "browserNotes": "Part of the MDN standard CSS reference. Verify exact browser coverage for your support matrix.",
+    "fallbackStrategy": "Declare a simple baseline rule first, then layer enhanced values or selectors where supported.",
+    "tags": [
+      "function",
+      "functions",
+      "standard"
+    ]
+  },
+  {
+    "slug": "atan-function",
+    "title": "atan()",
+    "kind": "function",
+    "syntax": "atan()",
+    "category": "functions",
+    "status": "standard",
+    "mdnUrl": "https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Values/atan",
+    "summary": "A function entry from the MDN standard CSS reference. This playground demonstrates atan() with live controls, snippets, and computed inspection.",
+    "specNotes": "Static local snapshot from the MDN CSS Reference index for the June 8, 2026 catalog scope.",
+    "browserNotes": "Part of the MDN standard CSS reference. Verify exact browser coverage for your support matrix.",
+    "fallbackStrategy": "Declare a simple baseline rule first, then layer enhanced values or selectors where supported.",
+    "tags": [
+      "function",
+      "functions",
+      "standard"
+    ]
+  },
+  {
+    "slug": "atan2-function",
+    "title": "atan2()",
+    "kind": "function",
+    "syntax": "atan2()",
+    "category": "functions",
+    "status": "standard",
+    "mdnUrl": "https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Values/atan2",
+    "summary": "A function entry from the MDN standard CSS reference. This playground demonstrates atan2() with live controls, snippets, and computed inspection.",
+    "specNotes": "Static local snapshot from the MDN CSS Reference index for the June 8, 2026 catalog scope.",
+    "browserNotes": "Part of the MDN standard CSS reference. Verify exact browser coverage for your support matrix.",
+    "fallbackStrategy": "Declare a simple baseline rule first, then layer enhanced values or selectors where supported.",
+    "tags": [
+      "function",
+      "functions",
+      "standard"
+    ]
+  },
+  {
+    "slug": "attr-function",
+    "title": "attr()",
+    "kind": "function",
+    "syntax": "attr()",
+    "category": "functions",
+    "status": "standard",
+    "mdnUrl": "https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Values/attr",
+    "summary": "A function entry from the MDN standard CSS reference. This playground demonstrates attr() with live controls, snippets, and computed inspection.",
+    "specNotes": "Static local snapshot from the MDN CSS Reference index for the June 8, 2026 catalog scope.",
+    "browserNotes": "Part of the MDN standard CSS reference. Verify exact browser coverage for your support matrix.",
+    "fallbackStrategy": "Declare a simple baseline rule first, then layer enhanced values or selectors where supported.",
+    "tags": [
+      "function",
+      "functions",
+      "standard"
+    ]
+  },
+  {
+    "slug": "blur-function",
+    "title": "blur()",
+    "kind": "function",
+    "syntax": "blur()",
+    "category": "functions",
+    "status": "standard",
+    "mdnUrl": "https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Values/filter-function/blur",
+    "summary": "A function entry from the MDN standard CSS reference. This playground demonstrates blur() with live controls, snippets, and computed inspection.",
+    "specNotes": "Static local snapshot from the MDN CSS Reference index for the June 8, 2026 catalog scope.",
+    "browserNotes": "Part of the MDN standard CSS reference. Verify exact browser coverage for your support matrix.",
+    "fallbackStrategy": "Declare a simple baseline rule first, then layer enhanced values or selectors where supported.",
+    "tags": [
+      "function",
+      "functions",
+      "standard"
+    ]
+  },
+  {
+    "slug": "brightness-function",
+    "title": "brightness()",
+    "kind": "function",
+    "syntax": "brightness()",
+    "category": "functions",
+    "status": "standard",
+    "mdnUrl": "https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Values/filter-function/brightness",
+    "summary": "A function entry from the MDN standard CSS reference. This playground demonstrates brightness() with live controls, snippets, and computed inspection.",
+    "specNotes": "Static local snapshot from the MDN CSS Reference index for the June 8, 2026 catalog scope.",
+    "browserNotes": "Part of the MDN standard CSS reference. Verify exact browser coverage for your support matrix.",
+    "fallbackStrategy": "Declare a simple baseline rule first, then layer enhanced values or selectors where supported.",
+    "tags": [
+      "function",
+      "functions",
+      "standard"
+    ]
+  },
+  {
+    "slug": "calc-function",
+    "title": "calc()",
+    "kind": "function",
+    "syntax": "calc()",
+    "category": "functions",
+    "status": "standard",
+    "mdnUrl": "https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Values/calc",
+    "summary": "A function entry from the MDN standard CSS reference. This playground demonstrates calc() with live controls, snippets, and computed inspection.",
+    "specNotes": "Static local snapshot from the MDN CSS Reference index for the June 8, 2026 catalog scope.",
+    "browserNotes": "Part of the MDN standard CSS reference. Verify exact browser coverage for your support matrix.",
+    "fallbackStrategy": "Declare a simple baseline rule first, then layer enhanced values or selectors where supported.",
+    "tags": [
+      "function",
+      "functions",
+      "standard"
+    ]
+  },
+  {
+    "slug": "calc-size-function",
+    "title": "calc-size()",
+    "kind": "function",
+    "syntax": "calc-size()",
+    "category": "layout",
+    "status": "experimental",
+    "mdnUrl": "https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Values/calc-size",
+    "summary": "A function entry from the MDN standard CSS reference. This playground demonstrates calc-size() with live controls, snippets, and computed inspection.",
+    "specNotes": "Static local snapshot from the MDN CSS Reference index for the June 8, 2026 catalog scope.",
+    "browserNotes": "Limited or emerging support. The demo keeps a fallback path and labels support with CSS.supports() when possible.",
+    "fallbackStrategy": "Ship a complete baseline visual first, then place this syntax behind @supports or a syntax-preview note.",
+    "tags": [
+      "function",
+      "layout",
+      "experimental"
+    ]
+  },
+  {
+    "slug": "circle-function",
+    "title": "circle()",
+    "kind": "function",
+    "syntax": "circle()",
+    "category": "functions",
+    "status": "standard",
+    "mdnUrl": "https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Values/basic-shape/circle",
+    "summary": "A function entry from the MDN standard CSS reference. This playground demonstrates circle() with live controls, snippets, and computed inspection.",
+    "specNotes": "Static local snapshot from the MDN CSS Reference index for the June 8, 2026 catalog scope.",
+    "browserNotes": "Part of the MDN standard CSS reference. Verify exact browser coverage for your support matrix.",
+    "fallbackStrategy": "Declare a simple baseline rule first, then layer enhanced values or selectors where supported.",
+    "tags": [
+      "function",
+      "functions",
+      "standard"
+    ]
+  },
+  {
+    "slug": "clamp-function",
+    "title": "clamp()",
+    "kind": "function",
+    "syntax": "clamp()",
+    "category": "functions",
+    "status": "standard",
+    "mdnUrl": "https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Values/clamp",
+    "summary": "A function entry from the MDN standard CSS reference. This playground demonstrates clamp() with live controls, snippets, and computed inspection.",
+    "specNotes": "Static local snapshot from the MDN CSS Reference index for the June 8, 2026 catalog scope.",
+    "browserNotes": "Part of the MDN standard CSS reference. Verify exact browser coverage for your support matrix.",
+    "fallbackStrategy": "Declare a simple baseline rule first, then layer enhanced values or selectors where supported.",
+    "tags": [
+      "function",
+      "functions",
+      "standard"
+    ]
+  },
+  {
+    "slug": "color-function",
+    "title": "color()",
+    "kind": "function",
+    "syntax": "color()",
+    "category": "colors",
+    "status": "standard",
+    "mdnUrl": "https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Values/color_value/color",
+    "summary": "A function entry from the MDN standard CSS reference. This playground demonstrates color() with live controls, snippets, and computed inspection.",
+    "specNotes": "Static local snapshot from the MDN CSS Reference index for the June 8, 2026 catalog scope.",
+    "browserNotes": "Part of the MDN standard CSS reference. Verify exact browser coverage for your support matrix.",
+    "fallbackStrategy": "Declare a simple baseline rule first, then layer enhanced values or selectors where supported.",
+    "tags": [
+      "function",
+      "colors",
+      "standard"
+    ]
+  },
+  {
+    "slug": "color-mix-function",
+    "title": "color-mix()",
+    "kind": "function",
+    "syntax": "color-mix()",
+    "category": "colors",
+    "status": "standard",
+    "mdnUrl": "https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Values/color_value/color-mix",
+    "summary": "A function entry from the MDN standard CSS reference. This playground demonstrates color-mix() with live controls, snippets, and computed inspection.",
+    "specNotes": "Static local snapshot from the MDN CSS Reference index for the June 8, 2026 catalog scope.",
+    "browserNotes": "Part of the MDN standard CSS reference. Verify exact browser coverage for your support matrix.",
+    "fallbackStrategy": "Declare a simple baseline rule first, then layer enhanced values or selectors where supported.",
+    "tags": [
+      "function",
+      "colors",
+      "standard"
+    ]
+  },
+  {
+    "slug": "conic-gradient-function",
+    "title": "conic-gradient()",
+    "kind": "function",
+    "syntax": "conic-gradient()",
+    "category": "functions",
+    "status": "standard",
+    "mdnUrl": "https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Values/gradient/conic-gradient",
+    "summary": "A function entry from the MDN standard CSS reference. This playground demonstrates conic-gradient() with live controls, snippets, and computed inspection.",
+    "specNotes": "Static local snapshot from the MDN CSS Reference index for the June 8, 2026 catalog scope.",
+    "browserNotes": "Part of the MDN standard CSS reference. Verify exact browser coverage for your support matrix.",
+    "fallbackStrategy": "Declare a simple baseline rule first, then layer enhanced values or selectors where supported.",
+    "tags": [
+      "function",
+      "functions",
+      "standard"
+    ]
+  },
+  {
+    "slug": "contrast-function",
+    "title": "contrast()",
+    "kind": "function",
+    "syntax": "contrast()",
+    "category": "colors",
+    "status": "standard",
+    "mdnUrl": "https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Values/filter-function/contrast",
+    "summary": "A function entry from the MDN standard CSS reference. This playground demonstrates contrast() with live controls, snippets, and computed inspection.",
+    "specNotes": "Static local snapshot from the MDN CSS Reference index for the June 8, 2026 catalog scope.",
+    "browserNotes": "Part of the MDN standard CSS reference. Verify exact browser coverage for your support matrix.",
+    "fallbackStrategy": "Declare a simple baseline rule first, then layer enhanced values or selectors where supported.",
+    "tags": [
+      "function",
+      "colors",
+      "standard"
+    ]
+  },
+  {
+    "slug": "contrast-color-function",
+    "title": "contrast-color()",
+    "kind": "function",
+    "syntax": "contrast-color()",
+    "category": "colors",
+    "status": "experimental",
+    "mdnUrl": "https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Values/color_value/contrast-color",
+    "summary": "A function entry from the MDN standard CSS reference. This playground demonstrates contrast-color() with live controls, snippets, and computed inspection.",
+    "specNotes": "Static local snapshot from the MDN CSS Reference index for the June 8, 2026 catalog scope.",
+    "browserNotes": "Limited or emerging support. The demo keeps a fallback path and labels support with CSS.supports() when possible.",
+    "fallbackStrategy": "Ship a complete baseline visual first, then place this syntax behind @supports or a syntax-preview note.",
+    "tags": [
+      "function",
+      "colors",
+      "experimental"
+    ]
+  },
+  {
+    "slug": "cos-function",
+    "title": "cos()",
+    "kind": "function",
+    "syntax": "cos()",
+    "category": "functions",
+    "status": "standard",
+    "mdnUrl": "https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Values/cos",
+    "summary": "A function entry from the MDN standard CSS reference. This playground demonstrates cos() with live controls, snippets, and computed inspection.",
+    "specNotes": "Static local snapshot from the MDN CSS Reference index for the June 8, 2026 catalog scope.",
+    "browserNotes": "Part of the MDN standard CSS reference. Verify exact browser coverage for your support matrix.",
+    "fallbackStrategy": "Declare a simple baseline rule first, then layer enhanced values or selectors where supported.",
+    "tags": [
+      "function",
+      "functions",
+      "standard"
+    ]
+  },
+  {
+    "slug": "counter-function",
+    "title": "counter()",
+    "kind": "function",
+    "syntax": "counter()",
+    "category": "functions",
+    "status": "standard",
+    "mdnUrl": "https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Values/counter",
+    "summary": "A function entry from the MDN standard CSS reference. This playground demonstrates counter() with live controls, snippets, and computed inspection.",
+    "specNotes": "Static local snapshot from the MDN CSS Reference index for the June 8, 2026 catalog scope.",
+    "browserNotes": "Part of the MDN standard CSS reference. Verify exact browser coverage for your support matrix.",
+    "fallbackStrategy": "Declare a simple baseline rule first, then layer enhanced values or selectors where supported.",
+    "tags": [
+      "function",
+      "functions",
+      "standard"
+    ]
+  },
+  {
+    "slug": "counters-function",
+    "title": "counters()",
+    "kind": "function",
+    "syntax": "counters()",
+    "category": "functions",
+    "status": "standard",
+    "mdnUrl": "https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Values/counters",
+    "summary": "A function entry from the MDN standard CSS reference. This playground demonstrates counters() with live controls, snippets, and computed inspection.",
+    "specNotes": "Static local snapshot from the MDN CSS Reference index for the June 8, 2026 catalog scope.",
+    "browserNotes": "Part of the MDN standard CSS reference. Verify exact browser coverage for your support matrix.",
+    "fallbackStrategy": "Declare a simple baseline rule first, then layer enhanced values or selectors where supported.",
+    "tags": [
+      "function",
+      "functions",
+      "standard"
+    ]
+  },
+  {
+    "slug": "cross-fade-function",
+    "title": "cross-fade()",
+    "kind": "function",
+    "syntax": "cross-fade()",
+    "category": "functions",
+    "status": "standard",
+    "mdnUrl": "https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Values/cross-fade",
+    "summary": "A function entry from the MDN standard CSS reference. This playground demonstrates cross-fade() with live controls, snippets, and computed inspection.",
+    "specNotes": "Static local snapshot from the MDN CSS Reference index for the June 8, 2026 catalog scope.",
+    "browserNotes": "Part of the MDN standard CSS reference. Verify exact browser coverage for your support matrix.",
+    "fallbackStrategy": "Declare a simple baseline rule first, then layer enhanced values or selectors where supported.",
+    "tags": [
+      "function",
+      "functions",
+      "standard"
+    ]
+  },
+  {
+    "slug": "cubic-bezier-function",
+    "title": "cubic-bezier()",
+    "kind": "function",
+    "syntax": "cubic-bezier()",
+    "category": "motion",
+    "status": "standard",
+    "mdnUrl": "https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Values/easing-function/cubic-bezier",
+    "summary": "A function entry from the MDN standard CSS reference. This playground demonstrates cubic-bezier() with live controls, snippets, and computed inspection.",
+    "specNotes": "Static local snapshot from the MDN CSS Reference index for the June 8, 2026 catalog scope.",
+    "browserNotes": "Part of the MDN standard CSS reference. Verify exact browser coverage for your support matrix.",
+    "fallbackStrategy": "Declare a simple baseline rule first, then layer enhanced values or selectors where supported.",
+    "tags": [
+      "function",
+      "motion",
+      "standard"
+    ]
+  },
+  {
+    "slug": "device-cmyk-function",
+    "title": "device-cmyk()",
+    "kind": "function",
+    "syntax": "device-cmyk()",
+    "category": "functions",
+    "status": "standard",
+    "mdnUrl": "https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Values/color_value/device-cmyk",
+    "summary": "A function entry from the MDN standard CSS reference. This playground demonstrates device-cmyk() with live controls, snippets, and computed inspection.",
+    "specNotes": "Static local snapshot from the MDN CSS Reference index for the June 8, 2026 catalog scope.",
+    "browserNotes": "Part of the MDN standard CSS reference. Verify exact browser coverage for your support matrix.",
+    "fallbackStrategy": "Declare a simple baseline rule first, then layer enhanced values or selectors where supported.",
+    "tags": [
+      "function",
+      "functions",
+      "standard"
+    ]
+  },
+  {
+    "slug": "drop-shadow-function",
+    "title": "drop-shadow()",
+    "kind": "function",
+    "syntax": "drop-shadow()",
+    "category": "effects",
+    "status": "standard",
+    "mdnUrl": "https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Values/filter-function/drop-shadow",
+    "summary": "A function entry from the MDN standard CSS reference. This playground demonstrates drop-shadow() with live controls, snippets, and computed inspection.",
+    "specNotes": "Static local snapshot from the MDN CSS Reference index for the June 8, 2026 catalog scope.",
+    "browserNotes": "Part of the MDN standard CSS reference. Verify exact browser coverage for your support matrix.",
+    "fallbackStrategy": "Declare a simple baseline rule first, then layer enhanced values or selectors where supported.",
+    "tags": [
+      "function",
+      "effects",
+      "standard"
+    ]
+  },
+  {
+    "slug": "dynamic-range-limit-mix-function",
+    "title": "dynamic-range-limit-mix()",
+    "kind": "function",
+    "syntax": "dynamic-range-limit-mix()",
+    "category": "colors",
+    "status": "standard",
+    "mdnUrl": "https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Values/dynamic-range-limit-mix",
+    "summary": "A function entry from the MDN standard CSS reference. This playground demonstrates dynamic-range-limit-mix() with live controls, snippets, and computed inspection.",
+    "specNotes": "Static local snapshot from the MDN CSS Reference index for the June 8, 2026 catalog scope.",
+    "browserNotes": "Part of the MDN standard CSS reference. Verify exact browser coverage for your support matrix.",
+    "fallbackStrategy": "Declare a simple baseline rule first, then layer enhanced values or selectors where supported.",
+    "tags": [
+      "function",
+      "colors",
+      "standard"
+    ]
+  },
+  {
+    "slug": "element-function",
+    "title": "element()",
+    "kind": "function",
+    "syntax": "element()",
+    "category": "functions",
+    "status": "standard",
+    "mdnUrl": "https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Values/element",
+    "summary": "A function entry from the MDN standard CSS reference. This playground demonstrates element() with live controls, snippets, and computed inspection.",
+    "specNotes": "Static local snapshot from the MDN CSS Reference index for the June 8, 2026 catalog scope.",
+    "browserNotes": "Part of the MDN standard CSS reference. Verify exact browser coverage for your support matrix.",
+    "fallbackStrategy": "Declare a simple baseline rule first, then layer enhanced values or selectors where supported.",
+    "tags": [
+      "function",
+      "functions",
+      "standard"
+    ]
+  },
+  {
+    "slug": "ellipse-function",
+    "title": "ellipse()",
+    "kind": "function",
+    "syntax": "ellipse()",
+    "category": "functions",
+    "status": "standard",
+    "mdnUrl": "https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Values/basic-shape/ellipse",
+    "summary": "A function entry from the MDN standard CSS reference. This playground demonstrates ellipse() with live controls, snippets, and computed inspection.",
+    "specNotes": "Static local snapshot from the MDN CSS Reference index for the June 8, 2026 catalog scope.",
+    "browserNotes": "Part of the MDN standard CSS reference. Verify exact browser coverage for your support matrix.",
+    "fallbackStrategy": "Declare a simple baseline rule first, then layer enhanced values or selectors where supported.",
+    "tags": [
+      "function",
+      "functions",
+      "standard"
+    ]
+  },
+  {
+    "slug": "env-function",
+    "title": "env()",
+    "kind": "function",
+    "syntax": "env()",
+    "category": "functions",
+    "status": "standard",
+    "mdnUrl": "https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Values/env",
+    "summary": "A function entry from the MDN standard CSS reference. This playground demonstrates env() with live controls, snippets, and computed inspection.",
+    "specNotes": "Static local snapshot from the MDN CSS Reference index for the June 8, 2026 catalog scope.",
+    "browserNotes": "Part of the MDN standard CSS reference. Verify exact browser coverage for your support matrix.",
+    "fallbackStrategy": "Declare a simple baseline rule first, then layer enhanced values or selectors where supported.",
+    "tags": [
+      "function",
+      "functions",
+      "standard"
+    ]
+  },
+  {
+    "slug": "exp-function",
+    "title": "exp()",
+    "kind": "function",
+    "syntax": "exp()",
+    "category": "functions",
+    "status": "standard",
+    "mdnUrl": "https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Values/exp",
+    "summary": "A function entry from the MDN standard CSS reference. This playground demonstrates exp() with live controls, snippets, and computed inspection.",
+    "specNotes": "Static local snapshot from the MDN CSS Reference index for the June 8, 2026 catalog scope.",
+    "browserNotes": "Part of the MDN standard CSS reference. Verify exact browser coverage for your support matrix.",
+    "fallbackStrategy": "Declare a simple baseline rule first, then layer enhanced values or selectors where supported.",
+    "tags": [
+      "function",
+      "functions",
+      "standard"
+    ]
+  },
+  {
+    "slug": "fit-content-function",
+    "title": "fit-content()",
+    "kind": "function",
+    "syntax": "fit-content()",
+    "category": "functions",
+    "status": "standard",
+    "mdnUrl": "https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Values/fit-content_function",
+    "summary": "A function entry from the MDN standard CSS reference. This playground demonstrates fit-content() with live controls, snippets, and computed inspection.",
+    "specNotes": "Static local snapshot from the MDN CSS Reference index for the June 8, 2026 catalog scope.",
+    "browserNotes": "Part of the MDN standard CSS reference. Verify exact browser coverage for your support matrix.",
+    "fallbackStrategy": "Declare a simple baseline rule first, then layer enhanced values or selectors where supported.",
+    "tags": [
+      "function",
+      "functions",
+      "standard"
+    ]
+  },
+  {
+    "slug": "grayscale-function",
+    "title": "grayscale()",
+    "kind": "function",
+    "syntax": "grayscale()",
+    "category": "motion",
+    "status": "standard",
+    "mdnUrl": "https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Values/filter-function/grayscale",
+    "summary": "A function entry from the MDN standard CSS reference. This playground demonstrates grayscale() with live controls, snippets, and computed inspection.",
+    "specNotes": "Static local snapshot from the MDN CSS Reference index for the June 8, 2026 catalog scope.",
+    "browserNotes": "Part of the MDN standard CSS reference. Verify exact browser coverage for your support matrix.",
+    "fallbackStrategy": "Declare a simple baseline rule first, then layer enhanced values or selectors where supported.",
+    "tags": [
+      "function",
+      "motion",
+      "standard"
+    ]
+  },
+  {
+    "slug": "hsl-function",
+    "title": "hsl()",
+    "kind": "function",
+    "syntax": "hsl()",
+    "category": "colors",
+    "status": "standard",
+    "mdnUrl": "https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Values/color_value/hsl",
+    "summary": "A function entry from the MDN standard CSS reference. This playground demonstrates hsl() with live controls, snippets, and computed inspection.",
+    "specNotes": "Static local snapshot from the MDN CSS Reference index for the June 8, 2026 catalog scope.",
+    "browserNotes": "Part of the MDN standard CSS reference. Verify exact browser coverage for your support matrix.",
+    "fallbackStrategy": "Declare a simple baseline rule first, then layer enhanced values or selectors where supported.",
+    "tags": [
+      "function",
+      "colors",
+      "standard"
+    ]
+  },
+  {
+    "slug": "hue-rotate-function",
+    "title": "hue-rotate()",
+    "kind": "function",
+    "syntax": "hue-rotate()",
+    "category": "colors",
+    "status": "standard",
+    "mdnUrl": "https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Values/filter-function/hue-rotate",
+    "summary": "A function entry from the MDN standard CSS reference. This playground demonstrates hue-rotate() with live controls, snippets, and computed inspection.",
+    "specNotes": "Static local snapshot from the MDN CSS Reference index for the June 8, 2026 catalog scope.",
+    "browserNotes": "Part of the MDN standard CSS reference. Verify exact browser coverage for your support matrix.",
+    "fallbackStrategy": "Declare a simple baseline rule first, then layer enhanced values or selectors where supported.",
+    "tags": [
+      "function",
+      "colors",
+      "standard"
+    ]
+  },
+  {
+    "slug": "hwb-function",
+    "title": "hwb()",
+    "kind": "function",
+    "syntax": "hwb()",
+    "category": "colors",
+    "status": "standard",
+    "mdnUrl": "https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Values/color_value/hwb",
+    "summary": "A function entry from the MDN standard CSS reference. This playground demonstrates hwb() with live controls, snippets, and computed inspection.",
+    "specNotes": "Static local snapshot from the MDN CSS Reference index for the June 8, 2026 catalog scope.",
+    "browserNotes": "Part of the MDN standard CSS reference. Verify exact browser coverage for your support matrix.",
+    "fallbackStrategy": "Declare a simple baseline rule first, then layer enhanced values or selectors where supported.",
+    "tags": [
+      "function",
+      "colors",
+      "standard"
+    ]
+  },
+  {
+    "slug": "hypot-function",
+    "title": "hypot()",
+    "kind": "function",
+    "syntax": "hypot()",
+    "category": "functions",
+    "status": "standard",
+    "mdnUrl": "https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Values/hypot",
+    "summary": "A function entry from the MDN standard CSS reference. This playground demonstrates hypot() with live controls, snippets, and computed inspection.",
+    "specNotes": "Static local snapshot from the MDN CSS Reference index for the June 8, 2026 catalog scope.",
+    "browserNotes": "Part of the MDN standard CSS reference. Verify exact browser coverage for your support matrix.",
+    "fallbackStrategy": "Declare a simple baseline rule first, then layer enhanced values or selectors where supported.",
+    "tags": [
+      "function",
+      "functions",
+      "standard"
+    ]
+  },
+  {
+    "slug": "if-function",
+    "title": "if()",
+    "kind": "function",
+    "syntax": "if()",
+    "category": "functions",
+    "status": "experimental",
+    "mdnUrl": "https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Values/if",
+    "summary": "A function entry from the MDN standard CSS reference. This playground demonstrates if() with live controls, snippets, and computed inspection.",
+    "specNotes": "Static local snapshot from the MDN CSS Reference index for the June 8, 2026 catalog scope.",
+    "browserNotes": "Limited or emerging support. The demo keeps a fallback path and labels support with CSS.supports() when possible.",
+    "fallbackStrategy": "Ship a complete baseline visual first, then place this syntax behind @supports or a syntax-preview note.",
+    "tags": [
+      "function",
+      "functions",
+      "experimental"
+    ]
+  },
+  {
+    "slug": "image-function",
+    "title": "image()",
+    "kind": "function",
+    "syntax": "image()",
+    "category": "effects",
+    "status": "standard",
+    "mdnUrl": "https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Values/image/image",
+    "summary": "A function entry from the MDN standard CSS reference. This playground demonstrates image() with live controls, snippets, and computed inspection.",
+    "specNotes": "Static local snapshot from the MDN CSS Reference index for the June 8, 2026 catalog scope.",
+    "browserNotes": "Part of the MDN standard CSS reference. Verify exact browser coverage for your support matrix.",
+    "fallbackStrategy": "Declare a simple baseline rule first, then layer enhanced values or selectors where supported.",
+    "tags": [
+      "function",
+      "effects",
+      "standard"
+    ]
+  },
+  {
+    "slug": "image-set-function",
+    "title": "image-set()",
+    "kind": "function",
+    "syntax": "image-set()",
+    "category": "effects",
+    "status": "standard",
+    "mdnUrl": "https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Values/image/image-set",
+    "summary": "A function entry from the MDN standard CSS reference. This playground demonstrates image-set() with live controls, snippets, and computed inspection.",
+    "specNotes": "Static local snapshot from the MDN CSS Reference index for the June 8, 2026 catalog scope.",
+    "browserNotes": "Part of the MDN standard CSS reference. Verify exact browser coverage for your support matrix.",
+    "fallbackStrategy": "Declare a simple baseline rule first, then layer enhanced values or selectors where supported.",
+    "tags": [
+      "function",
+      "effects",
+      "standard"
+    ]
+  },
+  {
+    "slug": "inset-function",
+    "title": "inset()",
+    "kind": "function",
+    "syntax": "inset()",
+    "category": "layout",
+    "status": "standard",
+    "mdnUrl": "https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Values/basic-shape/inset",
+    "summary": "A function entry from the MDN standard CSS reference. This playground demonstrates inset() with live controls, snippets, and computed inspection.",
+    "specNotes": "Static local snapshot from the MDN CSS Reference index for the June 8, 2026 catalog scope.",
+    "browserNotes": "Part of the MDN standard CSS reference. Verify exact browser coverage for your support matrix.",
+    "fallbackStrategy": "Declare a simple baseline rule first, then layer enhanced values or selectors where supported.",
+    "tags": [
+      "function",
+      "layout",
+      "standard"
+    ]
+  },
+  {
+    "slug": "invert-function",
+    "title": "invert()",
+    "kind": "function",
+    "syntax": "invert()",
+    "category": "functions",
+    "status": "standard",
+    "mdnUrl": "https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Values/filter-function/invert",
+    "summary": "A function entry from the MDN standard CSS reference. This playground demonstrates invert() with live controls, snippets, and computed inspection.",
+    "specNotes": "Static local snapshot from the MDN CSS Reference index for the June 8, 2026 catalog scope.",
+    "browserNotes": "Part of the MDN standard CSS reference. Verify exact browser coverage for your support matrix.",
+    "fallbackStrategy": "Declare a simple baseline rule first, then layer enhanced values or selectors where supported.",
+    "tags": [
+      "function",
+      "functions",
+      "standard"
+    ]
+  },
+  {
+    "slug": "lab-function",
+    "title": "lab()",
+    "kind": "function",
+    "syntax": "lab()",
+    "category": "colors",
+    "status": "standard",
+    "mdnUrl": "https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Values/color_value/lab",
+    "summary": "A function entry from the MDN standard CSS reference. This playground demonstrates lab() with live controls, snippets, and computed inspection.",
+    "specNotes": "Static local snapshot from the MDN CSS Reference index for the June 8, 2026 catalog scope.",
+    "browserNotes": "Part of the MDN standard CSS reference. Verify exact browser coverage for your support matrix.",
+    "fallbackStrategy": "Declare a simple baseline rule first, then layer enhanced values or selectors where supported.",
+    "tags": [
+      "function",
+      "colors",
+      "standard"
+    ]
+  },
+  {
+    "slug": "layer-function",
+    "title": "layer()",
+    "kind": "function",
+    "syntax": "layer()",
+    "category": "architecture",
+    "status": "standard",
+    "mdnUrl": "https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/At-rules/@import/layer_function",
+    "summary": "A function entry from the MDN standard CSS reference. This playground demonstrates layer() with live controls, snippets, and computed inspection.",
+    "specNotes": "Static local snapshot from the MDN CSS Reference index for the June 8, 2026 catalog scope.",
+    "browserNotes": "Part of the MDN standard CSS reference. Verify exact browser coverage for your support matrix.",
+    "fallbackStrategy": "Declare a simple baseline rule first, then layer enhanced values or selectors where supported.",
+    "tags": [
+      "function",
+      "architecture",
+      "standard"
+    ]
+  },
+  {
+    "slug": "lch-function",
+    "title": "lch()",
+    "kind": "function",
+    "syntax": "lch()",
+    "category": "colors",
+    "status": "standard",
+    "mdnUrl": "https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Values/color_value/lch",
+    "summary": "A function entry from the MDN standard CSS reference. This playground demonstrates lch() with live controls, snippets, and computed inspection.",
+    "specNotes": "Static local snapshot from the MDN CSS Reference index for the June 8, 2026 catalog scope.",
+    "browserNotes": "Part of the MDN standard CSS reference. Verify exact browser coverage for your support matrix.",
+    "fallbackStrategy": "Declare a simple baseline rule first, then layer enhanced values or selectors where supported.",
+    "tags": [
+      "function",
+      "colors",
+      "standard"
+    ]
+  },
+  {
+    "slug": "light-dark-function",
+    "title": "light-dark()",
+    "kind": "function",
+    "syntax": "light-dark()",
+    "category": "colors",
+    "status": "standard",
+    "mdnUrl": "https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Values/color_value/light-dark",
+    "summary": "A function entry from the MDN standard CSS reference. This playground demonstrates light-dark() with live controls, snippets, and computed inspection.",
+    "specNotes": "Static local snapshot from the MDN CSS Reference index for the June 8, 2026 catalog scope.",
+    "browserNotes": "Part of the MDN standard CSS reference. Verify exact browser coverage for your support matrix.",
+    "fallbackStrategy": "Declare a simple baseline rule first, then layer enhanced values or selectors where supported.",
+    "tags": [
+      "function",
+      "colors",
+      "standard"
+    ]
+  },
+  {
+    "slug": "linear-function",
+    "title": "linear()",
+    "kind": "function",
+    "syntax": "linear()",
+    "category": "typography",
+    "status": "standard",
+    "mdnUrl": "https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Values/easing-function/linear",
+    "summary": "A function entry from the MDN standard CSS reference. This playground demonstrates linear() with live controls, snippets, and computed inspection.",
+    "specNotes": "Static local snapshot from the MDN CSS Reference index for the June 8, 2026 catalog scope.",
+    "browserNotes": "Part of the MDN standard CSS reference. Verify exact browser coverage for your support matrix.",
+    "fallbackStrategy": "Declare a simple baseline rule first, then layer enhanced values or selectors where supported.",
+    "tags": [
+      "function",
+      "typography",
+      "standard"
+    ]
+  },
+  {
+    "slug": "linear-gradient-function",
+    "title": "linear-gradient()",
+    "kind": "function",
+    "syntax": "linear-gradient()",
+    "category": "typography",
+    "status": "standard",
+    "mdnUrl": "https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Values/gradient/linear-gradient",
+    "summary": "A function entry from the MDN standard CSS reference. This playground demonstrates linear-gradient() with live controls, snippets, and computed inspection.",
+    "specNotes": "Static local snapshot from the MDN CSS Reference index for the June 8, 2026 catalog scope.",
+    "browserNotes": "Part of the MDN standard CSS reference. Verify exact browser coverage for your support matrix.",
+    "fallbackStrategy": "Declare a simple baseline rule first, then layer enhanced values or selectors where supported.",
+    "tags": [
+      "function",
+      "typography",
+      "standard"
+    ]
+  },
+  {
+    "slug": "log-function",
+    "title": "log()",
+    "kind": "function",
+    "syntax": "log()",
+    "category": "functions",
+    "status": "standard",
+    "mdnUrl": "https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Values/log",
+    "summary": "A function entry from the MDN standard CSS reference. This playground demonstrates log() with live controls, snippets, and computed inspection.",
+    "specNotes": "Static local snapshot from the MDN CSS Reference index for the June 8, 2026 catalog scope.",
+    "browserNotes": "Part of the MDN standard CSS reference. Verify exact browser coverage for your support matrix.",
+    "fallbackStrategy": "Declare a simple baseline rule first, then layer enhanced values or selectors where supported.",
+    "tags": [
+      "function",
+      "functions",
+      "standard"
+    ]
+  },
+  {
+    "slug": "matrix-function",
+    "title": "matrix()",
+    "kind": "function",
+    "syntax": "matrix()",
+    "category": "functions",
+    "status": "standard",
+    "mdnUrl": "https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Values/transform-function/matrix",
+    "summary": "A function entry from the MDN standard CSS reference. This playground demonstrates matrix() with live controls, snippets, and computed inspection.",
+    "specNotes": "Static local snapshot from the MDN CSS Reference index for the June 8, 2026 catalog scope.",
+    "browserNotes": "Part of the MDN standard CSS reference. Verify exact browser coverage for your support matrix.",
+    "fallbackStrategy": "Declare a simple baseline rule first, then layer enhanced values or selectors where supported.",
+    "tags": [
+      "function",
+      "functions",
+      "standard"
+    ]
+  },
+  {
+    "slug": "matrix3d-function",
+    "title": "matrix3d()",
+    "kind": "function",
+    "syntax": "matrix3d()",
+    "category": "functions",
+    "status": "standard",
+    "mdnUrl": "https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Values/transform-function/matrix3d",
+    "summary": "A function entry from the MDN standard CSS reference. This playground demonstrates matrix3d() with live controls, snippets, and computed inspection.",
+    "specNotes": "Static local snapshot from the MDN CSS Reference index for the June 8, 2026 catalog scope.",
+    "browserNotes": "Part of the MDN standard CSS reference. Verify exact browser coverage for your support matrix.",
+    "fallbackStrategy": "Declare a simple baseline rule first, then layer enhanced values or selectors where supported.",
+    "tags": [
+      "function",
+      "functions",
+      "standard"
+    ]
+  },
+  {
+    "slug": "max-function",
+    "title": "max()",
+    "kind": "function",
+    "syntax": "max()",
+    "category": "functions",
+    "status": "standard",
+    "mdnUrl": "https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Values/max",
+    "summary": "A function entry from the MDN standard CSS reference. This playground demonstrates max() with live controls, snippets, and computed inspection.",
+    "specNotes": "Static local snapshot from the MDN CSS Reference index for the June 8, 2026 catalog scope.",
+    "browserNotes": "Part of the MDN standard CSS reference. Verify exact browser coverage for your support matrix.",
+    "fallbackStrategy": "Declare a simple baseline rule first, then layer enhanced values or selectors where supported.",
+    "tags": [
+      "function",
+      "functions",
+      "standard"
+    ]
+  },
+  {
+    "slug": "min-function",
+    "title": "min()",
+    "kind": "function",
+    "syntax": "min()",
+    "category": "functions",
+    "status": "standard",
+    "mdnUrl": "https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Values/min",
+    "summary": "A function entry from the MDN standard CSS reference. This playground demonstrates min() with live controls, snippets, and computed inspection.",
+    "specNotes": "Static local snapshot from the MDN CSS Reference index for the June 8, 2026 catalog scope.",
+    "browserNotes": "Part of the MDN standard CSS reference. Verify exact browser coverage for your support matrix.",
+    "fallbackStrategy": "Declare a simple baseline rule first, then layer enhanced values or selectors where supported.",
+    "tags": [
+      "function",
+      "functions",
+      "standard"
+    ]
+  },
+  {
+    "slug": "minmax-function",
+    "title": "minmax()",
+    "kind": "function",
+    "syntax": "minmax()",
+    "category": "functions",
+    "status": "standard",
+    "mdnUrl": "https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Values/minmax",
+    "summary": "A function entry from the MDN standard CSS reference. This playground demonstrates minmax() with live controls, snippets, and computed inspection.",
+    "specNotes": "Static local snapshot from the MDN CSS Reference index for the June 8, 2026 catalog scope.",
+    "browserNotes": "Part of the MDN standard CSS reference. Verify exact browser coverage for your support matrix.",
+    "fallbackStrategy": "Declare a simple baseline rule first, then layer enhanced values or selectors where supported.",
+    "tags": [
+      "function",
+      "functions",
+      "standard"
+    ]
+  },
+  {
+    "slug": "mod-function",
+    "title": "mod()",
+    "kind": "function",
+    "syntax": "mod()",
+    "category": "functions",
+    "status": "standard",
+    "mdnUrl": "https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Values/mod",
+    "summary": "A function entry from the MDN standard CSS reference. This playground demonstrates mod() with live controls, snippets, and computed inspection.",
+    "specNotes": "Static local snapshot from the MDN CSS Reference index for the June 8, 2026 catalog scope.",
+    "browserNotes": "Part of the MDN standard CSS reference. Verify exact browser coverage for your support matrix.",
+    "fallbackStrategy": "Declare a simple baseline rule first, then layer enhanced values or selectors where supported.",
+    "tags": [
+      "function",
+      "functions",
+      "standard"
+    ]
+  },
+  {
+    "slug": "oklab-function",
+    "title": "oklab()",
+    "kind": "function",
+    "syntax": "oklab()",
+    "category": "colors",
+    "status": "standard",
+    "mdnUrl": "https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Values/color_value/oklab",
+    "summary": "A function entry from the MDN standard CSS reference. This playground demonstrates oklab() with live controls, snippets, and computed inspection.",
+    "specNotes": "Static local snapshot from the MDN CSS Reference index for the June 8, 2026 catalog scope.",
+    "browserNotes": "Part of the MDN standard CSS reference. Verify exact browser coverage for your support matrix.",
+    "fallbackStrategy": "Declare a simple baseline rule first, then layer enhanced values or selectors where supported.",
+    "tags": [
+      "function",
+      "colors",
+      "standard"
+    ]
+  },
+  {
+    "slug": "oklch-function",
+    "title": "oklch()",
+    "kind": "function",
+    "syntax": "oklch()",
+    "category": "colors",
+    "status": "standard",
+    "mdnUrl": "https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Values/color_value/oklch",
+    "summary": "A function entry from the MDN standard CSS reference. This playground demonstrates oklch() with live controls, snippets, and computed inspection.",
+    "specNotes": "Static local snapshot from the MDN CSS Reference index for the June 8, 2026 catalog scope.",
+    "browserNotes": "Part of the MDN standard CSS reference. Verify exact browser coverage for your support matrix.",
+    "fallbackStrategy": "Declare a simple baseline rule first, then layer enhanced values or selectors where supported.",
+    "tags": [
+      "function",
+      "colors",
+      "standard"
+    ]
+  },
+  {
+    "slug": "opacity-function",
+    "title": "opacity()",
+    "kind": "function",
+    "syntax": "opacity()",
+    "category": "effects",
+    "status": "standard",
+    "mdnUrl": "https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Values/filter-function/opacity",
+    "summary": "A function entry from the MDN standard CSS reference. This playground demonstrates opacity() with live controls, snippets, and computed inspection.",
+    "specNotes": "Static local snapshot from the MDN CSS Reference index for the June 8, 2026 catalog scope.",
+    "browserNotes": "Part of the MDN standard CSS reference. Verify exact browser coverage for your support matrix.",
+    "fallbackStrategy": "Declare a simple baseline rule first, then layer enhanced values or selectors where supported.",
+    "tags": [
+      "function",
+      "effects",
+      "standard"
+    ]
+  },
+  {
+    "slug": "paint-function",
+    "title": "paint()",
+    "kind": "function",
+    "syntax": "paint()",
+    "category": "effects",
+    "status": "standard",
+    "mdnUrl": "https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Values/image/paint",
+    "summary": "A function entry from the MDN standard CSS reference. This playground demonstrates paint() with live controls, snippets, and computed inspection.",
+    "specNotes": "Static local snapshot from the MDN CSS Reference index for the June 8, 2026 catalog scope.",
+    "browserNotes": "Part of the MDN standard CSS reference. Verify exact browser coverage for your support matrix.",
+    "fallbackStrategy": "Declare a simple baseline rule first, then layer enhanced values or selectors where supported.",
+    "tags": [
+      "function",
+      "effects",
+      "standard"
+    ]
+  },
+  {
+    "slug": "palette-mix-function",
+    "title": "palette-mix()",
+    "kind": "function",
+    "syntax": "palette-mix()",
+    "category": "colors",
+    "status": "standard",
+    "mdnUrl": "https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/font-palette/palette-mix",
+    "summary": "A function entry from the MDN standard CSS reference. This playground demonstrates palette-mix() with live controls, snippets, and computed inspection.",
+    "specNotes": "Static local snapshot from the MDN CSS Reference index for the June 8, 2026 catalog scope.",
+    "browserNotes": "Part of the MDN standard CSS reference. Verify exact browser coverage for your support matrix.",
+    "fallbackStrategy": "Declare a simple baseline rule first, then layer enhanced values or selectors where supported.",
+    "tags": [
+      "function",
+      "colors",
+      "standard"
+    ]
+  },
+  {
+    "slug": "path-function",
+    "title": "path()",
+    "kind": "function",
+    "syntax": "path()",
+    "category": "functions",
+    "status": "standard",
+    "mdnUrl": "https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Values/basic-shape/path",
+    "summary": "A function entry from the MDN standard CSS reference. This playground demonstrates path() with live controls, snippets, and computed inspection.",
+    "specNotes": "Static local snapshot from the MDN CSS Reference index for the June 8, 2026 catalog scope.",
+    "browserNotes": "Part of the MDN standard CSS reference. Verify exact browser coverage for your support matrix.",
+    "fallbackStrategy": "Declare a simple baseline rule first, then layer enhanced values or selectors where supported.",
+    "tags": [
+      "function",
+      "functions",
+      "standard"
+    ]
+  },
+  {
+    "slug": "perspective-function",
+    "title": "perspective()",
+    "kind": "function",
+    "syntax": "perspective()",
+    "category": "effects",
+    "status": "standard",
+    "mdnUrl": "https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Values/transform-function/perspective",
+    "summary": "A function entry from the MDN standard CSS reference. This playground demonstrates perspective() with live controls, snippets, and computed inspection.",
+    "specNotes": "Static local snapshot from the MDN CSS Reference index for the June 8, 2026 catalog scope.",
+    "browserNotes": "Part of the MDN standard CSS reference. Verify exact browser coverage for your support matrix.",
+    "fallbackStrategy": "Declare a simple baseline rule first, then layer enhanced values or selectors where supported.",
+    "tags": [
+      "function",
+      "effects",
+      "standard"
+    ]
+  },
+  {
+    "slug": "polygon-function",
+    "title": "polygon()",
+    "kind": "function",
+    "syntax": "polygon()",
+    "category": "functions",
+    "status": "standard",
+    "mdnUrl": "https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Values/basic-shape/polygon",
+    "summary": "A function entry from the MDN standard CSS reference. This playground demonstrates polygon() with live controls, snippets, and computed inspection.",
+    "specNotes": "Static local snapshot from the MDN CSS Reference index for the June 8, 2026 catalog scope.",
+    "browserNotes": "Part of the MDN standard CSS reference. Verify exact browser coverage for your support matrix.",
+    "fallbackStrategy": "Declare a simple baseline rule first, then layer enhanced values or selectors where supported.",
+    "tags": [
+      "function",
+      "functions",
+      "standard"
+    ]
+  },
+  {
+    "slug": "pow-function",
+    "title": "pow()",
+    "kind": "function",
+    "syntax": "pow()",
+    "category": "functions",
+    "status": "standard",
+    "mdnUrl": "https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Values/pow",
+    "summary": "A function entry from the MDN standard CSS reference. This playground demonstrates pow() with live controls, snippets, and computed inspection.",
+    "specNotes": "Static local snapshot from the MDN CSS Reference index for the June 8, 2026 catalog scope.",
+    "browserNotes": "Part of the MDN standard CSS reference. Verify exact browser coverage for your support matrix.",
+    "fallbackStrategy": "Declare a simple baseline rule first, then layer enhanced values or selectors where supported.",
+    "tags": [
+      "function",
+      "functions",
+      "standard"
+    ]
+  },
+  {
+    "slug": "progress-function",
+    "title": "progress()",
+    "kind": "function",
+    "syntax": "progress()",
+    "category": "functions",
+    "status": "standard",
+    "mdnUrl": "https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Values/progress",
+    "summary": "A function entry from the MDN standard CSS reference. This playground demonstrates progress() with live controls, snippets, and computed inspection.",
+    "specNotes": "Static local snapshot from the MDN CSS Reference index for the June 8, 2026 catalog scope.",
+    "browserNotes": "Part of the MDN standard CSS reference. Verify exact browser coverage for your support matrix.",
+    "fallbackStrategy": "Declare a simple baseline rule first, then layer enhanced values or selectors where supported.",
+    "tags": [
+      "function",
+      "functions",
+      "standard"
+    ]
+  },
+  {
+    "slug": "radial-gradient-function",
+    "title": "radial-gradient()",
+    "kind": "function",
+    "syntax": "radial-gradient()",
+    "category": "functions",
+    "status": "standard",
+    "mdnUrl": "https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Values/gradient/radial-gradient",
+    "summary": "A function entry from the MDN standard CSS reference. This playground demonstrates radial-gradient() with live controls, snippets, and computed inspection.",
+    "specNotes": "Static local snapshot from the MDN CSS Reference index for the June 8, 2026 catalog scope.",
+    "browserNotes": "Part of the MDN standard CSS reference. Verify exact browser coverage for your support matrix.",
+    "fallbackStrategy": "Declare a simple baseline rule first, then layer enhanced values or selectors where supported.",
+    "tags": [
+      "function",
+      "functions",
+      "standard"
+    ]
+  },
+  {
+    "slug": "random-function",
+    "title": "random()",
+    "kind": "function",
+    "syntax": "random()",
+    "category": "functions",
+    "status": "experimental",
+    "mdnUrl": "https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Values/random",
+    "summary": "A function entry from the MDN standard CSS reference. This playground demonstrates random() with live controls, snippets, and computed inspection.",
+    "specNotes": "Static local snapshot from the MDN CSS Reference index for the June 8, 2026 catalog scope.",
+    "browserNotes": "Limited or emerging support. The demo keeps a fallback path and labels support with CSS.supports() when possible.",
+    "fallbackStrategy": "Ship a complete baseline visual first, then place this syntax behind @supports or a syntax-preview note.",
+    "tags": [
+      "function",
+      "functions",
+      "experimental"
+    ]
+  },
+  {
+    "slug": "ray-function",
+    "title": "ray()",
+    "kind": "function",
+    "syntax": "ray()",
+    "category": "functions",
+    "status": "standard",
+    "mdnUrl": "https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Values/ray",
+    "summary": "A function entry from the MDN standard CSS reference. This playground demonstrates ray() with live controls, snippets, and computed inspection.",
+    "specNotes": "Static local snapshot from the MDN CSS Reference index for the June 8, 2026 catalog scope.",
+    "browserNotes": "Part of the MDN standard CSS reference. Verify exact browser coverage for your support matrix.",
+    "fallbackStrategy": "Declare a simple baseline rule first, then layer enhanced values or selectors where supported.",
+    "tags": [
+      "function",
+      "functions",
+      "standard"
+    ]
+  },
+  {
+    "slug": "rect-function",
+    "title": "rect()",
+    "kind": "function",
+    "syntax": "rect()",
+    "category": "functions",
+    "status": "standard",
+    "mdnUrl": "https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Values/basic-shape/rect",
+    "summary": "A function entry from the MDN standard CSS reference. This playground demonstrates rect() with live controls, snippets, and computed inspection.",
+    "specNotes": "Static local snapshot from the MDN CSS Reference index for the June 8, 2026 catalog scope.",
+    "browserNotes": "Part of the MDN standard CSS reference. Verify exact browser coverage for your support matrix.",
+    "fallbackStrategy": "Declare a simple baseline rule first, then layer enhanced values or selectors where supported.",
+    "tags": [
+      "function",
+      "functions",
+      "standard"
+    ]
+  },
+  {
+    "slug": "rem-function",
+    "title": "rem()",
+    "kind": "function",
+    "syntax": "rem()",
+    "category": "functions",
+    "status": "standard",
+    "mdnUrl": "https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Values/rem",
+    "summary": "A function entry from the MDN standard CSS reference. This playground demonstrates rem() with live controls, snippets, and computed inspection.",
+    "specNotes": "Static local snapshot from the MDN CSS Reference index for the June 8, 2026 catalog scope.",
+    "browserNotes": "Part of the MDN standard CSS reference. Verify exact browser coverage for your support matrix.",
+    "fallbackStrategy": "Declare a simple baseline rule first, then layer enhanced values or selectors where supported.",
+    "tags": [
+      "function",
+      "functions",
+      "standard"
+    ]
+  },
+  {
+    "slug": "repeat-function",
+    "title": "repeat()",
+    "kind": "function",
+    "syntax": "repeat()",
+    "category": "functions",
+    "status": "standard",
+    "mdnUrl": "https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Values/repeat",
+    "summary": "A function entry from the MDN standard CSS reference. This playground demonstrates repeat() with live controls, snippets, and computed inspection.",
+    "specNotes": "Static local snapshot from the MDN CSS Reference index for the June 8, 2026 catalog scope.",
+    "browserNotes": "Part of the MDN standard CSS reference. Verify exact browser coverage for your support matrix.",
+    "fallbackStrategy": "Declare a simple baseline rule first, then layer enhanced values or selectors where supported.",
+    "tags": [
+      "function",
+      "functions",
+      "standard"
+    ]
+  },
+  {
+    "slug": "repeating-conic-gradient-function",
+    "title": "repeating-conic-gradient()",
+    "kind": "function",
+    "syntax": "repeating-conic-gradient()",
+    "category": "functions",
+    "status": "standard",
+    "mdnUrl": "https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Values/gradient/repeating-conic-gradient",
+    "summary": "A function entry from the MDN standard CSS reference. This playground demonstrates repeating-conic-gradient() with live controls, snippets, and computed inspection.",
+    "specNotes": "Static local snapshot from the MDN CSS Reference index for the June 8, 2026 catalog scope.",
+    "browserNotes": "Part of the MDN standard CSS reference. Verify exact browser coverage for your support matrix.",
+    "fallbackStrategy": "Declare a simple baseline rule first, then layer enhanced values or selectors where supported.",
+    "tags": [
+      "function",
+      "functions",
+      "standard"
+    ]
+  },
+  {
+    "slug": "repeating-linear-gradient-function",
+    "title": "repeating-linear-gradient()",
+    "kind": "function",
+    "syntax": "repeating-linear-gradient()",
+    "category": "typography",
+    "status": "standard",
+    "mdnUrl": "https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Values/gradient/repeating-linear-gradient",
+    "summary": "A function entry from the MDN standard CSS reference. This playground demonstrates repeating-linear-gradient() with live controls, snippets, and computed inspection.",
+    "specNotes": "Static local snapshot from the MDN CSS Reference index for the June 8, 2026 catalog scope.",
+    "browserNotes": "Part of the MDN standard CSS reference. Verify exact browser coverage for your support matrix.",
+    "fallbackStrategy": "Declare a simple baseline rule first, then layer enhanced values or selectors where supported.",
+    "tags": [
+      "function",
+      "typography",
+      "standard"
+    ]
+  },
+  {
+    "slug": "repeating-radial-gradient-function",
+    "title": "repeating-radial-gradient()",
+    "kind": "function",
+    "syntax": "repeating-radial-gradient()",
+    "category": "functions",
+    "status": "standard",
+    "mdnUrl": "https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Values/gradient/repeating-radial-gradient",
+    "summary": "A function entry from the MDN standard CSS reference. This playground demonstrates repeating-radial-gradient() with live controls, snippets, and computed inspection.",
+    "specNotes": "Static local snapshot from the MDN CSS Reference index for the June 8, 2026 catalog scope.",
+    "browserNotes": "Part of the MDN standard CSS reference. Verify exact browser coverage for your support matrix.",
+    "fallbackStrategy": "Declare a simple baseline rule first, then layer enhanced values or selectors where supported.",
+    "tags": [
+      "function",
+      "functions",
+      "standard"
+    ]
+  },
+  {
+    "slug": "rgb-function",
+    "title": "rgb()",
+    "kind": "function",
+    "syntax": "rgb()",
+    "category": "colors",
+    "status": "standard",
+    "mdnUrl": "https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Values/color_value/rgb",
+    "summary": "A function entry from the MDN standard CSS reference. This playground demonstrates rgb() with live controls, snippets, and computed inspection.",
+    "specNotes": "Static local snapshot from the MDN CSS Reference index for the June 8, 2026 catalog scope.",
+    "browserNotes": "Part of the MDN standard CSS reference. Verify exact browser coverage for your support matrix.",
+    "fallbackStrategy": "Declare a simple baseline rule first, then layer enhanced values or selectors where supported.",
+    "tags": [
+      "function",
+      "colors",
+      "standard"
+    ]
+  },
+  {
+    "slug": "rotate-function",
+    "title": "rotate()",
+    "kind": "function",
+    "syntax": "rotate()",
+    "category": "motion",
+    "status": "standard",
+    "mdnUrl": "https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Values/transform-function/rotate",
+    "summary": "A function entry from the MDN standard CSS reference. This playground demonstrates rotate() with live controls, snippets, and computed inspection.",
+    "specNotes": "Static local snapshot from the MDN CSS Reference index for the June 8, 2026 catalog scope.",
+    "browserNotes": "Part of the MDN standard CSS reference. Verify exact browser coverage for your support matrix.",
+    "fallbackStrategy": "Declare a simple baseline rule first, then layer enhanced values or selectors where supported.",
+    "tags": [
+      "function",
+      "motion",
+      "standard"
+    ]
+  },
+  {
+    "slug": "rotate3d-function",
+    "title": "rotate3d()",
+    "kind": "function",
+    "syntax": "rotate3d()",
+    "category": "motion",
+    "status": "standard",
+    "mdnUrl": "https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Values/transform-function/rotate3d",
+    "summary": "A function entry from the MDN standard CSS reference. This playground demonstrates rotate3d() with live controls, snippets, and computed inspection.",
+    "specNotes": "Static local snapshot from the MDN CSS Reference index for the June 8, 2026 catalog scope.",
+    "browserNotes": "Part of the MDN standard CSS reference. Verify exact browser coverage for your support matrix.",
+    "fallbackStrategy": "Declare a simple baseline rule first, then layer enhanced values or selectors where supported.",
+    "tags": [
+      "function",
+      "motion",
+      "standard"
+    ]
+  },
+  {
+    "slug": "rotatex-function",
+    "title": "rotateX()",
+    "kind": "function",
+    "syntax": "rotateX()",
+    "category": "motion",
+    "status": "standard",
+    "mdnUrl": "https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Values/transform-function/rotateX",
+    "summary": "A function entry from the MDN standard CSS reference. This playground demonstrates rotateX() with live controls, snippets, and computed inspection.",
+    "specNotes": "Static local snapshot from the MDN CSS Reference index for the June 8, 2026 catalog scope.",
+    "browserNotes": "Part of the MDN standard CSS reference. Verify exact browser coverage for your support matrix.",
+    "fallbackStrategy": "Declare a simple baseline rule first, then layer enhanced values or selectors where supported.",
+    "tags": [
+      "function",
+      "motion",
+      "standard"
+    ]
+  },
+  {
+    "slug": "rotatey-function",
+    "title": "rotateY()",
+    "kind": "function",
+    "syntax": "rotateY()",
+    "category": "motion",
+    "status": "standard",
+    "mdnUrl": "https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Values/transform-function/rotateY",
+    "summary": "A function entry from the MDN standard CSS reference. This playground demonstrates rotateY() with live controls, snippets, and computed inspection.",
+    "specNotes": "Static local snapshot from the MDN CSS Reference index for the June 8, 2026 catalog scope.",
+    "browserNotes": "Part of the MDN standard CSS reference. Verify exact browser coverage for your support matrix.",
+    "fallbackStrategy": "Declare a simple baseline rule first, then layer enhanced values or selectors where supported.",
+    "tags": [
+      "function",
+      "motion",
+      "standard"
+    ]
+  },
+  {
+    "slug": "rotatez-function",
+    "title": "rotateZ()",
+    "kind": "function",
+    "syntax": "rotateZ()",
+    "category": "motion",
+    "status": "standard",
+    "mdnUrl": "https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Values/transform-function/rotateZ",
+    "summary": "A function entry from the MDN standard CSS reference. This playground demonstrates rotateZ() with live controls, snippets, and computed inspection.",
+    "specNotes": "Static local snapshot from the MDN CSS Reference index for the June 8, 2026 catalog scope.",
+    "browserNotes": "Part of the MDN standard CSS reference. Verify exact browser coverage for your support matrix.",
+    "fallbackStrategy": "Declare a simple baseline rule first, then layer enhanced values or selectors where supported.",
+    "tags": [
+      "function",
+      "motion",
+      "standard"
+    ]
+  },
+  {
+    "slug": "round-function",
+    "title": "round()",
+    "kind": "function",
+    "syntax": "round()",
+    "category": "functions",
+    "status": "standard",
+    "mdnUrl": "https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Values/round",
+    "summary": "A function entry from the MDN standard CSS reference. This playground demonstrates round() with live controls, snippets, and computed inspection.",
+    "specNotes": "Static local snapshot from the MDN CSS Reference index for the June 8, 2026 catalog scope.",
+    "browserNotes": "Part of the MDN standard CSS reference. Verify exact browser coverage for your support matrix.",
+    "fallbackStrategy": "Declare a simple baseline rule first, then layer enhanced values or selectors where supported.",
+    "tags": [
+      "function",
+      "functions",
+      "standard"
+    ]
+  },
+  {
+    "slug": "saturate-function",
+    "title": "saturate()",
+    "kind": "function",
+    "syntax": "saturate()",
+    "category": "functions",
+    "status": "standard",
+    "mdnUrl": "https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Values/filter-function/saturate",
+    "summary": "A function entry from the MDN standard CSS reference. This playground demonstrates saturate() with live controls, snippets, and computed inspection.",
+    "specNotes": "Static local snapshot from the MDN CSS Reference index for the June 8, 2026 catalog scope.",
+    "browserNotes": "Part of the MDN standard CSS reference. Verify exact browser coverage for your support matrix.",
+    "fallbackStrategy": "Declare a simple baseline rule first, then layer enhanced values or selectors where supported.",
+    "tags": [
+      "function",
+      "functions",
+      "standard"
+    ]
+  },
+  {
+    "slug": "scale-function",
+    "title": "scale()",
+    "kind": "function",
+    "syntax": "scale()",
+    "category": "motion",
+    "status": "standard",
+    "mdnUrl": "https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Values/transform-function/scale",
+    "summary": "A function entry from the MDN standard CSS reference. This playground demonstrates scale() with live controls, snippets, and computed inspection.",
+    "specNotes": "Static local snapshot from the MDN CSS Reference index for the June 8, 2026 catalog scope.",
+    "browserNotes": "Part of the MDN standard CSS reference. Verify exact browser coverage for your support matrix.",
+    "fallbackStrategy": "Declare a simple baseline rule first, then layer enhanced values or selectors where supported.",
+    "tags": [
+      "function",
+      "motion",
+      "standard"
+    ]
+  },
+  {
+    "slug": "scale3d-function",
+    "title": "scale3d()",
+    "kind": "function",
+    "syntax": "scale3d()",
+    "category": "motion",
+    "status": "standard",
+    "mdnUrl": "https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Values/transform-function/scale3d",
+    "summary": "A function entry from the MDN standard CSS reference. This playground demonstrates scale3d() with live controls, snippets, and computed inspection.",
+    "specNotes": "Static local snapshot from the MDN CSS Reference index for the June 8, 2026 catalog scope.",
+    "browserNotes": "Part of the MDN standard CSS reference. Verify exact browser coverage for your support matrix.",
+    "fallbackStrategy": "Declare a simple baseline rule first, then layer enhanced values or selectors where supported.",
+    "tags": [
+      "function",
+      "motion",
+      "standard"
+    ]
+  },
+  {
+    "slug": "scalex-function",
+    "title": "scaleX()",
+    "kind": "function",
+    "syntax": "scaleX()",
+    "category": "motion",
+    "status": "standard",
+    "mdnUrl": "https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Values/transform-function/scaleX",
+    "summary": "A function entry from the MDN standard CSS reference. This playground demonstrates scaleX() with live controls, snippets, and computed inspection.",
+    "specNotes": "Static local snapshot from the MDN CSS Reference index for the June 8, 2026 catalog scope.",
+    "browserNotes": "Part of the MDN standard CSS reference. Verify exact browser coverage for your support matrix.",
+    "fallbackStrategy": "Declare a simple baseline rule first, then layer enhanced values or selectors where supported.",
+    "tags": [
+      "function",
+      "motion",
+      "standard"
+    ]
+  },
+  {
+    "slug": "scaley-function",
+    "title": "scaleY()",
+    "kind": "function",
+    "syntax": "scaleY()",
+    "category": "motion",
+    "status": "standard",
+    "mdnUrl": "https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Values/transform-function/scaleY",
+    "summary": "A function entry from the MDN standard CSS reference. This playground demonstrates scaleY() with live controls, snippets, and computed inspection.",
+    "specNotes": "Static local snapshot from the MDN CSS Reference index for the June 8, 2026 catalog scope.",
+    "browserNotes": "Part of the MDN standard CSS reference. Verify exact browser coverage for your support matrix.",
+    "fallbackStrategy": "Declare a simple baseline rule first, then layer enhanced values or selectors where supported.",
+    "tags": [
+      "function",
+      "motion",
+      "standard"
+    ]
+  },
+  {
+    "slug": "scalez-function",
+    "title": "scaleZ()",
+    "kind": "function",
+    "syntax": "scaleZ()",
+    "category": "motion",
+    "status": "standard",
+    "mdnUrl": "https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Values/transform-function/scaleZ",
+    "summary": "A function entry from the MDN standard CSS reference. This playground demonstrates scaleZ() with live controls, snippets, and computed inspection.",
+    "specNotes": "Static local snapshot from the MDN CSS Reference index for the June 8, 2026 catalog scope.",
+    "browserNotes": "Part of the MDN standard CSS reference. Verify exact browser coverage for your support matrix.",
+    "fallbackStrategy": "Declare a simple baseline rule first, then layer enhanced values or selectors where supported.",
+    "tags": [
+      "function",
+      "motion",
+      "standard"
+    ]
+  },
+  {
+    "slug": "scroll-function",
+    "title": "scroll()",
+    "kind": "function",
+    "syntax": "scroll()",
+    "category": "motion",
+    "status": "standard",
+    "mdnUrl": "https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/animation-timeline/scroll",
+    "summary": "A function entry from the MDN standard CSS reference. This playground demonstrates scroll() with live controls, snippets, and computed inspection.",
+    "specNotes": "Static local snapshot from the MDN CSS Reference index for the June 8, 2026 catalog scope.",
+    "browserNotes": "Part of the MDN standard CSS reference. Verify exact browser coverage for your support matrix.",
+    "fallbackStrategy": "Declare a simple baseline rule first, then layer enhanced values or selectors where supported.",
+    "tags": [
+      "function",
+      "motion",
+      "standard"
+    ]
+  },
+  {
+    "slug": "sepia-function",
+    "title": "sepia()",
+    "kind": "function",
+    "syntax": "sepia()",
+    "category": "functions",
+    "status": "standard",
+    "mdnUrl": "https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Values/filter-function/sepia",
+    "summary": "A function entry from the MDN standard CSS reference. This playground demonstrates sepia() with live controls, snippets, and computed inspection.",
+    "specNotes": "Static local snapshot from the MDN CSS Reference index for the June 8, 2026 catalog scope.",
+    "browserNotes": "Part of the MDN standard CSS reference. Verify exact browser coverage for your support matrix.",
+    "fallbackStrategy": "Declare a simple baseline rule first, then layer enhanced values or selectors where supported.",
+    "tags": [
+      "function",
+      "functions",
+      "standard"
+    ]
+  },
+  {
+    "slug": "shape-function",
+    "title": "shape()",
+    "kind": "function",
+    "syntax": "shape()",
+    "category": "effects",
+    "status": "experimental",
+    "mdnUrl": "https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Values/basic-shape/shape",
+    "summary": "A function entry from the MDN standard CSS reference. This playground demonstrates shape() with live controls, snippets, and computed inspection.",
+    "specNotes": "Static local snapshot from the MDN CSS Reference index for the June 8, 2026 catalog scope.",
+    "browserNotes": "Limited or emerging support. The demo keeps a fallback path and labels support with CSS.supports() when possible.",
+    "fallbackStrategy": "Ship a complete baseline visual first, then place this syntax behind @supports or a syntax-preview note.",
+    "tags": [
+      "function",
+      "effects",
+      "experimental"
+    ]
+  },
+  {
+    "slug": "sibling-count-function",
+    "title": "sibling-count()",
+    "kind": "function",
+    "syntax": "sibling-count()",
+    "category": "functions",
+    "status": "experimental",
+    "mdnUrl": "https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Values/sibling-count",
+    "summary": "A function entry from the MDN standard CSS reference. This playground demonstrates sibling-count() with live controls, snippets, and computed inspection.",
+    "specNotes": "Static local snapshot from the MDN CSS Reference index for the June 8, 2026 catalog scope.",
+    "browserNotes": "Limited or emerging support. The demo keeps a fallback path and labels support with CSS.supports() when possible.",
+    "fallbackStrategy": "Ship a complete baseline visual first, then place this syntax behind @supports or a syntax-preview note.",
+    "tags": [
+      "function",
+      "functions",
+      "experimental"
+    ]
+  },
+  {
+    "slug": "sibling-index-function",
+    "title": "sibling-index()",
+    "kind": "function",
+    "syntax": "sibling-index()",
+    "category": "functions",
+    "status": "experimental",
+    "mdnUrl": "https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Values/sibling-index",
+    "summary": "A function entry from the MDN standard CSS reference. This playground demonstrates sibling-index() with live controls, snippets, and computed inspection.",
+    "specNotes": "Static local snapshot from the MDN CSS Reference index for the June 8, 2026 catalog scope.",
+    "browserNotes": "Limited or emerging support. The demo keeps a fallback path and labels support with CSS.supports() when possible.",
+    "fallbackStrategy": "Ship a complete baseline visual first, then place this syntax behind @supports or a syntax-preview note.",
+    "tags": [
+      "function",
+      "functions",
+      "experimental"
+    ]
+  },
+  {
+    "slug": "sign-function",
+    "title": "sign()",
+    "kind": "function",
+    "syntax": "sign()",
+    "category": "functions",
+    "status": "standard",
+    "mdnUrl": "https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Values/sign",
+    "summary": "A function entry from the MDN standard CSS reference. This playground demonstrates sign() with live controls, snippets, and computed inspection.",
+    "specNotes": "Static local snapshot from the MDN CSS Reference index for the June 8, 2026 catalog scope.",
+    "browserNotes": "Part of the MDN standard CSS reference. Verify exact browser coverage for your support matrix.",
+    "fallbackStrategy": "Declare a simple baseline rule first, then layer enhanced values or selectors where supported.",
+    "tags": [
+      "function",
+      "functions",
+      "standard"
+    ]
+  },
+  {
+    "slug": "sin-function",
+    "title": "sin()",
+    "kind": "function",
+    "syntax": "sin()",
+    "category": "functions",
+    "status": "standard",
+    "mdnUrl": "https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Values/sin",
+    "summary": "A function entry from the MDN standard CSS reference. This playground demonstrates sin() with live controls, snippets, and computed inspection.",
+    "specNotes": "Static local snapshot from the MDN CSS Reference index for the June 8, 2026 catalog scope.",
+    "browserNotes": "Part of the MDN standard CSS reference. Verify exact browser coverage for your support matrix.",
+    "fallbackStrategy": "Declare a simple baseline rule first, then layer enhanced values or selectors where supported.",
+    "tags": [
+      "function",
+      "functions",
+      "standard"
+    ]
+  },
+  {
+    "slug": "skew-function",
+    "title": "skew()",
+    "kind": "function",
+    "syntax": "skew()",
+    "category": "functions",
+    "status": "standard",
+    "mdnUrl": "https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Values/transform-function/skew",
+    "summary": "A function entry from the MDN standard CSS reference. This playground demonstrates skew() with live controls, snippets, and computed inspection.",
+    "specNotes": "Static local snapshot from the MDN CSS Reference index for the June 8, 2026 catalog scope.",
+    "browserNotes": "Part of the MDN standard CSS reference. Verify exact browser coverage for your support matrix.",
+    "fallbackStrategy": "Declare a simple baseline rule first, then layer enhanced values or selectors where supported.",
+    "tags": [
+      "function",
+      "functions",
+      "standard"
+    ]
+  },
+  {
+    "slug": "skewx-function",
+    "title": "skewX()",
+    "kind": "function",
+    "syntax": "skewX()",
+    "category": "functions",
+    "status": "standard",
+    "mdnUrl": "https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Values/transform-function/skewX",
+    "summary": "A function entry from the MDN standard CSS reference. This playground demonstrates skewX() with live controls, snippets, and computed inspection.",
+    "specNotes": "Static local snapshot from the MDN CSS Reference index for the June 8, 2026 catalog scope.",
+    "browserNotes": "Part of the MDN standard CSS reference. Verify exact browser coverage for your support matrix.",
+    "fallbackStrategy": "Declare a simple baseline rule first, then layer enhanced values or selectors where supported.",
+    "tags": [
+      "function",
+      "functions",
+      "standard"
+    ]
+  },
+  {
+    "slug": "skewy-function",
+    "title": "skewY()",
+    "kind": "function",
+    "syntax": "skewY()",
+    "category": "functions",
+    "status": "standard",
+    "mdnUrl": "https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Values/transform-function/skewY",
+    "summary": "A function entry from the MDN standard CSS reference. This playground demonstrates skewY() with live controls, snippets, and computed inspection.",
+    "specNotes": "Static local snapshot from the MDN CSS Reference index for the June 8, 2026 catalog scope.",
+    "browserNotes": "Part of the MDN standard CSS reference. Verify exact browser coverage for your support matrix.",
+    "fallbackStrategy": "Declare a simple baseline rule first, then layer enhanced values or selectors where supported.",
+    "tags": [
+      "function",
+      "functions",
+      "standard"
+    ]
+  },
+  {
+    "slug": "sqrt-function",
+    "title": "sqrt()",
+    "kind": "function",
+    "syntax": "sqrt()",
+    "category": "functions",
+    "status": "standard",
+    "mdnUrl": "https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Values/sqrt",
+    "summary": "A function entry from the MDN standard CSS reference. This playground demonstrates sqrt() with live controls, snippets, and computed inspection.",
+    "specNotes": "Static local snapshot from the MDN CSS Reference index for the June 8, 2026 catalog scope.",
+    "browserNotes": "Part of the MDN standard CSS reference. Verify exact browser coverage for your support matrix.",
+    "fallbackStrategy": "Declare a simple baseline rule first, then layer enhanced values or selectors where supported.",
+    "tags": [
+      "function",
+      "functions",
+      "standard"
+    ]
+  },
+  {
+    "slug": "steps-function",
+    "title": "steps()",
+    "kind": "function",
+    "syntax": "steps()",
+    "category": "motion",
+    "status": "standard",
+    "mdnUrl": "https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Values/easing-function/steps",
+    "summary": "A function entry from the MDN standard CSS reference. This playground demonstrates steps() with live controls, snippets, and computed inspection.",
+    "specNotes": "Static local snapshot from the MDN CSS Reference index for the June 8, 2026 catalog scope.",
+    "browserNotes": "Part of the MDN standard CSS reference. Verify exact browser coverage for your support matrix.",
+    "fallbackStrategy": "Declare a simple baseline rule first, then layer enhanced values or selectors where supported.",
+    "tags": [
+      "function",
+      "motion",
+      "standard"
+    ]
+  },
+  {
+    "slug": "superellipse-function",
+    "title": "superellipse()",
+    "kind": "function",
+    "syntax": "superellipse()",
+    "category": "functions",
+    "status": "standard",
+    "mdnUrl": "https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Values/superellipse",
+    "summary": "A function entry from the MDN standard CSS reference. This playground demonstrates superellipse() with live controls, snippets, and computed inspection.",
+    "specNotes": "Static local snapshot from the MDN CSS Reference index for the June 8, 2026 catalog scope.",
+    "browserNotes": "Part of the MDN standard CSS reference. Verify exact browser coverage for your support matrix.",
+    "fallbackStrategy": "Declare a simple baseline rule first, then layer enhanced values or selectors where supported.",
+    "tags": [
+      "function",
+      "functions",
+      "standard"
+    ]
+  },
+  {
+    "slug": "symbols-function",
+    "title": "symbols()",
+    "kind": "function",
+    "syntax": "symbols()",
+    "category": "functions",
+    "status": "standard",
+    "mdnUrl": "https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Values/symbols",
+    "summary": "A function entry from the MDN standard CSS reference. This playground demonstrates symbols() with live controls, snippets, and computed inspection.",
+    "specNotes": "Static local snapshot from the MDN CSS Reference index for the June 8, 2026 catalog scope.",
+    "browserNotes": "Part of the MDN standard CSS reference. Verify exact browser coverage for your support matrix.",
+    "fallbackStrategy": "Declare a simple baseline rule first, then layer enhanced values or selectors where supported.",
+    "tags": [
+      "function",
+      "functions",
+      "standard"
+    ]
+  },
+  {
+    "slug": "tan-function",
+    "title": "tan()",
+    "kind": "function",
+    "syntax": "tan()",
+    "category": "functions",
+    "status": "standard",
+    "mdnUrl": "https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Values/tan",
+    "summary": "A function entry from the MDN standard CSS reference. This playground demonstrates tan() with live controls, snippets, and computed inspection.",
+    "specNotes": "Static local snapshot from the MDN CSS Reference index for the June 8, 2026 catalog scope.",
+    "browserNotes": "Part of the MDN standard CSS reference. Verify exact browser coverage for your support matrix.",
+    "fallbackStrategy": "Declare a simple baseline rule first, then layer enhanced values or selectors where supported.",
+    "tags": [
+      "function",
+      "functions",
+      "standard"
+    ]
+  },
+  {
+    "slug": "translate-function",
+    "title": "translate()",
+    "kind": "function",
+    "syntax": "translate()",
+    "category": "motion",
+    "status": "standard",
+    "mdnUrl": "https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Values/transform-function/translate",
+    "summary": "A function entry from the MDN standard CSS reference. This playground demonstrates translate() with live controls, snippets, and computed inspection.",
+    "specNotes": "Static local snapshot from the MDN CSS Reference index for the June 8, 2026 catalog scope.",
+    "browserNotes": "Part of the MDN standard CSS reference. Verify exact browser coverage for your support matrix.",
+    "fallbackStrategy": "Declare a simple baseline rule first, then layer enhanced values or selectors where supported.",
+    "tags": [
+      "function",
+      "motion",
+      "standard"
+    ]
+  },
+  {
+    "slug": "translate3d-function",
+    "title": "translate3d()",
+    "kind": "function",
+    "syntax": "translate3d()",
+    "category": "motion",
+    "status": "standard",
+    "mdnUrl": "https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Values/transform-function/translate3d",
+    "summary": "A function entry from the MDN standard CSS reference. This playground demonstrates translate3d() with live controls, snippets, and computed inspection.",
+    "specNotes": "Static local snapshot from the MDN CSS Reference index for the June 8, 2026 catalog scope.",
+    "browserNotes": "Part of the MDN standard CSS reference. Verify exact browser coverage for your support matrix.",
+    "fallbackStrategy": "Declare a simple baseline rule first, then layer enhanced values or selectors where supported.",
+    "tags": [
+      "function",
+      "motion",
+      "standard"
+    ]
+  },
+  {
+    "slug": "translatex-function",
+    "title": "translateX()",
+    "kind": "function",
+    "syntax": "translateX()",
+    "category": "motion",
+    "status": "standard",
+    "mdnUrl": "https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Values/transform-function/translateX",
+    "summary": "A function entry from the MDN standard CSS reference. This playground demonstrates translateX() with live controls, snippets, and computed inspection.",
+    "specNotes": "Static local snapshot from the MDN CSS Reference index for the June 8, 2026 catalog scope.",
+    "browserNotes": "Part of the MDN standard CSS reference. Verify exact browser coverage for your support matrix.",
+    "fallbackStrategy": "Declare a simple baseline rule first, then layer enhanced values or selectors where supported.",
+    "tags": [
+      "function",
+      "motion",
+      "standard"
+    ]
+  },
+  {
+    "slug": "translatey-function",
+    "title": "translateY()",
+    "kind": "function",
+    "syntax": "translateY()",
+    "category": "motion",
+    "status": "standard",
+    "mdnUrl": "https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Values/transform-function/translateY",
+    "summary": "A function entry from the MDN standard CSS reference. This playground demonstrates translateY() with live controls, snippets, and computed inspection.",
+    "specNotes": "Static local snapshot from the MDN CSS Reference index for the June 8, 2026 catalog scope.",
+    "browserNotes": "Part of the MDN standard CSS reference. Verify exact browser coverage for your support matrix.",
+    "fallbackStrategy": "Declare a simple baseline rule first, then layer enhanced values or selectors where supported.",
+    "tags": [
+      "function",
+      "motion",
+      "standard"
+    ]
+  },
+  {
+    "slug": "translatez-function",
+    "title": "translateZ()",
+    "kind": "function",
+    "syntax": "translateZ()",
+    "category": "motion",
+    "status": "standard",
+    "mdnUrl": "https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Values/transform-function/translateZ",
+    "summary": "A function entry from the MDN standard CSS reference. This playground demonstrates translateZ() with live controls, snippets, and computed inspection.",
+    "specNotes": "Static local snapshot from the MDN CSS Reference index for the June 8, 2026 catalog scope.",
+    "browserNotes": "Part of the MDN standard CSS reference. Verify exact browser coverage for your support matrix.",
+    "fallbackStrategy": "Declare a simple baseline rule first, then layer enhanced values or selectors where supported.",
+    "tags": [
+      "function",
+      "motion",
+      "standard"
+    ]
+  },
+  {
+    "slug": "type-function",
+    "title": "type()",
+    "kind": "function",
+    "syntax": "type()",
+    "category": "functions",
+    "status": "standard",
+    "mdnUrl": "https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Values/type",
+    "summary": "A function entry from the MDN standard CSS reference. This playground demonstrates type() with live controls, snippets, and computed inspection.",
+    "specNotes": "Static local snapshot from the MDN CSS Reference index for the June 8, 2026 catalog scope.",
+    "browserNotes": "Part of the MDN standard CSS reference. Verify exact browser coverage for your support matrix.",
+    "fallbackStrategy": "Declare a simple baseline rule first, then layer enhanced values or selectors where supported.",
+    "tags": [
+      "function",
+      "functions",
+      "standard"
+    ]
+  },
+  {
+    "slug": "url-function",
+    "title": "url()",
+    "kind": "function",
+    "syntax": "url()",
+    "category": "functions",
+    "status": "standard",
+    "mdnUrl": "https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Values/url_function",
+    "summary": "A function entry from the MDN standard CSS reference. This playground demonstrates url() with live controls, snippets, and computed inspection.",
+    "specNotes": "Static local snapshot from the MDN CSS Reference index for the June 8, 2026 catalog scope.",
+    "browserNotes": "Part of the MDN standard CSS reference. Verify exact browser coverage for your support matrix.",
+    "fallbackStrategy": "Declare a simple baseline rule first, then layer enhanced values or selectors where supported.",
+    "tags": [
+      "function",
+      "functions",
+      "standard"
+    ]
+  },
+  {
+    "slug": "var-function",
+    "title": "var()",
+    "kind": "function",
+    "syntax": "var()",
+    "category": "functions",
+    "status": "standard",
+    "mdnUrl": "https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Values/var",
+    "summary": "A function entry from the MDN standard CSS reference. This playground demonstrates var() with live controls, snippets, and computed inspection.",
+    "specNotes": "Static local snapshot from the MDN CSS Reference index for the June 8, 2026 catalog scope.",
+    "browserNotes": "Part of the MDN standard CSS reference. Verify exact browser coverage for your support matrix.",
+    "fallbackStrategy": "Declare a simple baseline rule first, then layer enhanced values or selectors where supported.",
+    "tags": [
+      "function",
+      "functions",
+      "standard"
+    ]
+  },
+  {
+    "slug": "view-function",
+    "title": "view()",
+    "kind": "function",
+    "syntax": "view()",
+    "category": "functions",
+    "status": "standard",
+    "mdnUrl": "https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/animation-timeline/view",
+    "summary": "A function entry from the MDN standard CSS reference. This playground demonstrates view() with live controls, snippets, and computed inspection.",
+    "specNotes": "Static local snapshot from the MDN CSS Reference index for the June 8, 2026 catalog scope.",
+    "browserNotes": "Part of the MDN standard CSS reference. Verify exact browser coverage for your support matrix.",
+    "fallbackStrategy": "Declare a simple baseline rule first, then layer enhanced values or selectors where supported.",
+    "tags": [
+      "function",
+      "functions",
+      "standard"
+    ]
+  },
+  {
+    "slug": "xywh-function",
+    "title": "xywh()",
+    "kind": "function",
+    "syntax": "xywh()",
+    "category": "functions",
+    "status": "standard",
+    "mdnUrl": "https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Values/basic-shape/xywh",
+    "summary": "A function entry from the MDN standard CSS reference. This playground demonstrates xywh() with live controls, snippets, and computed inspection.",
+    "specNotes": "Static local snapshot from the MDN CSS Reference index for the June 8, 2026 catalog scope.",
+    "browserNotes": "Part of the MDN standard CSS reference. Verify exact browser coverage for your support matrix.",
+    "fallbackStrategy": "Declare a simple baseline rule first, then layer enhanced values or selectors where supported.",
+    "tags": [
+      "function",
+      "functions",
+      "standard"
+    ]
+  }
+]

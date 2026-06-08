@@ -1,0 +1,20 @@
+[
+  {
+    "slug": "custom-properties-universal-css-variables",
+    "title": "Custom properties (--*): CSS variables",
+    "kind": "concept",
+    "syntax": "Custom properties (--*): CSS variables",
+    "category": "components",
+    "status": "standard",
+    "mdnUrl": "https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/--*",
+    "summary": "A concept entry from the MDN standard CSS reference. This playground demonstrates Custom properties (--*): CSS variables with live controls, snippets, and computed inspection.",
+    "specNotes": "Static local snapshot from the MDN CSS Reference index for the June 8, 2026 catalog scope.",
+    "browserNotes": "Part of the MDN standard CSS reference. Verify exact browser coverage for your support matrix.",
+    "fallbackStrategy": "Declare a simple baseline rule first, then layer enhanced values or selectors where supported.",
+    "tags": [
+      "concept",
+      "components",
+      "standard"
+    ]
+  }
+]
