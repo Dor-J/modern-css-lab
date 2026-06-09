@@ -1,4 +1,4 @@
-import { useMemo, useRef, useState, type ReactNode } from 'react'
+import { useId, useMemo, useRef, useState, type ReactNode } from 'react'
 import type {
   Feature,
   FeatureControl,
@@ -43,6 +43,8 @@ function DemoShell({
   computedProperties,
   supportQueries,
 }: DemoShellProps) {
+  const headingId = useId()
+  const previewDescriptionId = useId()
   const stageRef = useRef<HTMLDivElement>(null)
   const activeTargets = targets ?? feature.interaction.targets
   const activeControls = controls
@@ -66,15 +68,25 @@ function DemoShell({
   const hasInspector = activeTargets.length > 0 || activeControls.length > 0 || activeSupportQueries.length > 0
 
   return (
-    <section className="demo-shell" id={feature.slug}>
+    <section className="demo-shell" id={feature.slug} aria-labelledby={headingId}>
       <div className="demo-shell__header">
         <div>
           <p className="eyebrow">Live demo</p>
-          <h2>{title}</h2>
+          <h2 id={headingId}>{title}</h2>
         </div>
         <BrowserSupportBadge support={feature.support} year={feature.baselineYear} />
       </div>
       <p className="demo-shell__intro">{explanation}</p>
+      <p className="interaction-help">
+        Keyboard: tab through controls, the live preview, inspector target buttons, and copyable snippets. Control
+        changes update the preview, URL state, snippets, and computed styles.
+      </p>
+      {feature.category === 'motion' ? (
+        <aside className="motion-safety-note" aria-label="Reduced motion behavior">
+          Motion safe: this demo respects <code>prefers-reduced-motion</code>. Reduced-motion users receive static
+          or near-instant states instead of continuous animation.
+        </aside>
+      ) : null}
       <DemoControlBar
         controls={activeControls}
         values={values}
@@ -96,10 +108,18 @@ function DemoShell({
           className="demo-shell__stage"
           ref={stageRef}
           style={stageStyle}
+          role="region"
+          tabIndex={0}
+          aria-label={`${title} live preview`}
+          aria-describedby={previewDescriptionId}
           onInputCapture={() => setRefreshKey((current) => current + 1)}
           onChangeCapture={() => setRefreshKey((current) => current + 1)}
           onPointerUpCapture={() => setRefreshKey((current) => current + 1)}
         >
+          <p className="visually-hidden" id={previewDescriptionId}>
+            Interactive preview for {title}. Use the demo controls before this region to change CSS custom
+            properties and inspect the results in the panel after this region.
+          </p>
           {children}
         </div>
         {hasInspector ? (

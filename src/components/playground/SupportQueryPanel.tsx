@@ -1,4 +1,4 @@
-import { useMemo } from 'react'
+import { useId, useMemo } from 'react'
 import type { FeatureSupportQuery } from '../../data/features'
 
 type SupportQueryPanelProps = {
@@ -22,14 +22,20 @@ function evaluateQuery(query: FeatureSupportQuery): QueryResult {
 }
 
 function SupportQueryPanel({ queries }: SupportQueryPanelProps) {
+  const headingId = useId()
   const results = useMemo(() => queries.map(evaluateQuery), [queries])
 
   if (queries.length === 0) return null
 
   return (
-    <div className="support-query-panel">
-      <h4>Live support</h4>
-      <ul>
+    <div className="support-query-panel" aria-labelledby={headingId}>
+      <h4 id={headingId}>Live support</h4>
+      <p className="visually-hidden" role="status" aria-live="polite" aria-atomic="true">
+        Support checks loaded. {results.filter((query) => query.result === 'supported').length} supported,
+        {` ${results.filter((query) => query.result === 'unsupported').length}`} fallback, and
+        {` ${results.filter((query) => query.result === 'unknown').length}`} syntax preview.
+      </p>
+      <ul aria-label="Browser support checks">
         {results.map((query) => (
           <li key={query.id} data-result={query.result}>
             <span>{query.label}</span>

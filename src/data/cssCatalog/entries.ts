@@ -1,30 +1,11 @@
-import atRules from './entries/at-rule.json'
-import concepts from './entries/concept.json'
-import dataTypes from './entries/data-type.json'
-import descriptors from './entries/descriptor.json'
-import functions from './entries/function.json'
 import manifest from './entries/manifest.json'
-import properties from './entries/property.json'
-import pseudoClasses from './entries/pseudo-class.json'
-import pseudoElements from './entries/pseudo-element.json'
-import selectors from './entries/selector.json'
-import values from './entries/value.json'
-import type { CssCatalogEntry, CssCatalogKind, CssCatalogManifest } from './types'
+import type { CssCatalogCategory, CssCatalogEntry, CssCatalogKind, CssCatalogManifest } from './types'
+
+type CatalogJsonModule = {
+  default: unknown
+}
 
 export const cssCatalogManifest = manifest as CssCatalogManifest
-
-export const cssCatalogEntries = [
-  ...properties,
-  ...atRules,
-  ...descriptors,
-  ...selectors,
-  ...pseudoClasses,
-  ...pseudoElements,
-  ...functions,
-  ...dataTypes,
-  ...values,
-  ...concepts,
-] as CssCatalogEntry[]
 
 export const cssCatalogKinds: CssCatalogKind[] = [
   'property',
@@ -51,12 +32,66 @@ export const cssCatalogCategories = [
   'architecture',
 ] as const
 
-const entryBySlug = new Map(cssCatalogEntries.map((entry) => [entry.slug, entry]))
-
-export function getCssCatalogEntry(slug: string) {
-  return entryBySlug.get(slug)
+export const cssCatalogCategoryCounts: Record<CssCatalogCategory, number> = {
+  layout: 20,
+  colors: 22,
+  functions: 91,
+  selectors: 119,
+  typography: 15,
+  motion: 21,
+  components: 1,
+  effects: 12,
+  architecture: 567,
 }
 
-export function getCssCatalogEntriesByCategory(category: CssCatalogEntry['category']) {
-  return cssCatalogEntries.filter((entry) => entry.category === category)
+const entryLoaders = {
+  property: () => import('./entries/property.json'),
+  'at-rule': () => import('./entries/at-rule.json'),
+  descriptor: () => import('./entries/descriptor.json'),
+  selector: () => import('./entries/selector.json'),
+  'pseudo-class': () => import('./entries/pseudo-class.json'),
+  'pseudo-element': () => import('./entries/pseudo-element.json'),
+  function: () => import('./entries/function.json'),
+  'data-type': () => import('./entries/data-type.json'),
+  value: () => import('./entries/value.json'),
+  concept: () => import('./entries/concept.json'),
+} satisfies Record<CssCatalogKind, () => Promise<CatalogJsonModule>>
+
+const kindEntryCache = new Map<CssCatalogKind, Promise<CssCatalogEntry[]>>()
+let allEntriesCache: Promise<CssCatalogEntry[]> | undefined
+
+export function loadCssCatalogKind(kind: CssCatalogKind) {
+  const cached = kindEntryCache.get(kind)
+  if (cached) return cached
+
+  const promise = entryLoaders[kind]().then((module) => module.default as CssCatalogEntry[])
+  kindEntryCache.set(kind, promise)
+  return promise
+}
+
+export function loadAllCssCatalogEntries() {
+  allEntriesCache ??= Promise.all(cssCatalogKinds.map((kind) => loadCssCatalogKind(kind))).then((chunks) =>
+    chunks.flat(),
+  )
+
+  return allEntriesCache
+}
+
+export async function loadCssCatalogEntry(slug: string) {
+  const allEntries = await allEntriesCache
+  const cachedEntry = allEntries?.find((entry) => entry.slug === slug)
+  if (cachedEntry) return cachedEntry
+
+  for (const kind of cssCatalogKinds) {
+    const entries = await loadCssCatalogKind(kind)
+    const entry = entries.find((candidate) => candidate.slug === slug)
+    if (entry) return entry
+  }
+
+  return undefined
+}
+
+export async function loadCssCatalogEntriesByCategory(category: CssCatalogCategory) {
+  const entries = await loadAllCssCatalogEntries()
+  return entries.filter((entry) => entry.category === category)
 }

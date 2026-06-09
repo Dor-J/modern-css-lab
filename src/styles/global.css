@@ -42,6 +42,18 @@ textarea {
   border-radius: var(--radius-sm);
 }
 
+button,
+select,
+input[type='button'],
+input[type='checkbox'],
+input[type='radio'],
+input[type='range'],
+input[type='reset'],
+input[type='submit'],
+summary {
+  touch-action: manipulation;
+}
+
 button {
   border: 1px solid var(--border-subtle);
   color: var(--color-text);
@@ -78,6 +90,10 @@ p {
 }
 
 @media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
   *,
   *::before,
   *::after {

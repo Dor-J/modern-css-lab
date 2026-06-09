@@ -8,14 +8,15 @@ type CodeBlockProps = {
 
 function CodeBlock({ code, language = 'css', title }: CodeBlockProps) {
   const trimmed = code.trim()
+  const label = title ?? `${language} snippet`
 
   return (
     <figure className="code-block">
       <figcaption>
-        <span>{title ?? language}</span>
-        <CopyButton value={trimmed} />
+        <span>{label}</span>
+        <CopyButton value={trimmed} label={`Copy ${label}`} />
       </figcaption>
-      <pre>
+      <pre tabIndex={0} aria-label={`${label} code`}>
         <code>{trimmed}</code>
       </pre>
     </figure>

@@ -1,10 +1,12 @@
 export {
   cssCatalogCategories,
-  cssCatalogEntries,
+  cssCatalogCategoryCounts,
   cssCatalogKinds,
   cssCatalogManifest,
-  getCssCatalogEntriesByCategory,
-  getCssCatalogEntry,
+  loadAllCssCatalogEntries,
+  loadCssCatalogEntriesByCategory,
+  loadCssCatalogEntry,
+  loadCssCatalogKind,
 } from './entries'
 export { createCssDemoSpec } from './demoSpecs'
 export type {

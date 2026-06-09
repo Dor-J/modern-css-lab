@@ -294,7 +294,7 @@
 }
 
 .css-dev-console__tabs button {
-  min-block-size: 2.6rem;
+  min-block-size: 2.75rem;
   padding-inline: 0.8rem;
   border: 0;
   border-radius: 0;
@@ -310,12 +310,21 @@
   background: rgb(255 255 255 / 0.08);
 }
 
+.css-dev-console__tabs button:focus-visible {
+  position: relative;
+  z-index: 1;
+  outline: 3px solid color-mix(in srgb, var(--color-accent), white 24%);
+  outline-offset: -3px;
+}
+
 .css-dev-console__panel {
   display: grid;
   gap: var(--space-4);
   max-block-size: 42rem;
   overflow: auto;
   padding: var(--space-4);
+  scrollbar-color: #53627c #0a1020;
+  scrollbar-width: thin;
 }
 
 .css-dev-console .target-picker button {

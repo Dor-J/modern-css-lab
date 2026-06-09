@@ -1,7 +1,7 @@
 import type { ReactNode } from 'react'
 import { Link } from 'react-router-dom'
 import { categoryById } from '../data/categories'
-import { getCssCatalogEntriesByCategory, type CssCatalogCategory } from '../data/cssCatalog'
+import { cssCatalogCategoryCounts, type CssCatalogCategory } from '../data/cssCatalog'
 import type { FeatureCategory } from '../data/features'
 import { getFeaturesByCategory, mvpFeatureSlugs } from '../data/features'
 import FeaturePlayground from '../components/playground/FeaturePlayground'
@@ -25,8 +25,8 @@ function CategoryPage({ categoryId, demos, afterHero }: CategoryPageProps) {
   const experimentalCount = categoryFeatures.filter((feature) => feature.support === 'experimental').length
   const customDemoSlugSet = new Set(demos ? mvpFeatureSlugs : [])
   const playgroundFeatures = categoryFeatures.filter((feature) => !customDemoSlugSet.has(feature.slug))
-  const catalogEntries =
-    categoryId === 'games' ? [] : getCssCatalogEntriesByCategory(categoryId as CssCatalogCategory)
+  const catalogEntryCount =
+    categoryId === 'games' ? 0 : cssCatalogCategoryCounts[categoryId as CssCatalogCategory]
 
   return (
     <div className="page-stack">
@@ -34,7 +34,7 @@ function CategoryPage({ categoryId, demos, afterHero }: CategoryPageProps) {
       <section className="catalog-coverage-strip" aria-label={`${category.title} CSS catalog coverage`}>
         <div>
           <p className="eyebrow">All CSS coverage</p>
-          <strong>{catalogEntries.length}</strong>
+          <strong>{catalogEntryCount}</strong>
           <span>MDN reference entries mapped to this category</span>
         </div>
         <Link className="button-link button-link--secondary" to={`/css?category=${category.id}`}>

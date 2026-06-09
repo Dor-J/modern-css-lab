@@ -1,17 +1,58 @@
+import { useEffect, useMemo, useState } from 'react'
 import { Link, useParams } from 'react-router-dom'
 import CssDemoRenderer from '../components/cssCatalog/CssDemoRenderer'
-import { createCssDemoSpec, getCssCatalogEntry } from '../data/cssCatalog'
+import { createCssDemoSpec, loadCssCatalogEntry, type CssCatalogEntry } from '../data/cssCatalog'
+
+type EntryLoadState =
+  | { slug: string; status: 'loading' }
+  | { slug: string; status: 'loaded'; entry: CssCatalogEntry | undefined }
+  | { slug: string; status: 'error'; message: string }
 
 function CssCatalogDetailPage() {
   const { slug = '' } = useParams()
-  const entry = getCssCatalogEntry(slug)
+  const [entryState, setEntryState] = useState<EntryLoadState>({ slug, status: 'loading' })
+
+  useEffect(() => {
+    let cancelled = false
+
+    loadCssCatalogEntry(slug)
+      .then((loadedEntry) => {
+        if (cancelled) return
+        setEntryState({ slug, status: 'loaded', entry: loadedEntry })
+      })
+      .catch(() => {
+        if (cancelled) return
+        setEntryState({ slug, status: 'error', message: 'The CSS catalog entry could not be loaded.' })
+      })
+
+    return () => {
+      cancelled = true
+    }
+  }, [slug])
+
+  const activeEntryState: EntryLoadState =
+    entryState.slug === slug ? entryState : { slug, status: 'loading' }
+  const entry = activeEntryState.status === 'loaded' ? activeEntryState.entry : undefined
+  const isLoading = activeEntryState.status === 'loading'
+  const loadError = activeEntryState.status === 'error' ? activeEntryState.message : ''
+  const spec = useMemo(() => (entry ? createCssDemoSpec(entry) : undefined), [entry])
+
+  if (isLoading) {
+    return (
+      <section className="section-block">
+        <p className="eyebrow">Loading CSS entry</p>
+        <h1>Loading catalog entry...</h1>
+        <p className="route-loading">Loading the relevant catalog chunk for this route.</p>
+      </section>
+    )
+  }
 
   if (!entry) {
     return (
       <section className="section-block">
         <p className="eyebrow">Missing CSS entry</p>
         <h1>Catalog entry not found</h1>
-        <p>The requested CSS catalog slug is not in the MDN snapshot.</p>
+        <p>{loadError || 'The requested CSS catalog slug is not in the MDN snapshot.'}</p>
         <Link className="button-link" to="/css">
           Back to All CSS
         </Link>
@@ -19,7 +60,7 @@ function CssCatalogDetailPage() {
     )
   }
 
-  const spec = createCssDemoSpec(entry)
+  const activeSpec = spec ?? createCssDemoSpec(entry)
 
   return (
     <article className="css-entry-detail">
@@ -41,7 +82,7 @@ function CssCatalogDetailPage() {
           </a>
         </div>
       </header>
-      <CssDemoRenderer entry={entry} spec={spec} />
+      <CssDemoRenderer entry={entry} spec={activeSpec} />
       <section className="section-block">
         <div className="section-heading">
           <div>
@@ -51,7 +92,7 @@ function CssCatalogDetailPage() {
         </div>
         <p>{entry.specNotes}</p>
         <ul>
-          {spec.edgeCases.map((edgeCase) => (
+          {activeSpec.edgeCases.map((edgeCase) => (
             <li key={edgeCase}>{edgeCase}</li>
           ))}
         </ul>

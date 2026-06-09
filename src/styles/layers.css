@@ -106,6 +106,15 @@
   align-items: start;
 }
 
+.app-main:focus {
+  outline: none;
+}
+
+.app-main:focus-visible {
+  outline: 3px solid color-mix(in srgb, var(--color-accent), white 24%);
+  outline-offset: -3px;
+}
+
 .sidebar {
   position: sticky;
   inset-block-start: var(--header-block-size);
@@ -474,7 +483,7 @@
 }
 
 .demo-control input[type='range'] {
-  min-block-size: 1.75rem;
+  min-block-size: 2.5rem;
 }
 
 .demo-control--checkbox {
@@ -483,13 +492,38 @@
 }
 
 .demo-control--checkbox input {
-  inline-size: 1.1rem;
-  min-block-size: 1.1rem;
+  inline-size: 1.35rem;
+  min-block-size: 1.35rem;
 }
 
 .demo-control-bar__reset {
-  min-block-size: 2.45rem;
+  min-block-size: 2.75rem;
   padding-inline: 0.8rem;
+}
+
+.interaction-help,
+.motion-safety-note {
+  max-inline-size: 72ch;
+  color: var(--color-muted);
+  font-size: 0.92rem;
+}
+
+.motion-safety-note {
+  padding: var(--space-3) var(--space-4);
+  border: 1px solid color-mix(in srgb, var(--info), transparent 50%);
+  border-inline-start-width: 0.35rem;
+  border-radius: var(--radius-sm);
+  background: color-mix(in srgb, var(--info), transparent 90%);
+}
+
+.demo-shell__stage:focus-visible,
+.feature-playground__preview:focus-visible,
+.css-demo-renderer__stage:focus-visible,
+.css-dev-console__panel:focus-visible,
+.inspector-panel:focus-visible,
+.code-block pre:focus-visible {
+  outline: 3px solid color-mix(in srgb, var(--color-accent), white 24%);
+  outline-offset: 0.2rem;
 }
 
 .inspector-panel {
@@ -523,7 +557,7 @@
 }
 
 .target-picker button {
-  min-block-size: 2.2rem;
+  min-block-size: 2.75rem;
   padding-inline: 0.65rem;
   color: var(--color-muted);
   background: var(--surface-2);
@@ -1103,9 +1137,11 @@
   padding: var(--space-4);
   scrollbar-color: #53627c #0a1020;
   scrollbar-width: thin;
+  line-height: 1.6;
 }
 
 .copy-button {
+  min-block-size: 2.5rem;
   padding-block: 0.35rem;
   padding-inline: 0.65rem;
   border-color: rgb(255 255 255 / 0.18);

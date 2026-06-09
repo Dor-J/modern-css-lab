@@ -9,7 +9,12 @@ function BrowserSupportBadge({ support, year }: BrowserSupportBadgeProps) {
   const meta = supportMeta[support]
 
   return (
-    <span className="support-badge" data-support={support} title={meta.description}>
+    <span
+      className="support-badge"
+      data-support={support}
+      title={meta.description}
+      aria-label={`${meta.shortLabel}: ${meta.description}${year ? ` Baseline year ${year}.` : ''}`}
+    >
       <span className="support-badge__dot" aria-hidden="true" />
       <span>{meta.shortLabel}</span>
       {year ? <span className="support-badge__year">{year}</span> : null}

@@ -11,6 +11,7 @@ function MobileNav() {
       <span className="visually-hidden">Navigate to section</span>
       <select
         value={selected}
+        aria-label="Navigate to section"
         onChange={(event) => {
           navigate(event.target.value)
         }}

@@ -21,4 +21,18 @@ function getBasePath() {
 export default defineConfig({
   base: getBasePath(),
   plugins: [react()],
+  build: {
+    rollupOptions: {
+      output: {
+        manualChunks(id) {
+          const normalizedId = id.replaceAll('\\', '/')
+          const catalogEntryMatch = normalizedId.match(/\/src\/data\/cssCatalog\/entries\/(.+)\.json$/)
+
+          if (catalogEntryMatch && catalogEntryMatch[1] !== 'manifest') {
+            return `css-catalog-${catalogEntryMatch[1]}`
+          }
+        },
+      },
+    },
+  },
 })

@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
+import LiveRegion from '../ui/LiveRegion'
 import MobileNav from './MobileNav'
 
 type ThemeChoice = 'system' | 'light' | 'dark'
@@ -46,12 +47,14 @@ function Header() {
             type="button"
             className="theme-switcher__button"
             aria-pressed={theme === choice}
+            aria-label={`Use ${choice} color theme`}
             onClick={() => setTheme(choice)}
           >
             {choice}
           </button>
         ))}
       </div>
+      <LiveRegion message={`Color theme set to ${theme}.`} />
     </header>
   )
 }

@@ -1,28 +1,58 @@
-import { useMemo } from 'react'
+import { useEffect, useMemo, useState } from 'react'
 import { useSearchParams } from 'react-router-dom'
 import CssCatalogCard from '../components/cssCatalog/CssCatalogCard'
 import {
   cssCatalogCategories,
-  cssCatalogEntries,
   cssCatalogKinds,
   cssCatalogManifest,
+  loadAllCssCatalogEntries,
   type CssCatalogCategory,
+  type CssCatalogEntry,
   type CssCatalogKind,
   type CssCatalogStatus,
 } from '../data/cssCatalog'
 
 const statuses: CssCatalogStatus[] = ['standard', 'experimental', 'deprecated']
 
+type CatalogLoadState =
+  | { status: 'loading' }
+  | { status: 'loaded'; entries: CssCatalogEntry[] }
+  | { status: 'error'; message: string }
+
 function CssCatalogPage() {
   const [searchParams, setSearchParams] = useSearchParams()
+  const [catalogState, setCatalogState] = useState<CatalogLoadState>({ status: 'loading' })
   const query = searchParams.get('q') ?? ''
   const kind = searchParams.get('kind') ?? 'all'
   const category = searchParams.get('category') ?? 'all'
   const status = searchParams.get('status') ?? 'all'
 
+  useEffect(() => {
+    let cancelled = false
+
+    loadAllCssCatalogEntries()
+      .then((loadedEntries) => {
+        if (cancelled) return
+        setCatalogState({ status: 'loaded', entries: loadedEntries })
+      })
+      .catch(() => {
+        if (cancelled) return
+        setCatalogState({ status: 'error', message: 'The CSS catalog data could not be loaded.' })
+      })
+
+    return () => {
+      cancelled = true
+    }
+  }, [])
+
+  const isLoading = catalogState.status === 'loading'
+  const loadError = catalogState.status === 'error' ? catalogState.message : ''
+
   const filteredEntries = useMemo(
-    () =>
-      cssCatalogEntries.filter((entry) => {
+    () => {
+      const entries = catalogState.status === 'loaded' ? catalogState.entries : []
+
+      return entries.filter((entry) => {
         const matchesQuery =
           query.trim().length === 0 ||
           `${entry.title} ${entry.syntax} ${entry.summary} ${entry.tags.join(' ')}`
@@ -33,8 +63,9 @@ function CssCatalogPage() {
         const matchesStatus = status === 'all' || entry.status === status
 
         return matchesQuery && matchesKind && matchesCategory && matchesStatus
-      }),
-    [category, kind, query, status],
+      })
+    },
+    [catalogState, category, kind, query, status],
   )
 
   const updateParam = (key: string, value: string) => {
@@ -115,15 +146,22 @@ function CssCatalogPage() {
         <div className="section-heading">
           <div>
             <p className="eyebrow">Results</p>
-            <h2>{filteredEntries.length} entries</h2>
+            <h2>{isLoading ? 'Loading entries' : `${filteredEntries.length} entries`}</h2>
           </div>
-          <p>Each result links to a dedicated route with its own scoped demo spec.</p>
+          <p>
+            Catalog data is loaded in kind-based chunks only when this route is visited. Each result links to a
+            dedicated route with its own scoped demo spec.
+          </p>
         </div>
-        <div className="css-catalog-grid">
-          {filteredEntries.map((entry) => (
-            <CssCatalogCard key={entry.slug} entry={entry} />
-          ))}
-        </div>
+        {loadError ? <p role="alert">{loadError}</p> : null}
+        {isLoading ? <p className="route-loading">Loading CSS catalog entries...</p> : null}
+        {!isLoading && !loadError ? (
+          <div className="css-catalog-grid">
+            {filteredEntries.map((entry) => (
+              <CssCatalogCard key={entry.slug} entry={entry} />
+            ))}
+          </div>
+        ) : null}
       </section>
     </div>
   )

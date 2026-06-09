@@ -52,21 +52,30 @@ function ComputedStyleTable({
   }, [customProperties, properties, refreshKey, rootRef, selector])
 
   if (!found) {
-    return <p className="computed-table__empty">Target element is not currently mounted.</p>
+    return (
+      <p className="computed-table__empty" role="status" aria-live="polite">
+        Target element is not currently mounted.
+      </p>
+    )
   }
 
   return (
-    <table className="computed-table">
-      <caption>Computed styles</caption>
-      <tbody>
-        {rows.map((row) => (
-          <tr key={row.property}>
-            <th scope="row">{row.property}</th>
-            <td>{row.value}</td>
-          </tr>
-        ))}
-      </tbody>
-    </table>
+    <>
+      <p className="visually-hidden" role="status" aria-live="polite" aria-atomic="true">
+        Computed styles refreshed for {selector}. {rows.length} values shown.
+      </p>
+      <table className="computed-table">
+        <caption>Computed styles for {selector}</caption>
+        <tbody>
+          {rows.map((row) => (
+            <tr key={row.property}>
+              <th scope="row">{row.property}</th>
+              <td>{row.value}</td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
+    </>
   )
 }
 

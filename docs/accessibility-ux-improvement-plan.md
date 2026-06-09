@@ -18,6 +18,24 @@ The project already has a solid accessibility foundation:
 - Theme support uses `color-scheme`, light/dark tokens, and app-level theme state.
 - The catalog and feature playgrounds expose inspectable targets, support checks, dynamic snippets, and computed styles.
 
+## Implementation Status
+
+Implemented on June 9, 2026:
+
+- Route changes now move focus back to the main content region.
+- Demo controls announce CSS variable updates and reset actions.
+- Copy buttons expose success/failure feedback through a live region.
+- Demo previews, feature playground previews, and catalog demo stages are labelled focusable regions.
+- Inspector target pickers support arrow-key, Home, and End navigation.
+- Inspector panels announce the currently selected target.
+- Catalog dev-console tabs support keyboard tab-panel navigation and include screen-reader descriptions.
+- Computed-style and support-query panels expose dynamic status summaries.
+- Motion demos and catalog motion entries include visible reduced-motion notes.
+- Game pages include a labelled play region and a consistent accessibility guidance panel.
+- Support badges include accessible descriptions beyond visual color and `title` text.
+- Controls, game controls, code blocks, and dev-console panels have stronger focus/touch ergonomics.
+- Playwright accessibility/UX smoke coverage now verifies route focus, target picker keyboard behavior, copy feedback, dev-console tab navigation, reduced-motion behavior, mobile navigation, and game accessibility guidance.
+
 ## Main UX Risks
 
 The highest-impact gaps are not basic semantic failures. They are product-level clarity and interaction issues:
@@ -152,4 +170,3 @@ Before marking future accessibility/UX work complete:
 - Add completed items to release notes or PR descriptions.
 - Link any future automated accessibility test results from this document.
 - Do not claim WCAG conformance until a full manual audit and automated test suite have been completed.
-

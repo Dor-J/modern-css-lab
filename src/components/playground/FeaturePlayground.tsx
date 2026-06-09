@@ -1,4 +1,4 @@
-import { useMemo, useRef, useState } from 'react'
+import { useId, useMemo, useRef, useState } from 'react'
 import type { Feature } from '../../data/features'
 import BrowserSupportBadge from '../ui/BrowserSupportBadge'
 import DemoControlBar from './DemoControlBar'
@@ -13,6 +13,8 @@ type FeaturePlaygroundProps = {
 }
 
 function FeaturePlayground({ feature, compact = false }: FeaturePlaygroundProps) {
+  const headingId = useId()
+  const previewDescriptionId = useId()
   const rootRef = useRef<HTMLDivElement>(null)
   const [selectedTargetId, setSelectedTargetId] = useState(feature.interaction.targets[0]?.id ?? '')
   const [refreshKey, setRefreshKey] = useState(0)
@@ -23,15 +25,29 @@ function FeaturePlayground({ feature, compact = false }: FeaturePlaygroundProps)
   )
 
   return (
-    <article className={`feature-playground ${compact ? 'feature-playground--compact' : ''}`} id={`play-${feature.slug}`}>
+    <article
+      className={`feature-playground ${compact ? 'feature-playground--compact' : ''}`}
+      id={`play-${feature.slug}`}
+      aria-labelledby={headingId}
+    >
       <header className="feature-playground__header">
         <div>
           <p className="eyebrow">Interactive inspector</p>
-          <h3>{feature.title}</h3>
+          <h3 id={headingId}>{feature.title}</h3>
           <p>{feature.summary}</p>
         </div>
         <BrowserSupportBadge support={feature.support} year={feature.baselineYear} />
       </header>
+      <p className="interaction-help">
+        Keyboard: adjust controls, focus the preview, then choose inspector targets. Snippets and computed values
+        update from the same CSS variables.
+      </p>
+      {feature.category === 'motion' ? (
+        <aside className="motion-safety-note" aria-label="Reduced motion behavior">
+          Motion safe: animation previews respect <code>prefers-reduced-motion</code> and keep the content
+          readable when motion is reduced.
+        </aside>
+      ) : null}
       <DemoControlBar
         controls={feature.interaction.controls}
         values={values}
@@ -49,10 +65,18 @@ function FeaturePlayground({ feature, compact = false }: FeaturePlaygroundProps)
           className="feature-playground__preview"
           ref={rootRef}
           style={style}
+          role="region"
+          tabIndex={0}
+          aria-label={`${feature.title} live preview`}
+          aria-describedby={previewDescriptionId}
           onInputCapture={() => setRefreshKey((current) => current + 1)}
           onChangeCapture={() => setRefreshKey((current) => current + 1)}
           onPointerUpCapture={() => setRefreshKey((current) => current + 1)}
         >
+          <p className="visually-hidden" id={previewDescriptionId}>
+            Feature preview for {feature.title}. Use the controls before this region to update CSS variables and
+            inspect computed values in the panel after this region.
+          </p>
           {renderCategoryPreview(feature)}
         </div>
         <InspectorPanel
