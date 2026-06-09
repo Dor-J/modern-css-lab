@@ -22,3 +22,11 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+test-results/
+
+# AI
+.codex/
+.claude/
+.agent/
+.cursor/
