@@ -93,12 +93,52 @@ function valueFor(entry: CssCatalogEntry, mode: 'primary' | 'alternate' | 'fallb
     return mode === 'primary' ? 'var(--color-accent)' : mode === 'alternate' ? 'var(--color-accent-2)' : 'var(--surface-3)'
   }
 
-  if (/color|palette|fill|stroke|accent/.test(title)) {
+  if (/color|palette|fill|stroke|accent|caret/.test(title)) {
     return mode === 'primary' ? 'oklch(62% 0.21 286)' : mode === 'alternate' ? 'oklch(68% 0.16 165)' : '#6d5dfc'
   }
 
-  if (/width|height|size|gap|margin|padding|inset|radius|spacing|offset|position|top|right|bottom|left/.test(title)) {
+  if (/background-image|mask-image/.test(title)) {
+    return mode === 'primary'
+      ? 'linear-gradient(135deg, var(--color-accent), var(--color-accent-2))'
+      : mode === 'alternate'
+        ? 'radial-gradient(circle, var(--color-accent-3), transparent 65%)'
+        : 'none'
+  }
+
+  if (/background|background-color/.test(title)) {
+    return mode === 'primary'
+      ? 'color-mix(in srgb, var(--color-accent), transparent 82%)'
+      : mode === 'alternate'
+        ? 'var(--surface-3)'
+        : 'var(--surface-2)'
+  }
+
+  if (/border-style|outline-style/.test(title)) {
+    return mode === 'primary' ? 'dashed' : mode === 'alternate' ? 'solid' : 'none'
+  }
+
+  if (/border-width|outline-width|column-rule-width/.test(title)) {
+    return mode === 'primary' ? '3px' : mode === 'alternate' ? '6px' : '1px'
+  }
+
+  if (/border-radius|radius|corner/.test(title)) {
+    return mode === 'primary' ? '1.2rem' : mode === 'alternate' ? '2rem 0.4rem' : '0.5rem'
+  }
+
+  if (/box-shadow|text-shadow/.test(title)) {
+    return mode === 'primary'
+      ? '0 1rem 2rem rgb(0 0 0 / 0.22)'
+      : mode === 'alternate'
+        ? '0 0 0 4px color-mix(in srgb, var(--color-accent), transparent 70%)'
+        : 'none'
+  }
+
+  if (/width|height|size|gap|margin|padding|inset|spacing|offset|top|right|bottom|left/.test(title)) {
     return mode === 'primary' ? '2rem' : mode === 'alternate' ? '4rem' : '1rem'
+  }
+
+  if (/inline-size|block-size/.test(title)) {
+    return mode === 'primary' ? 'min(100%, 22rem)' : mode === 'alternate' ? '14rem' : 'auto'
   }
 
   if (/duration|delay|time/.test(title)) {
@@ -109,12 +149,140 @@ function valueFor(entry: CssCatalogEntry, mode: 'primary' | 'alternate' | 'fallb
     return mode === 'primary' ? 'grid' : mode === 'alternate' ? 'flex' : 'block'
   }
 
-  if (/font|text/.test(title)) {
+  if (/grid-template-columns/.test(title)) {
+    return mode === 'primary'
+      ? 'repeat(3, minmax(0, 1fr))'
+      : mode === 'alternate'
+        ? 'subgrid'
+        : 'repeat(2, minmax(0, 1fr))'
+  }
+
+  if (/grid-template-rows/.test(title)) {
+    return mode === 'primary' ? 'auto 1fr auto' : mode === 'alternate' ? 'subgrid' : 'auto'
+  }
+
+  if (/grid-column|grid-row/.test(title)) {
+    return mode === 'primary' ? 'span 2' : mode === 'alternate' ? '1 / -1' : 'auto'
+  }
+
+  if (/flex-direction/.test(title)) {
+    return mode === 'primary' ? 'row' : mode === 'alternate' ? 'column' : 'row'
+  }
+
+  if (/flex-wrap/.test(title)) {
+    return mode === 'primary' ? 'wrap' : mode === 'alternate' ? 'nowrap' : 'wrap'
+  }
+
+  if (/align|justify|place/.test(title)) {
+    return mode === 'primary' ? 'center' : mode === 'alternate' ? 'start' : 'normal'
+  }
+
+  if (/overflow/.test(title)) {
+    return mode === 'primary' ? 'auto' : mode === 'alternate' ? 'clip' : 'visible'
+  }
+
+  if (/position/.test(title)) {
+    return mode === 'primary' ? 'relative' : mode === 'alternate' ? 'sticky' : 'static'
+  }
+
+  if (/container-type/.test(title)) {
+    return mode === 'primary' ? 'inline-size' : mode === 'alternate' ? 'size' : 'normal'
+  }
+
+  if (/contain-intrinsic-size/.test(title)) {
+    return mode === 'primary' ? '18rem' : mode === 'alternate' ? '12rem 24rem' : 'auto'
+  }
+
+  if (/content-visibility/.test(title)) {
+    return mode === 'primary' ? 'auto' : mode === 'alternate' ? 'hidden' : 'visible'
+  }
+
+  if (/aspect-ratio/.test(title)) {
+    return mode === 'primary' ? '16 / 9' : mode === 'alternate' ? '1 / 1' : 'auto'
+  }
+
+  if (/font-size/.test(title)) {
     return mode === 'primary' ? 'clamp(1rem, 3vw, 2rem)' : mode === 'alternate' ? '1.25rem' : '1rem'
+  }
+
+  if (/line-height/.test(title)) {
+    return mode === 'primary' ? '1.6' : mode === 'alternate' ? '1.2' : 'normal'
+  }
+
+  if (/text-wrap/.test(title)) {
+    return mode === 'primary' ? 'balance' : mode === 'alternate' ? 'pretty' : 'wrap'
+  }
+
+  if (/text-align/.test(title)) {
+    return mode === 'primary' ? 'center' : mode === 'alternate' ? 'start' : 'initial'
+  }
+
+  if (/white-space/.test(title)) {
+    return mode === 'primary' ? 'preserve wrap' : mode === 'alternate' ? 'normal' : 'normal'
+  }
+
+  if (/hyphens/.test(title)) {
+    return mode === 'primary' ? 'auto' : mode === 'alternate' ? 'manual' : 'none'
+  }
+
+  if (/writing-mode/.test(title)) {
+    return mode === 'primary' ? 'vertical-rl' : mode === 'alternate' ? 'horizontal-tb' : 'horizontal-tb'
   }
 
   if (/transform|rotate|scale|translate/.test(title)) {
     return mode === 'primary' ? 'rotate(6deg) scale(1.04)' : mode === 'alternate' ? 'translateY(-0.5rem)' : 'none'
+  }
+
+  if (/filter/.test(title)) {
+    return mode === 'primary' ? 'saturate(1.4) contrast(1.08)' : mode === 'alternate' ? 'blur(2px)' : 'none'
+  }
+
+  if (/backdrop-filter/.test(title)) {
+    return mode === 'primary' ? 'blur(18px) saturate(1.4)' : mode === 'alternate' ? 'blur(6px)' : 'none'
+  }
+
+  if (/clip-path/.test(title)) {
+    return mode === 'primary' ? 'inset(8% round 1.2rem)' : mode === 'alternate' ? 'circle(45%)' : 'none'
+  }
+
+  if (/mix-blend-mode/.test(title)) {
+    return mode === 'primary' ? 'screen' : mode === 'alternate' ? 'multiply' : 'normal'
+  }
+
+  if (/isolation/.test(title)) {
+    return mode === 'primary' ? 'isolate' : mode === 'alternate' ? 'auto' : 'auto'
+  }
+
+  if (/image-rendering/.test(title)) {
+    return mode === 'primary' ? 'pixelated' : mode === 'alternate' ? 'crisp-edges' : 'auto'
+  }
+
+  if (/scroll-snap-type/.test(title)) {
+    return mode === 'primary' ? 'inline mandatory' : mode === 'alternate' ? 'block proximity' : 'none'
+  }
+
+  if (/scroll-snap-align/.test(title)) {
+    return mode === 'primary' ? 'start' : mode === 'alternate' ? 'center' : 'none'
+  }
+
+  if (/scrollbar-width/.test(title)) {
+    return mode === 'primary' ? 'thin' : mode === 'alternate' ? 'none' : 'auto'
+  }
+
+  if (/scrollbar-color/.test(title)) {
+    return mode === 'primary' ? 'var(--color-accent) transparent' : mode === 'alternate' ? 'var(--color-accent-2) var(--surface-3)' : 'auto'
+  }
+
+  if (/animation-name/.test(title)) {
+    return mode === 'primary' ? 'catalog-pulse' : mode === 'alternate' ? 'catalog-slide' : 'none'
+  }
+
+  if (/animation-timeline/.test(title)) {
+    return mode === 'primary' ? 'scroll()' : mode === 'alternate' ? 'view()' : 'auto'
+  }
+
+  if (/transition-behavior/.test(title)) {
+    return mode === 'primary' ? 'allow-discrete' : mode === 'alternate' ? 'normal' : 'normal'
   }
 
   if (/opacity/.test(title)) {
@@ -143,9 +311,12 @@ function functionValue(entry: CssCatalogEntry) {
 
 function cssFor(entry: CssCatalogEntry) {
   const scope = `[data-css-demo="${entry.slug}"]`
+  const context = contextCssFor(entry, scope)
 
   if (entry.kind === 'property') {
     return `
+${context}
+
 ${scope} .css-demo-subject {
   ${entry.title}: var(--demo-value);
 }
@@ -153,6 +324,16 @@ ${scope} .css-demo-subject {
 ${scope} .css-demo-edge {
   ${entry.title}: var(--demo-value);
   padding: var(--demo-space);
+}
+
+@keyframes catalog-pulse {
+  from { opacity: 0.58; transform: translateY(0); }
+  to { opacity: 1; transform: translateY(-0.35rem); }
+}
+
+@keyframes catalog-slide {
+  from { transform: translateX(-0.5rem); }
+  to { transform: translateX(0.5rem); }
 }
 `
   }
@@ -173,6 +354,8 @@ ${scope} .css-demo-edge {
 
   if (entry.kind === 'function') {
     return `
+${context}
+
 ${scope} .css-demo-subject {
   inline-size: min(100%, var(--demo-value));
   transform: translateY(calc(var(--demo-intensity) * -0.25rem));
@@ -185,6 +368,8 @@ ${scope} .css-demo-edge {
   }
 
   return `
+${context}
+
 ${scope} .css-demo-subject {
   border-color: var(--color-accent);
   padding: var(--demo-space);
@@ -195,6 +380,93 @@ ${scope} .css-demo-edge {
   background: color-mix(in srgb, var(--color-accent), transparent 88%);
 }
 `
+}
+
+function contextCssFor(entry: CssCatalogEntry, scope: string) {
+  switch (entry.category) {
+    case 'layout':
+      return `
+${scope} .css-demo-subject {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: calc(var(--demo-space) * 0.75);
+  min-block-size: 8rem;
+}
+
+${scope} .css-demo-edge {
+  display: grid;
+  place-items: center;
+  min-block-size: 5rem;
+}
+`
+    case 'colors':
+      return `
+${scope} .css-demo-subject {
+  color: var(--color-text);
+  background: color-mix(in srgb, var(--demo-value), transparent 82%);
+}
+
+${scope} .css-demo-edge {
+  border-color: var(--demo-value);
+}
+`
+    case 'typography':
+      return `
+${scope} .css-demo-subject {
+  max-inline-size: 42ch;
+  font-size: clamp(1rem, 2vw, 1.6rem);
+}
+
+${scope} .css-demo-edge {
+  max-inline-size: 32ch;
+}
+`
+    case 'motion':
+      return `
+${scope} .css-demo-subject {
+  animation-duration: 900ms;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  ${scope} .css-demo-subject {
+    animation: none;
+    transition: none;
+  }
+}
+`
+    case 'components':
+      return `
+${scope} .css-demo-subject {
+  accent-color: var(--color-accent);
+}
+
+${scope} .css-demo-edge {
+  scroll-snap-align: start;
+}
+`
+    case 'effects':
+      return `
+${scope} .css-demo-subject {
+  isolation: isolate;
+  background:
+    radial-gradient(circle at 20% 20%, var(--color-accent), transparent 6rem),
+    radial-gradient(circle at 80% 80%, var(--color-accent-2), transparent 7rem),
+    var(--surface-2);
+}
+`
+    case 'architecture':
+      return `
+${scope} .css-demo-subject {
+  --catalog-token: var(--demo-value);
+  background: color-mix(in srgb, var(--catalog-token), transparent 86%);
+}
+`
+    case 'functions':
+    case 'selectors':
+      return ''
+  }
 }
 
 function selectorForDemo(entry: CssCatalogEntry) {

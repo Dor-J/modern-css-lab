@@ -151,64 +151,402 @@ const customDemoSlugs = [
   'scroll-driven-animations',
   'view-timeline',
   'cascade-layers',
+  'text-wrap-balance',
+  'popover',
+  'backdrop-filter',
 ]
 
 const customDemoSlugSet = new Set(customDemoSlugs)
 
-const defaultControls: FeatureControl[] = [
-  {
-    id: 'accent',
-    label: 'Accent',
-    type: 'select',
-    cssVar: '--playground-accent',
-    defaultValue: 'var(--color-accent)',
-    options: [
-      { label: 'Violet', value: 'var(--color-accent)' },
-      { label: 'Mint', value: 'var(--color-accent-2)' },
-      { label: 'Copper', value: 'var(--color-accent-3)' },
-    ],
-  },
-  {
-    id: 'radius',
-    label: 'Radius',
-    type: 'range',
-    cssVar: '--playground-radius',
-    defaultValue: '12',
-    min: 0,
-    max: 24,
-    step: 1,
-    unit: 'px',
-  },
-  {
-    id: 'density',
-    label: 'Density',
-    type: 'range',
-    cssVar: '--playground-density',
-    defaultValue: '1',
-    min: 0.75,
-    max: 1.35,
-    step: 0.05,
-  },
-]
+const accentControl = {
+  id: 'accent',
+  label: 'Accent',
+  type: 'select',
+  cssVar: '--playground-accent',
+  defaultValue: 'var(--color-accent)',
+  options: [
+    { label: 'Violet', value: 'var(--color-accent)' },
+    { label: 'Mint', value: 'var(--color-accent-2)' },
+    { label: 'Copper', value: 'var(--color-accent-3)' },
+  ],
+} satisfies FeatureControl
 
-const defaultTargets: FeatureTarget[] = [
-  { id: 'surface', label: 'Preview surface', selector: '.feature-playground__preview' },
-  { id: 'subject', label: 'Feature subject', selector: '.feature-playground__subject' },
-  { id: 'chip', label: 'Generated chip', selector: '.feature-playground__chip' },
-]
+const defaultControlsFor = (feature: FeatureSeed): FeatureControl[] => {
+  switch (feature.category) {
+    case 'layout':
+      return [
+        accentControl,
+        {
+          id: 'demoWidth',
+          label: 'Container',
+          type: 'range',
+          cssVar: '--playground-demo-width',
+          defaultValue: '28',
+          min: 16,
+          max: 48,
+          step: 1,
+          unit: 'rem',
+        },
+        {
+          id: 'gap',
+          label: 'Grid gap',
+          type: 'range',
+          cssVar: '--playground-gap',
+          defaultValue: '1',
+          min: 0.25,
+          max: 2,
+          step: 0.05,
+          unit: 'rem',
+        },
+      ]
+    case 'colors':
+      return [
+        {
+          id: 'baseColor',
+          label: 'Base color',
+          type: 'select',
+          cssVar: '--playground-base-color',
+          defaultValue: 'oklch(62% 0.21 286)',
+          options: [
+            { label: 'Violet', value: 'oklch(62% 0.21 286)' },
+            { label: 'Coral', value: 'oklch(66% 0.2 22)' },
+            { label: 'Mint', value: 'oklch(70% 0.16 165)' },
+          ],
+        },
+        {
+          id: 'mix',
+          label: 'Surface mix',
+          type: 'range',
+          cssVar: '--playground-mix',
+          defaultValue: '72',
+          min: 35,
+          max: 90,
+          step: 1,
+          unit: '%',
+        },
+        {
+          id: 'chroma',
+          label: 'Chroma boost',
+          type: 'range',
+          cssVar: '--playground-chroma',
+          defaultValue: '1',
+          min: 0.5,
+          max: 1.5,
+          step: 0.05,
+        },
+      ]
+    case 'functions':
+      return [
+        accentControl,
+        {
+          id: 'radius',
+          label: 'Orbit radius',
+          type: 'range',
+          cssVar: '--playground-orbit-radius',
+          defaultValue: '6',
+          min: 3,
+          max: 9,
+          step: 0.25,
+          unit: 'rem',
+        },
+        {
+          id: 'angle',
+          label: 'Angle',
+          type: 'range',
+          cssVar: '--playground-angle',
+          defaultValue: '38',
+          min: -180,
+          max: 180,
+          step: 2,
+          unit: 'deg',
+        },
+      ]
+    case 'selectors':
+      return [
+        accentControl,
+        {
+          id: 'focusSize',
+          label: 'Focus ring',
+          type: 'range',
+          cssVar: '--playground-focus-size',
+          defaultValue: '4',
+          min: 0,
+          max: 10,
+          step: 1,
+          unit: 'px',
+        },
+        {
+          id: 'invalidTint',
+          label: 'Invalid tint',
+          type: 'range',
+          cssVar: '--playground-invalid-alpha',
+          defaultValue: '0.12',
+          min: 0,
+          max: 0.28,
+          step: 0.01,
+        },
+      ]
+    case 'typography':
+      return [
+        {
+          id: 'measure',
+          label: 'Measure',
+          type: 'range',
+          cssVar: '--playground-measure',
+          defaultValue: '38',
+          min: 22,
+          max: 64,
+          step: 1,
+          unit: 'ch',
+        },
+        {
+          id: 'leading',
+          label: 'Line height',
+          type: 'range',
+          cssVar: '--playground-leading',
+          defaultValue: '1.45',
+          min: 1,
+          max: 2,
+          step: 0.05,
+        },
+        {
+          id: 'wrapMode',
+          label: 'Wrap mode',
+          type: 'select',
+          cssVar: '--playground-wrap-mode',
+          defaultValue: 'balance',
+          options: [
+            { label: 'Balance', value: 'balance' },
+            { label: 'Pretty', value: 'pretty' },
+            { label: 'Wrap', value: 'wrap' },
+          ],
+        },
+      ]
+    case 'motion':
+      return [
+        accentControl,
+        {
+          id: 'duration',
+          label: 'Duration',
+          type: 'range',
+          cssVar: '--playground-duration',
+          defaultValue: '650',
+          min: 120,
+          max: 1600,
+          step: 10,
+          unit: 'ms',
+        },
+        {
+          id: 'distance',
+          label: 'Distance',
+          type: 'range',
+          cssVar: '--playground-distance',
+          defaultValue: '1.4',
+          min: 0,
+          max: 4,
+          step: 0.1,
+          unit: 'rem',
+        },
+      ]
+    case 'components':
+      return [
+        accentControl,
+        {
+          id: 'panelGap',
+          label: 'Panel gap',
+          type: 'range',
+          cssVar: '--playground-panel-gap',
+          defaultValue: '0.75',
+          min: 0,
+          max: 2,
+          step: 0.05,
+          unit: 'rem',
+        },
+        {
+          id: 'slideSize',
+          label: 'Slide size',
+          type: 'range',
+          cssVar: '--playground-slide-size',
+          defaultValue: '14',
+          min: 9,
+          max: 22,
+          step: 1,
+          unit: 'rem',
+        },
+      ]
+    case 'effects':
+      return [
+        accentControl,
+        {
+          id: 'blur',
+          label: 'Blur',
+          type: 'range',
+          cssVar: '--playground-blur',
+          defaultValue: '14',
+          min: 0,
+          max: 30,
+          step: 1,
+          unit: 'px',
+        },
+        {
+          id: 'shape',
+          label: 'Shape',
+          type: 'range',
+          cssVar: '--playground-shape',
+          defaultValue: '12',
+          min: 0,
+          max: 28,
+          step: 1,
+          unit: '%',
+        },
+      ]
+    case 'architecture':
+      return [
+        accentControl,
+        {
+          id: 'layerOrder',
+          label: 'Layer order',
+          type: 'select',
+          cssVar: '--playground-layer-token',
+          defaultValue: 'var(--color-accent)',
+          options: [
+            { label: 'Component wins', value: 'var(--color-accent)' },
+            { label: 'Utility wins', value: 'var(--color-accent-2)' },
+            { label: 'Override wins', value: 'var(--color-accent-3)' },
+          ],
+        },
+        {
+          id: 'scope',
+          label: 'Scope radius',
+          type: 'range',
+          cssVar: '--playground-scope-radius',
+          defaultValue: '14',
+          min: 0,
+          max: 28,
+          step: 1,
+          unit: 'px',
+        },
+      ]
+    case 'games':
+      return [
+        accentControl,
+        {
+          id: 'cellSize',
+          label: 'Cell size',
+          type: 'range',
+          cssVar: '--playground-cell-size',
+          defaultValue: '2.3',
+          min: 1.5,
+          max: 3.5,
+          step: 0.1,
+          unit: 'rem',
+        },
+        {
+          id: 'speed',
+          label: 'Loop speed',
+          type: 'range',
+          cssVar: '--playground-duration',
+          defaultValue: '900',
+          min: 300,
+          max: 1600,
+          step: 50,
+          unit: 'ms',
+        },
+      ]
+  }
+}
 
-const defaultComputedProperties = [
-  'display',
-  'inline-size',
-  'block-size',
-  'color',
-  'background-color',
-  'border-color',
-  'border-radius',
-  'container-type',
-  'color-scheme',
-  'animation-timeline',
-]
+const defaultTargetsFor = (feature: FeatureSeed): FeatureTarget[] => {
+  const common = [{ id: 'surface', label: 'Preview surface', selector: '.feature-playground__preview' }]
+
+  switch (feature.category) {
+    case 'layout':
+      return [
+        ...common,
+        { id: 'grid', label: 'Responsive grid', selector: '.feature-playground__layout-grid' },
+        { id: 'item', label: 'Adaptive item', selector: '.feature-playground__layout-item' },
+      ]
+    case 'colors':
+      return [
+        ...common,
+        { id: 'palette', label: 'Generated palette', selector: '.feature-playground__palette' },
+        { id: 'swatch', label: 'Derived swatch', selector: '.feature-playground__swatch' },
+      ]
+    case 'functions':
+      return [
+        ...common,
+        { id: 'formula', label: 'Formula stage', selector: '.feature-playground__formula-stage' },
+        { id: 'point', label: 'Math point', selector: '.feature-playground__math-point' },
+      ]
+    case 'selectors':
+      return [
+        ...common,
+        { id: 'form', label: 'State form', selector: '.feature-playground__state-form' },
+        { id: 'field', label: 'Interactive field', selector: '.feature-playground__state-form input' },
+      ]
+    case 'typography':
+      return [
+        ...common,
+        { id: 'headline', label: 'Text headline', selector: '.feature-playground__type-headline' },
+        { id: 'paragraph', label: 'Text paragraph', selector: '.feature-playground__type-copy' },
+      ]
+    case 'motion':
+      return [
+        ...common,
+        { id: 'scroller', label: 'Timeline scroller', selector: '.feature-playground__motion-scroll' },
+        { id: 'card', label: 'Animated card', selector: '.feature-playground__motion-card' },
+      ]
+    case 'components':
+      return [
+        ...common,
+        { id: 'details', label: 'Native details', selector: '.feature-playground__native-details' },
+        { id: 'carousel', label: 'Snap carousel', selector: '.feature-playground__native-carousel' },
+      ]
+    case 'effects':
+      return [
+        ...common,
+        { id: 'glass', label: 'Glass panel', selector: '.feature-playground__effect-glass' },
+        { id: 'shape', label: 'Effect shape', selector: '.feature-playground__effect-shape' },
+      ]
+    case 'architecture':
+      return [
+        ...common,
+        { id: 'scoped', label: 'Scoped component', selector: '.feature-playground__scope-demo' },
+        { id: 'token', label: 'Token output', selector: '.feature-playground__token-output' },
+      ]
+    case 'games':
+      return [
+        ...common,
+        { id: 'board', label: 'CSS board', selector: '.feature-playground__game-board' },
+        { id: 'cell', label: 'State cell', selector: '.feature-playground__game-cell' },
+      ]
+  }
+}
+
+const defaultComputedPropertiesFor = (feature: FeatureSeed) => {
+  switch (feature.category) {
+    case 'layout':
+      return ['display', 'grid-template-columns', 'gap', 'container-type', 'inline-size', 'aspect-ratio']
+    case 'colors':
+      return ['color', 'background-color', 'border-color', 'box-shadow', 'color-scheme', 'accent-color']
+    case 'functions':
+      return ['transform', 'inline-size', 'rotate', 'translate', 'width', 'height']
+    case 'selectors':
+      return ['border-color', 'outline-color', 'box-shadow', 'background-color', 'color']
+    case 'typography':
+      return ['font-size', 'line-height', 'max-inline-size', 'text-wrap', 'hyphens', 'writing-mode']
+    case 'motion':
+      return ['animation-name', 'animation-duration', 'animation-timeline', 'animation-range-start', 'opacity', 'transform']
+    case 'components':
+      return ['display', 'scroll-snap-type', 'scroll-snap-align', 'anchor-name', 'position-anchor', 'overlay']
+    case 'effects':
+      return ['backdrop-filter', 'filter', 'clip-path', 'mask-image', 'mix-blend-mode', 'image-rendering']
+    case 'architecture':
+      return ['background-color', 'border-radius', 'color', 'transition-property', 'contain', 'content-visibility']
+    case 'games':
+      return ['display', 'grid-template-columns', 'animation-duration', 'transform', 'background-color']
+  }
+}
 
 const supportsQueryFor = (syntax: string): string | undefined => {
   const normalized = syntax.toLowerCase()
@@ -306,23 +644,7 @@ const defaultSnippetTemplates = (feature: FeatureSeed): FeatureSnippetTemplate[]
   {
     id: `${feature.slug}-live-css`,
     title: 'Live CSS',
-    template: `
-/* ${feature.title}: ${feature.support} */
-.feature-playground__preview {
-  --playground-accent: {{accent}};
-  --playground-radius: {{radius}}px;
-  --playground-density: {{density}};
-}
-
-.feature-playground__subject {
-  border-radius: var(--playground-radius);
-  padding: calc(1rem * var(--playground-density));
-  border: 1px solid color-mix(in srgb, var(--playground-accent), transparent 40%);
-  background: color-mix(in srgb, var(--playground-accent), transparent 88%);
-}
-
-${feature.cssFeatures.map((cssFeature) => `/* Inspect: ${cssFeature} */`).join('\n')}
-`,
+    template: snippetForCategory(feature),
   },
 ]
 
@@ -332,12 +654,228 @@ const defaultInteraction = (feature: FeatureSeed): FeatureInteraction => ({
     : feature.support === 'experimental'
       ? 'snippet-only'
       : 'inspector',
-  controls: defaultControls,
-  targets: defaultTargets,
+  controls: defaultControlsFor(feature),
+  targets: defaultTargetsFor(feature),
   snippetTemplates: defaultSnippetTemplates(feature),
-  computedProperties: defaultComputedProperties,
+  computedProperties: defaultComputedPropertiesFor(feature),
   supportQueries: defaultSupportQueries(feature),
 })
+
+function snippetForCategory(feature: FeatureSeed) {
+  const inspected = feature.cssFeatures.map((cssFeature) => `/* Inspect: ${cssFeature} */`).join('\n')
+
+  switch (feature.category) {
+    case 'layout':
+      return `
+/* ${feature.title}: component-owned layout controls */
+.feature-playground__preview {
+  --playground-accent: {{accent}};
+  --playground-demo-width: {{demoWidth}};
+  --playground-gap: {{gap}};
+}
+
+.feature-playground__subject--layout {
+  container-type: inline-size;
+  inline-size: min(100%, var(--playground-demo-width));
+}
+
+.feature-playground__layout-grid {
+  display: grid;
+  gap: var(--playground-gap);
+}
+
+@container (inline-size >= 32rem) {
+  .feature-playground__layout-grid {
+    grid-template-columns: 0.8fr 1.2fr;
+  }
+}
+
+${inspected}
+`
+    case 'colors':
+      return `
+/* ${feature.title}: token derivation */
+.feature-playground__preview {
+  --playground-base-color: {{baseColor}};
+  --playground-mix: {{mix}};
+  --playground-chroma: {{chroma}};
+}
+
+@supports (color: color-mix(in oklch, red, white)) {
+  .feature-playground__swatch {
+    background: color-mix(in oklch, var(--playground-base-color), white var(--playground-mix));
+    border-color: color-mix(in oklch, var(--playground-base-color), black 20%);
+  }
+}
+
+${inspected}
+`
+    case 'functions':
+      return `
+/* ${feature.title}: CSS math as layout input */
+.feature-playground__preview {
+  --playground-accent: {{accent}};
+  --playground-orbit-radius: {{radius}};
+  --playground-angle: {{angle}};
+}
+
+@supports (top: calc(sin(1deg) * 1px)) {
+  .feature-playground__math-point {
+    transform: translate(
+      calc(cos(var(--playground-angle)) * var(--playground-orbit-radius)),
+      calc(sin(var(--playground-angle)) * var(--playground-orbit-radius))
+    );
+  }
+}
+
+${inspected}
+`
+    case 'selectors':
+      return `
+/* ${feature.title}: native state selectors */
+.feature-playground__state-form {
+  --playground-accent: {{accent}};
+  --playground-focus-size: {{focusSize}};
+  --playground-invalid-alpha: {{invalidTint}};
+}
+
+.feature-playground__state-form:has(:focus-visible) {
+  box-shadow: 0 0 0 var(--playground-focus-size) color-mix(in srgb, var(--playground-accent), transparent 72%);
+}
+
+.feature-playground__state-form:has(input:not(:placeholder-shown):invalid) {
+  background: rgb(255 80 80 / var(--playground-invalid-alpha));
+}
+
+${inspected}
+`
+    case 'typography':
+      return `
+/* ${feature.title}: readable text controls */
+.feature-playground__type-headline {
+  max-inline-size: {{measure}};
+  text-wrap: {{wrapMode}};
+}
+
+.feature-playground__type-copy {
+  max-inline-size: {{measure}};
+  line-height: {{leading}};
+  text-wrap: pretty;
+  hyphens: auto;
+}
+
+${inspected}
+`
+    case 'motion':
+      return `
+/* ${feature.title}: motion timeline controls */
+.feature-playground__preview {
+  --playground-accent: {{accent}};
+  --playground-duration: {{duration}};
+  --playground-distance: {{distance}};
+}
+
+.feature-playground__motion-card {
+  animation: playground-reveal var(--playground-duration) both;
+  transform: translateY(var(--playground-distance));
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .feature-playground__motion-card {
+    animation: none;
+    transform: none;
+  }
+}
+
+${inspected}
+`
+    case 'components':
+      return `
+/* ${feature.title}: native UI surface */
+.feature-playground__preview {
+  --playground-accent: {{accent}};
+  --playground-panel-gap: {{panelGap}};
+  --playground-slide-size: {{slideSize}};
+}
+
+.feature-playground__native-carousel {
+  grid-auto-columns: var(--playground-slide-size);
+  gap: var(--playground-panel-gap);
+  scroll-snap-type: inline mandatory;
+}
+
+.feature-playground__native-slide {
+  scroll-snap-align: start;
+}
+
+${inspected}
+`
+    case 'effects':
+      return `
+/* ${feature.title}: progressive visual effects */
+.feature-playground__preview {
+  --playground-accent: {{accent}};
+  --playground-blur: {{blur}};
+  --playground-shape: {{shape}};
+}
+
+.feature-playground__effect-glass {
+  backdrop-filter: blur(var(--playground-blur));
+}
+
+.feature-playground__effect-shape {
+  clip-path: inset(var(--playground-shape) round 1.4rem);
+}
+
+${inspected}
+`
+    case 'architecture':
+      return `
+/* ${feature.title}: cascade and token architecture */
+.feature-playground__preview {
+  --playground-accent: {{accent}};
+  --playground-layer-token: {{layerOrder}};
+  --playground-scope-radius: {{scope}};
+}
+
+@layer demo-base, demo-utilities {
+  @layer demo-utilities {
+    .feature-playground__token-output {
+      background: var(--playground-layer-token);
+    }
+  }
+}
+
+@scope (.feature-playground__scope-demo) {
+  .feature-playground__token-output {
+    border-radius: var(--playground-scope-radius);
+  }
+}
+
+${inspected}
+`
+    case 'games':
+      return `
+/* ${feature.title}: CSS state-machine board */
+.feature-playground__preview {
+  --playground-accent: {{accent}};
+  --playground-cell-size: {{cellSize}};
+  --playground-duration: {{speed}};
+}
+
+.feature-playground__game-board {
+  display: grid;
+  grid-template-columns: repeat(3, var(--playground-cell-size));
+}
+
+.feature-playground__game-cell:has(input:checked) {
+  background: var(--playground-accent);
+}
+
+${inspected}
+`
+  }
+}
 
 const makeFeature = (feature: FeatureSeed): Feature => ({
   ...feature,

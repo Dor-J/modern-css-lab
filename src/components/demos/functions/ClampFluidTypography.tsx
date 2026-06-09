@@ -3,6 +3,10 @@ import DemoShell from '../../ui/DemoShell'
 import { getDemoFeature } from '../getDemoFeature'
 
 const css = `
+.fluid-type-demo {
+  inline-size: min(100%, {{stageWidth}});
+}
+
 .fluid-type-demo h3 {
   font-size: clamp({{minSize}}, {{fluidSize}} + 0.75rem, {{maxSize}});
   line-height: 0.95;
@@ -19,6 +23,17 @@ const css = `
 `
 
 const controls = [
+  {
+    id: 'stageWidth',
+    label: 'Demo width',
+    type: 'range',
+    cssVar: '--type-stage-width',
+    defaultValue: '44',
+    min: 18,
+    max: 72,
+    step: 1,
+    unit: 'rem',
+  },
   {
     id: 'minSize',
     label: 'Minimum',
@@ -58,6 +73,7 @@ const targets = [
   { id: 'demo', label: 'Type container', selector: '.fluid-type-demo' },
   { id: 'heading', label: 'Heading', selector: '.fluid-type-demo h3' },
   { id: 'body', label: 'Body copy', selector: '.fluid-type-demo p:not(.eyebrow)' },
+  { id: 'ruler', label: 'Width simulator', selector: '.fluid-type-demo__ruler' },
 ] satisfies FeatureTarget[]
 
 const snippets = [
@@ -85,12 +101,26 @@ function ClampFluidTypography() {
     >
       <article className="fluid-type-demo">
         <div className="fluid-type-demo__measure">
-          <p className="eyebrow">min 2rem / preferred 8cqi / max 5.75rem</p>
+          <p className="eyebrow">resize the demo width, not only the viewport</p>
           <h3>Fluid type that respects bounds</h3>
           <p>
             The text grows when the component has space, then stops at a designed maximum so screenshots and
             dense layouts stay controlled.
           </p>
+          <dl className="fluid-type-demo__readout" aria-label="Clamp formula parts">
+            <div>
+              <dt>min</dt>
+              <dd>var(--fluid-min)</dd>
+            </div>
+            <div>
+              <dt>preferred</dt>
+              <dd>var(--fluid-slope) + 0.75rem</dd>
+            </div>
+            <div>
+              <dt>max</dt>
+              <dd>var(--fluid-max)</dd>
+            </div>
+          </dl>
         </div>
         <div className="fluid-type-demo__ruler" aria-label="Fluid type bounds">
           <span>min</span>
