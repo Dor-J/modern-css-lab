@@ -139,7 +139,7 @@ This project is ready to deploy with GitHub Pages through `.github/workflows/dep
 Deployment behavior:
 
 - Local development keeps Vite's base path at `/`.
-- GitHub Actions sets `GITHUB_PAGES=true`, and Vite derives the Pages base path from `GITHUB_REPOSITORY`.
+- The deploy workflow sets `VITE_BASE_PATH` only for the Pages artifact build.
 - User or organization Pages repositories such as `owner.github.io` deploy at `/`.
 - Project Pages repositories such as `modern-css-lab` deploy at `/modern-css-lab/`.
 - `npm run build:pages` creates `dist/404.html` as an SPA fallback and `dist/.nojekyll`.

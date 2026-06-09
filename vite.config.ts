@@ -14,17 +14,7 @@ function getBasePath() {
     return normalizeBasePath(process.env.VITE_BASE_PATH)
   }
 
-  if (process.env.GITHUB_PAGES !== 'true') {
-    return '/'
-  }
-
-  const repositoryName = process.env.GITHUB_REPOSITORY?.split('/')[1]
-
-  if (!repositoryName || repositoryName.endsWith('.github.io')) {
-    return '/'
-  }
-
-  return normalizeBasePath(repositoryName)
+  return '/'
 }
 
 // https://vite.dev/config/
